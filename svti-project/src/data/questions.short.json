@@ -1,0 +1,79 @@
+[
+  {
+    "id": "sq001",
+    "version": "short",
+    "prompt": "春天的一个下午，你发现镇上正在举办复活节彩蛋寻宝活动。你会怎么做？",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "积极参与，和所有人竞争并享受节日气氛", "value": "a" },
+      { "label": "去看看，但更喜欢站在一旁观察", "value": "b" },
+      { "label": "完全不去，宁愿在农场照料作物", "value": "c" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "social", "delta": 20 },
+        { "dimension": "adventure", "delta": 5 }
+      ]
+    },
+    "primaryDimension": "social",
+    "secondaryDimension": "adventure",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "social_participation"
+  },
+  {
+    "id": "sq002",
+    "version": "short",
+    "prompt": "当你规划农场时，你更倾向于：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "提前画好布局图，按季节严格轮作", "value": "a" },
+      { "label": "大致规划，允许根据心情调整", "value": "b" },
+      { "label": "想到什么种什么，享受意外收获", "value": "c" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "pace", "delta": 25 }
+      ]
+    },
+    "primaryDimension": "pace",
+    "secondaryDimension": "value",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "pace_planning"
+  },
+  {
+    "id": "sq003",
+    "version": "short",
+    "prompt": "休息日里，你更愿意：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "去河边钓鱼，享受自然的宁静", "value": "a" },
+      { "label": "研究新的酿酒配方或自动化装置", "value": "b" },
+      { "label": "去镇上拜访朋友，参加各种活动", "value": "c" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "natureTech", "delta": 15 },
+        { "dimension": "social", "delta": 10 }
+      ]
+    },
+    "primaryDimension": "natureTech",
+    "secondaryDimension": "social",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "nature_tech_preference"
+  }
+]

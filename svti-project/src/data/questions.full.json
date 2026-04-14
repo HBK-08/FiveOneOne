@@ -1,0 +1,207 @@
+[
+  {
+    "id": "q001",
+    "version": "full",
+    "prompt": "春天的一个下午，你发现镇上正在举办复活节彩蛋寻宝活动。你会怎么做？",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "积极参与，和所有人竞争并享受节日气氛", "value": "a" },
+      { "label": "去看看，但更喜欢站在一旁观察", "value": "b" },
+      { "label": "完全不去，宁愿在农场照料作物", "value": "c" },
+      { "label": "只在结束时出现，领取可能的奖励", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "social", "delta": 20 },
+        { "dimension": "adventure", "delta": 5 }
+      ]
+    },
+    "primaryDimension": "social",
+    "secondaryDimension": "adventure",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "social_participation"
+  },
+  {
+    "id": "q002",
+    "version": "full",
+    "prompt": "当你规划农场时，你更倾向于：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "提前画好布局图，按季节严格轮作", "value": "a" },
+      { "label": "大致规划，允许根据心情调整", "value": "b" },
+      { "label": "想到什么种什么，享受意外收获", "value": "c" },
+      { "label": "只专注于高利润作物，其他随意", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "pace", "delta": 25 }
+      ]
+    },
+    "primaryDimension": "pace",
+    "secondaryDimension": "value",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "pace_planning"
+  },
+  {
+    "id": "q003",
+    "version": "full",
+    "prompt": "在表达自己的情感时，你通常是：",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "非常含蓄，习惯隐藏情绪", "mid": "视情况而定", "high": "非常直接，喜欢坦诚表达" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "emotion", "delta": 15 }
+      ],
+      "romance": [
+        { "dimension": "openness", "delta": 8 }
+      ]
+    },
+    "primaryDimension": "emotion",
+    "secondaryDimension": "openness",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "emotion_expression"
+  },
+  {
+    "id": "q004",
+    "version": "full",
+    "prompt": "你更喜欢在矿洞中待上一整天，还是确保每天按时回家做饭休息？",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "矿洞探险更有趣，时间不知不觉就过去了", "value": "a" },
+      { "label": "会设定闹钟，保证生活节奏不被打乱", "value": "b" },
+      { "label": "只在有准备的日子去探险", "value": "c" },
+      { "label": "完全不去矿洞，农场生活已足够", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "adventure", "delta": 20 },
+        { "dimension": "pace", "delta": -5 }
+      ]
+    },
+    "primaryDimension": "adventure",
+    "secondaryDimension": "pace",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "adventure_rhythm"
+  },
+  {
+    "id": "q005",
+    "version": "full",
+    "prompt": "休息日里，你更愿意：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "去河边钓鱼，享受自然的宁静", "value": "a" },
+      { "label": "研究新的酿酒配方或自动化装置", "value": "b" },
+      { "label": "去镇上拜访朋友，参加各种活动", "value": "c" },
+      { "label": "待在家里整理房间或阅读", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "natureTech", "delta": 15 },
+        { "dimension": "social", "delta": 10 }
+      ]
+    },
+    "primaryDimension": "natureTech",
+    "secondaryDimension": "social",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "nature_tech_preference"
+  },
+  {
+    "id": "q006",
+    "version": "full",
+    "prompt": "当你遇到困难时，你更希望伴侣如何回应？",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "安静陪伴，给我空间自己处理", "value": "a" },
+      { "label": "主动提供建议，帮我一起解决", "value": "b" },
+      { "label": "用温暖的话语安慰和鼓励我", "value": "c" },
+      { "label": "转移注意力，带我去做些有趣的事", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "romance": [
+        { "dimension": "independence", "delta": 15 },
+        { "dimension": "growthSupport", "delta": 10 },
+        { "dimension": "romance", "delta": 10 }
+      ]
+    },
+    "primaryDimension": "independence",
+    "secondaryDimension": "growthSupport",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": true,
+    "weight": 1.2,
+    "explanationKey": "romance_support_style"
+  },
+  {
+    "id": "q007",
+    "version": "full",
+    "prompt": "你通常不擅长在人群中表达自己。（反向题）",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "完全不同意", "mid": "中立", "high": "完全同意" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "emotion", "delta": 15 }
+      ]
+    },
+    "primaryDimension": "emotion",
+    "secondaryDimension": "social",
+    "reverseScored": true,
+    "consistencyTag": "emotion_r001",
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "emotion_reverse"
+  },
+  {
+    "id": "q008",
+    "version": "full",
+    "prompt": "对于一段关系，稳定的日常比激情和冒险更重要。",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "完全不同意", "mid": "中立", "high": "完全同意" },
+    "targetVectors": {
+      "romance": [
+        { "dimension": "stability", "delta": 20 },
+        { "dimension": "adventure", "delta": -8 }
+      ],
+      "trait": [
+        { "dimension": "adventure", "delta": -5 }
+      ]
+    },
+    "primaryDimension": "stability",
+    "secondaryDimension": "adventure",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": true,
+    "weight": 1.2,
+    "explanationKey": "romance_stability"
+  }
+]

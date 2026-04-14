@@ -1,0 +1,20 @@
+{
+  "result": {
+    "oneLinerTemplate": "你的灵魂深处，住着一位{topCharacter}。",
+    "analysisPrefix": "根据你的选择，你在八个核心维度上展现出独特的分布。以下是对你最像角色的深度解析：",
+    "getAlongAdvicePrefix": "在与这位角色相处时，以下几点建议或许能帮助你更好地理解彼此：",
+    "conflictWarningPrefix": "当然，每一段关系都需要磨合。以下是可能需要留意的冲突点：",
+    "farmLifeAdvicePrefix": "在星露谷的农场生活中，这样的性格会倾向于：",
+    "romanceTopPrefix": "从恋爱匹配的角度来看，以下角色最能回应你的情感需求：",
+    "romanceBottomPrefix": "而这位角色，可能与你存在较大的关系模式差异，需要更多磨合："
+  },
+  "shareCard": {
+    "titleTemplate": "我是 {typeCode} 型",
+    "subtitleTemplate": "最像 {characterName} · 理想伴侣是 {romanceName}",
+    "cta": "来测测你的 SVTI 类型"
+  },
+  "admin": {
+    "title": "SVTI 本地管理页",
+    "description": "此页面仅用于本地配置查看与调试，不做登录与权限控制。"
+  }
+}

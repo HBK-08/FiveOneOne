@@ -1,0 +1,79 @@
+{
+  "typeAxisWeights": {
+    "SC": {
+      "social": 0.6,
+      "bonding": 0.4
+    },
+    "FP": {
+      "pace": 1.0
+    },
+    "RI": {
+      "value": 0.8,
+      "aesthetic": 0.4,
+      "emotion": 0.2
+    },
+    "NT": {
+      "natureTech": 0.7,
+      "adventure": 0.3
+    }
+  },
+  "characterMatch": {
+    "weights": {
+      "social": 1.0,
+      "pace": 1.0,
+      "emotion": 1.0,
+      "value": 1.0,
+      "natureTech": 1.0,
+      "adventure": 1.0,
+      "bonding": 1.0,
+      "aesthetic": 1.0
+    },
+    "distanceMode": "manhattan"
+  },
+  "romanceMatch": {
+    "needWeights": {
+      "stability": 1.0,
+      "openness": 1.0,
+      "independence": 1.0,
+      "romance": 1.0,
+      "adventure": 1.0,
+      "domesticity": 1.0,
+      "socialPresence": 1.0,
+      "growthSupport": 1.0
+    },
+    "complementBonus": {
+      "enabled": true,
+      "dimensions": [
+        {
+          "userTrait": "social",
+          "characterTrait": "bonding",
+          "bonus": 5,
+          "reason": "社交与依恋风格的互补带来空间平衡"
+        }
+      ]
+    },
+    "conflictPenalty": {
+      "enabled": true,
+      "defaultPenalty": 8
+    },
+    "hardFilters": {
+      "orientationMismatch": {
+        "enabled": true,
+        "strategy": "exclude"
+      },
+      "extremeValueConflict": {
+        "enabled": true,
+        "threshold": 60,
+        "strategy": "penalty_cap"
+      }
+    },
+    "genderAndRelation": {
+      "defaultPool": "all",
+      "filterStrategy": "preference_then_all"
+    }
+  },
+  "consistency": {
+    "reverseMultiplier": -1,
+    "tolerance": 15
+  }
+}

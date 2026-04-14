@@ -1,0 +1,138 @@
+{
+  "dimensions": [
+    {
+      "id": "social",
+      "nameZh": "社交取向",
+      "nameEn": "Social Orientation",
+      "lowLabel": "独处沉浸",
+      "highLabel": "社区投入",
+      "radarOrder": 1,
+      "axisMapping": {
+        "axis": "SC",
+        "weight": 0.6
+      }
+    },
+    {
+      "id": "pace",
+      "nameZh": "节奏取向",
+      "nameEn": "Pace Orientation",
+      "lowLabel": "松弛随性",
+      "highLabel": "规划推进",
+      "radarOrder": 2,
+      "axisMapping": {
+        "axis": "FP",
+        "weight": 1.0
+      }
+    },
+    {
+      "id": "emotion",
+      "nameZh": "情感表达",
+      "nameEn": "Emotional Expression",
+      "lowLabel": "含蓄克制",
+      "highLabel": "直接外露",
+      "radarOrder": 3,
+      "axisMapping": {
+        "axis": "RI",
+        "weight": 0.2
+      }
+    },
+    {
+      "id": "value",
+      "nameZh": "价值核心",
+      "nameEn": "Value Core",
+      "lowLabel": "浪漫理想",
+      "highLabel": "现实务实",
+      "radarOrder": 4,
+      "axisMapping": {
+        "axis": "RI",
+        "weight": 0.8
+      }
+    },
+    {
+      "id": "natureTech",
+      "nameZh": "世界兴趣",
+      "nameEn": "World Interest",
+      "lowLabel": "自然手作",
+      "highLabel": "技术系统",
+      "radarOrder": 5,
+      "axisMapping": {
+        "axis": "NT",
+        "weight": 0.7
+      }
+    },
+    {
+      "id": "adventure",
+      "nameZh": "探索倾向",
+      "nameEn": "Exploration Tendency",
+      "lowLabel": "安稳日常",
+      "highLabel": "冒险未知",
+      "radarOrder": 6,
+      "axisMapping": {
+        "axis": "NT",
+        "weight": 0.3
+      }
+    },
+    {
+      "id": "bonding",
+      "nameZh": "关系模式",
+      "nameEn": "Relationship Mode",
+      "lowLabel": "自主边界",
+      "highLabel": "亲密依附",
+      "radarOrder": 7,
+      "axisMapping": {
+        "axis": "SC",
+        "weight": 0.4
+      }
+    },
+    {
+      "id": "aesthetic",
+      "nameZh": "美学与精神性",
+      "nameEn": "Aesthetic and Spirituality",
+      "lowLabel": "朴素现实",
+      "highLabel": "艺术幻想",
+      "radarOrder": 8,
+      "axisMapping": {
+        "axis": "RI",
+        "weight": 0.4
+      }
+    }
+  ],
+  "axes": [
+    {
+      "id": "SC",
+      "nameZh": "社群取向",
+      "nameEn": "Social vs Communal",
+      "lowLetter": "S",
+      "highLetter": "C",
+      "lowLabel": "独处沉浸",
+      "highLabel": "社区投入"
+    },
+    {
+      "id": "FP",
+      "nameZh": "节奏取向",
+      "nameEn": "Freeflow vs Planned",
+      "lowLetter": "F",
+      "highLetter": "P",
+      "lowLabel": "松弛随性",
+      "highLabel": "规划推进"
+    },
+    {
+      "id": "RI",
+      "nameZh": "价值取向",
+      "nameEn": "Realistic vs Idealistic",
+      "lowLetter": "R",
+      "highLetter": "I",
+      "lowLabel": "现实务实",
+      "highLabel": "浪漫理想"
+    },
+    {
+      "id": "NT",
+      "nameZh": "世界取向",
+      "nameEn": "Nature vs Technology",
+      "lowLetter": "N",
+      "highLetter": "T",
+      "lowLabel": "自然手作",
+      "highLabel": "技术系统"
+    }
+  ]
+}
