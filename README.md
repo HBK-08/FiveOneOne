@@ -5,3 +5,4 @@ This repository contains study materials and collaborative projects. All project
 ## TODO
 
 - [ ] Auto-Detection and Check-in for Courses
+- [ ] Stardew Valley
