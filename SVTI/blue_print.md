@@ -1,111 +1,779 @@
-# Role & Objective
-You are an Expert React/TypeScript Developer and UI/UX Designer. Your task is to build a "Stardew Valley Personality Test" single-page web application from scratch in the current directory. You will execute this plan step-by-step autonomously.
+你的约束已经足够把项目从“想法”推进到“可执行方案”。
+当前不再缺“方向性信息”，缺的是**落地参数**与**数据规范**。所以这一步最合理的产出不是继续泛问，而是：
 
-## 1. Tech Stack
-* **Framework:** React with Vite
-* **Language:** TypeScript
-* **Styling:** Tailwind CSS
-* **Icons:** `lucide-react`
-* **State Management:** React `useState` / `useReducer`
+1. 给出 **SVTI 正式计划书 v1.0 框架**
+2. 给出 **算法与数据结构的定稿骨架**
+3. 给出 **仍需你确认的少量高价值问题**
+4. 给出 **可转写为 Claude Code 执行指令的 prompt 骨架**
 
-## 2. Project Execution Plan
+下面直接进入正题。
 
-### Step 1: Project Initialization & Dependencies
-1. Run `npm create vite@latest . -- --template react-ts` in the current directory (force overwrite if needed, or clear the directory first).
-2. Run `npm install` to install base dependencies.
-3. Install Tailwind CSS and its peers: `npm install -D tailwindcss postcss autoprefixer`.
-4. Initialize Tailwind: `npx tailwindcss init -p`.
-5. Configure `tailwind.config.js` to include `./index.html` and `./src/**/*.{js,ts,jsx,tsx}`.
-6. Add Tailwind directives to `src/index.css`.
-7. Install icons: `npm install lucide-react`.
+---
 
-### Step 2: Data Seeding (`src/data/quizData.ts`)
-Create a file `src/data/quizData.ts` and export the following strict data structures. Do not use external APIs.
+# SVTI 项目计划书 v1.0
 
-```typescript
-export const dimensions = ["Social (1 Extrovert / -1 Introvert)", "Activity (1 Farming / -1 Mining)", "Finance (1 Saver / -1 Spender)", "Rule (1 Lawful / -1 Chaotic)"];
+## 1. 项目概述
 
-export const characters = [
-  { name: "Sebastian", vector: [-1, -1, 1, -1], desc: "你像塞巴斯蒂安一样，是个喜欢独处、热爱下矿冒险的夜猫子。比起喧闹的人群，你更享受一个人在房间里敲击键盘或在雨天散步。" },
-  { name: "Haley", vector: [1, 1, -1, -1], desc: "你像海莉一样，充满活力且注重生活品质。你喜欢阳光明媚的日子，热爱摄影，虽然偶尔有点小任性，但内心热情。" },
-  { name: "Harvey", vector: [-1, 1, 1, 1], desc: "你像哈维医生一样，是个内心细腻、温柔且循规蹈矩的人。你喜欢安稳的田园生活，做事谨慎，让人感到非常可靠。" },
-  { name: "Abigail", vector: [1, -1, -1, -1], desc: "你像阿比盖尔一样，是个充满好奇心的冒险家。你对未知的世界充满渴望，不喜欢被传统的规则束缚，随时准备拿起剑走向矿井。" }
-];
+### 1.1 项目名称
 
-export const questions = [
-  {
-    id: 1,
-    text: "在一个完美的周五晚上，你通常会选择怎么度过？",
-    options: [
-      { text: "去星之果实餐吧和大家一起喝酒聊天", weight: [1, 0, -1, 0] },
-      { text: "一个人待在房间里打游戏或看书", weight: [-1, 0, 1, 0] }
-    ]
-  },
-  {
-    id: 2,
-    text: "如果镇长刘易斯让你帮忙筹备节日庆典，你的态度是？",
-    options: [
-      { text: "严格按照传统流程，确保万无一失", weight: [0, 1, 0, 1] },
-      { text: "觉得传统太无聊，想搞点新花样", weight: [0, -1, 0, -1] }
-    ]
-  },
-  {
-    id: 3,
-    text: "你在矿洞里挖到了一颗极其罕见的五彩碎片，你会怎么做？",
-    options: [
-      { text: "立刻卖掉换成一大笔金币存起来", weight: [0, 0, 1, 1] },
-      { text: "拿到博物馆捐掉或者送给喜欢的人", weight: [1, 0, -1, -1] }
-    ]
-  },
-  {
-    id: 4,
-    text: "你的农场目前百废待兴，你会优先清理什么？",
-    options: [
-      { text: "清理杂草和树木，规划出一片整齐的菜地", weight: [0, 1, 1, 1] },
-      { text: "不管农场了，带上稿子直接去矿井深处探险", weight: [0, -1, -1, -1] }
-    ]
-  }
-];
+SVTI（Stardew Valley Type Indicator）
+
+### 1.2 项目目标
+
+构建一个基于《星露谷物语》角色画像、生活方式偏好与关系适配逻辑的本地可运行测试网页。测试以 50 题为初始题量，输出三类结果：
+
+* 用户最像的星露谷角色 Top 3
+* 用户的理想伴侣 Top 3
+* 用户的 SVTI 类型码与各维度连续百分比
+
+该系统定位为**半严肃、尽量自洽的角色人格映射系统**，而不是心理学测量工具。
+
+### 1.3 项目形态
+
+* 本地运行网页
+* 技术栈：Vue.js + Vite
+* 数据来源严格本地化，不联网
+* 后续可部署到服务器，也可供用户下载 repo 本地运行
+
+### 1.4 双重受众
+
+本项目需要同时服务两类文档对象：
+
+* 团队协作版：简要说明产品结构、模型逻辑、任务分工
+* Claude Code 执行版：高约束工程指令，明确文件结构、输入输出、命名、算法流程、验收标准
+
+---
+
+## 2. 产品定位
+
+### 2.1 核心定位
+
+SVTI 不直接复制 MBTI，而是采用“**MBTI 外观 + 连续向量底层**”方案：
+
+* 外观层：提供固定类型码，增强传播性
+* 机制层：采用 8 维连续分数进行角色匹配与伴侣适配
+* 输出层：同时给出类型、维度百分比、角色结果、解释文案
+
+### 2.2 核心体验目标
+
+用户完成测试后，应获得以下体验：
+
+* 结果“有代入感”，而非随机贴标签
+* “最像谁”与“理想伴侣”不重复套壳，而是有不同逻辑
+* 维度解释清楚，可追溯
+* 对玩过和没玩过《星露谷物语》的用户都可理解
+* 结果页面有展示性、传播性、复测价值
+
+---
+
+## 3. 角色池与结果池设计
+
+### 3.1 角色范围
+
+* 共 46 位角色
+* 均来自 `./people` 目录
+* 包含可结婚与不可结婚角色
+* `最像谁` 与 `理想伴侣` 使用**同一角色池**
+* 包含 Krobus、Wizard
+* 不包含模组角色
+
+### 3.2 角色池使用规则
+
+* 所有角色都进入“最像谁”计算池
+* 所有角色都进入“理想伴侣”计算池
+* 允许“最像角色”和“理想伴侣”为同一角色
+* 伴侣推荐阶段需要考虑用户性别与性取向信息做过滤或加权
+
+### 3.3 角色设定口径
+
+* 依据：原版官方文本 + Wiki
+* `最像谁`：允许使用角色完整画像，包括其成长性和复杂性
+* `理想伴侣`：采用角色的“成熟稳定态画像”
+
+---
+
+## 4. 测评模型总体结构
+
+## 4.1 总体结构
+
+SVTI 采用三层结构：
+
+### 第一层：答题层
+
+50 题混合题型：
+
+* 场景选择题
+* 五级量表题
+* 反向题
+* 一致性检测题
+* 少量专用于伴侣匹配的题
+
+### 第二层：向量层
+
+用户答案被映射为两个核心向量：
+
+1. **人格/生活方式向量**
+   用于计算“最像谁”
+2. **关系需求向量**
+   用于计算“理想伴侣”
+
+### 第三层：结果层
+
+输出三套结果：
+
+* 8 维连续百分比
+* 4 字母类型码
+* 角色匹配 Top 3 与伴侣匹配 Top 3
+
+---
+
+## 5. 推荐的 8 维模型
+
+你已经确定“先 8 维，后压缩成 4 字母码”。
+基于你强调的“社交风格 + 恋爱观 + 生活方式 + 价值观”，并结合星露谷语境，最合理的 8 维如下。
+
+## 5.1 八个连续维度
+
+### D1 社交取向
+
+**独处沉浸 ↔ 社区投入**
+衡量是否更偏向安静自处，还是更愿意参与镇上关系与公共活动。
+
+### D2 节奏取向
+
+**松弛随性 ↔ 规划推进**
+衡量生活方式更偏自发、缓慢，还是有目标感、秩序感和行动推进。
+
+### D3 情感表达
+
+**含蓄克制 ↔ 直接外露**
+衡量情感与需求表达方式。
+
+### D4 价值核心
+
+**浪漫理想 ↔ 现实务实**
+衡量对人生、关系、职业、家庭的价值判断方式。
+
+### D5 世界兴趣
+
+**自然手作 ↔ 技术系统**
+对应星露谷语境中的自然、土地、手工、生活感，与理性系统、技术效率、机械改造倾向。
+
+### D6 探索倾向
+
+**安稳日常 ↔ 冒险未知**
+对应洞穴、秘密、未知、变动、探索、风险接受程度。
+
+### D7 关系模式
+
+**自主边界 ↔ 亲密依附**
+衡量是否更需要空间独立，还是更倾向稳定陪伴与情感联结。
+
+### D8 美学与精神性
+
+**朴素现实 ↔ 艺术幻想**
+衡量对艺术、仪式、神秘感、诗意生活的偏好。
+
+---
+
+## 5.2 从 8 维压缩为 4 轴类型码
+
+建议最终固定为 **16 型**，不是 32 型。理由很简单：
+
+* 你要传播性，但不坚持 MBTI 纯模仿
+* 46 个角色映射到 16 型，足够稀疏
+* 32 型会导致每型过窄，角色承载不足
+* 8 型又太粗，无法支持“Top3 + 差异解释”
+
+因此，推荐：
+
+* 底层：8 维连续分数
+* 中层：压缩成 4 条主轴
+* 外层：16 型字母码
+
+### 推荐 4 条主轴
+
+#### S / C
+
+Solitary vs Communal
+来自 D1 社交取向 + D7 关系模式部分权重
+
+#### F / P
+
+Freeflow vs Planned
+来自 D2 节奏取向
+
+#### R / I
+
+Realistic vs Idealistic
+来自 D4 价值核心 + D8 美学精神性
+
+#### N / T
+
+Nature vs Technology
+来自 D5 世界兴趣 + D6 探索倾向部分校正
+
+这样可以形成 16 型，例如：
+
+* SFIN
+* CPRT
+* 等等
+
+不建议直接照抄 MBTI 的 E/I、S/N、T/F、J/P。那会强行套壳，和《星露谷》世界观耦合度不够。
+
+---
+
+## 6. 题目系统设计
+
+## 6.1 题量结构
+
+50 题建议如下分配：
+
+* 32 题：核心人格/生活方式题
+* 8 题：恋爱偏好与关系需求题
+* 4 题：性别/性取向/伴侣过滤相关隐性题
+* 4 题：反向题
+* 2 题：一致性检测题
+
+这样做的原因是：
+你要同时测“像谁”和“伴侣适配”，如果 50 题全部混算，伴侣结果会塌缩成“你喜欢和自己相似的人”，失去区分度。
+
+## 6.2 题型比例建议
+
+推荐比例：
+
+* 场景选择题：60%
+* 五级量表题：40%
+
+场景题负责沉浸感、传播感、游戏语境。
+量表题负责稳定性和算法可控性。
+
+## 6.3 出题原则
+
+每道题必须满足：
+
+* 高度贴合星露谷语境
+* 对没玩过游戏的用户也可通过括号理解
+* 每题主测一个维度，最多副测一个维度
+* 存在反向题
+* 存在伴侣专属题
+* 最终可追溯到维度与结果解释
+
+---
+
+## 7. 算法设计
+
+这是计划书最关键的部分。
+
+## 7.1 三套独立计算结果
+
+你已经明确：**类型与角色均单独计算**。
+因此最终需要三套分数系统：
+
+### A. 类型分数
+
+根据 8 维压缩到 4 轴，生成 4 字母类型码
+
+### B. 最像角色分数
+
+用户人格向量 vs 角色人格向量，相似度匹配
+
+### C. 理想伴侣分数
+
+用户关系需求向量 vs 角色成熟稳定态画像 + 角色择偶偏好模型
+
+这三者不能互相替代。
+
+---
+
+## 7.2 用户向量结构
+
+建议将用户答题结果拆成两个向量：
+
+### 1）用户人格向量 `userTraitVector`
+
+用于“最像谁”
+
+```json
+{
+  "social": 72,
+  "pace": 43,
+  "emotion": 68,
+  "value": 61,
+  "natureTech": 30,
+  "adventure": 77,
+  "bonding": 46,
+  "aesthetic": 74
+}
 ```
 
-### Step 3: Types & Algorithm (`src/utils/calculator.ts`)
+### 2）用户关系需求向量 `userLoveNeedVector`
 
-1. Create `src/types/index.ts` to define interfaces for `Character`, `Option`, `Question`, and `GameState` (which tracks `currentQuestionIndex`, `userVector` (number[]), and `isFinished`).
-2. Create `src/utils/calculator.ts`. Write a function `calculateResult(userVector: number[], characters: Character[]): Character`.
-3. The logic must use **Euclidean Distance**. Calculate the distance between the `userVector` and each character's `vector`. Return the character with the **minimum** distance.
+用于“理想伴侣”
 
-### Step 4: UI/UX Implementation (`src/App.tsx`)
+```json
+{
+  "desired_stability": 80,
+  "desired_openness": 65,
+  "desired_independence": 40,
+  "desired_romance": 72,
+  "desired_adventure": 38,
+  "desired_domesticity": 67,
+  "desired_social_presence": 52,
+  "desired_growth_support": 84
+}
+```
 
-Build the main application flow with Tailwind CSS.
+---
 
-**Design System:**
+## 7.3 角色数据结构
 
-- **Colors:** Use an earthy, Stardew Valley-inspired palette. Backgrounds should be soft beige/wood colors (`bg-stone-100`, `bg-amber-50`). Buttons should use nature greens or warm browns.
-- **Typography:** Clean, readable sans-serif, with larger, bold headings.
-- **Layout:** A centered, max-width card container (`max-w-lg`, `mx-auto`, `mt-10`, `shadow-xl`, `rounded-xl`). Responsive for mobile devices.
+每个角色至少需要三类结构化数据：
 
-**State Machine (3 Views):**
+### A. 基础资料
 
-1. **Welcome View (index === 0 && !isFinished):**
-   - Title: "你在星露谷物语中是哪个NPC？"
-   - Subtitle: "完成这个简短的性格测试，发现你的星际灵魂伴侣。"
-   - Call to action: A prominent "开始测试 (Start Test)" button.
-2. **Quiz View (index < questions.length):**
-   - Progress Bar: Visual indicator of `currentQuestionIndex / questions.length`.
-   - Question Text: Display current question prominently.
-   - Options: Render as large, clickable block buttons with hover effects.
-   - Interaction: onClick -> add option's `weight` to `userVector` using vector addition -> increment `currentQuestionIndex`.
-3. **Result View (isFinished === true):**
-   - Run `calculateResult`.
-   - Display a congratulatory title.
-   - Display the winning Character's name in a large font.
-   - Display the Character's description text.
-   - Add a placeholder UI element (like an empty colored circle with a User icon from lucide-react) representing the character portrait.
-   - Call to action: "重新测试 (Restart)" button -> resets state.
+* id
+* 中文名
+* 英文名
+* 头像路径
+* 简介
+* 标签
 
-### Step 5: Final Review & Polish
+### B. 人格画像 `traitVector`
 
-1. Ensure there are no TypeScript errors.
-2. Ensure simple transition animations between questions (e.g., standard Tailwind `transition-all opacity-100`).
-3. Clean up boilerplate code from Vite (`App.css`, unneeded logos).
-4. Do not start the dev server, just leave the code ready for production or manual testing.
+用于“最像谁”
+
+### C. 成熟恋爱画像 `romanceProfile`
+
+用于“理想伴侣”
+
+### D. 择偶偏好 `partnerPreference`
+
+定义其更适合什么样的人，以及冲突项和硬门槛
+
+示意：
+
+```json
+{
+  "id": "emily",
+  "name_zh": "艾米丽",
+  "name_en": "Emily",
+  "avatar": "./people/Emily.png",
+  "intro_md": "./people/Emily.md",
+  "tags": ["自由", "浪漫", "艺术感", "灵性"],
+  "traitVector": {
+    "social": 70,
+    "pace": 48,
+    "emotion": 79,
+    "value": 66,
+    "natureTech": 42,
+    "adventure": 58,
+    "bonding": 71,
+    "aesthetic": 90
+  },
+  "romanceProfile": {
+    "stability": 55,
+    "openness": 84,
+    "independence": 63,
+    "romance": 86,
+    "adventure": 57,
+    "domesticity": 49,
+    "socialPresence": 67,
+    "growthSupport": 80
+  },
+  "partnerPreference": {
+    "preferredGender": ["male", "female", "nonbinary"],
+    "orientationMode": "flexible",
+    "weights": {
+      "desired_stability": 0.10,
+      "desired_openness": 0.18,
+      "desired_independence": 0.15,
+      "desired_romance": 0.18,
+      "desired_adventure": 0.09,
+      "desired_domesticity": 0.06,
+      "desired_social_presence": 0.07,
+      "desired_growth_support": 0.17
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": true
+    },
+    "conflictRules": [
+      {
+        "field": "desired_control",
+        "operator": ">",
+        "value": 75,
+        "penalty": 18,
+        "reason": "过强的控制倾向与角色的自由边界需求冲突"
+      }
+    ]
+  }
+}
+```
+
+---
+
+## 7.4 “最像谁”算法
+
+建议采用：**加权距离 + 归一化得分**
+
+### 计算逻辑
+
+对于用户人格向量 `U` 和角色人格向量 `C`：
+
+[
+distance = \sum_i w_i \cdot |U_i - C_i|
+]
+
+[
+score = 100 - normalize(distance)
+]
+
+优先建议：
+
+* 初版：加权曼哈顿距离
+* 原因：可解释性强，便于调参与输出维度差异
+* 不建议一上来用余弦相似度，解释成本更高
+
+### 输出内容
+
+* Top 3 角色
+* 每个角色的总分
+* 与第一名最接近的 3 个维度
+* 与第一名差异最大的 2 个维度
+* 一句话文艺总结
+* 长文画像解析
+
+---
+
+## 7.5 “理想伴侣”算法
+
+这一块必须和“最像谁”分开。你已经做对了。
+
+建议伴侣算法采用三部分混合：
+
+### A. 需求匹配分
+
+用户的关系需求向量 vs 角色恋爱画像
+
+### B. 吸引机制分
+
+允许部分维度是“互补优于相似”，不是简单距离最小
+
+### C. 冲突惩罚分
+
+高冲突维度直接扣分
+
+### D. 硬门槛过滤
+
+包括：
+
+* 性别/性取向过滤
+* 角色特殊规则过滤
+* 极端冲突值封顶
+
+总公式建议为：
+
+[
+romanceScore = baseCompatibility + attractionBonus - conflictPenalty
+]
+
+其中：
+
+[
+baseCompatibility = \sum_i w_i \cdot match(userLoveNeed_i, characterRomance_i)
+]
+
+[
+attractionBonus = \sum_j a_j \cdot complement(userTrait_j, characterTrait_j)
+]
+
+[
+conflictPenalty = \sum_k p_k
+]
+
+### 关键点
+
+伴侣推荐不能是“跟你最像的人”。
+否则 Sebastian 型用户几乎永远只会配 Sebastian 类角色，结果单薄。
+
+---
+
+## 7.6 性别与性取向处理
+
+你要求：
+
+* 对性别过滤
+* 用委婉题目确认性取向
+* 用于最终伴侣推荐
+
+建议实现方式：
+
+### 明确输入层
+
+用户可在开始页填写：
+
+* 自身性别
+* 是否愿意跳过
+* 关系对象偏好范围
+
+### 隐性校正层
+
+在题目中加入若干关系偏好场景题，用作软校正，不直接暴露为“你的性取向是什么”
+
+### 算法层
+
+对伴侣推荐启用：
+
+* 硬过滤
+* 或软过滤 + 权重惩罚
+
+其中建议采用：
+
+* 默认硬过滤
+* 可在设置中允许“开放全部角色池”
+
+否则会出现结果与用户预期冲突。
+
+---
+
+## 8. 数据组织方案
+
+你现在的 `./people` 目录只有头像和 md，且字段不统一。
+这不足以支撑稳定算法。必须改造。
+
+## 8.1 推荐目录结构
+
+```bash
+svti-project/
+├─ public/
+│  └─ people/
+│     ├─ Emily.png
+│     ├─ Emily.md
+│     └─ ...
+├─ src/
+│  ├─ assets/
+│  ├─ components/
+│  ├─ pages/
+│  ├─ data/
+│  │  ├─ characters/
+│  │  │  ├─ emily.json
+│  │  │  ├─ sebastian.json
+│  │  │  └─ ...
+│  │  ├─ dimensions.json
+│  │  ├─ questions.full.json
+│  │  ├─ questions.short.json
+│  │  ├─ type-map.json
+│  │  ├─ scoring.rules.json
+│  │  └─ display.copy.json
+│  ├─ utils/
+│  │  ├─ scoring.ts
+│  │  ├─ typeEngine.ts
+│  │  ├─ characterMatcher.ts
+│  │  ├─ romanceMatcher.ts
+│  │  ├─ consistencyCheck.ts
+│  │  └─ contentLoader.ts
+│  ├─ stores/
+│  ├─ router/
+│  ├─ App.vue
+│  └─ main.ts
+├─ scripts/
+│  ├─ validate-data.js
+│  ├─ sync-people-assets.js
+│  └─ init-character-json.js
+├─ docs/
+│  ├─ plan-team.md
+│  └─ plan-claude.md
+├─ package.json
+└─ vite.config.ts
+```
+
+---
+
+## 8.2 角色 JSON 必须统一字段
+
+每个角色 JSON 必须至少包含：
+
+* `id`
+* `nameZh`
+* `nameEn`
+* `avatar`
+* `introShort`
+* `introLong`
+* `tags`
+* `traitVector`
+* `romanceProfile`
+* `partnerPreference`
+* `farmLifeAdvice`
+* `shareCardTitle`
+* `shareCardSubtitle`
+
+否则前端展示、算法调用、解释生成都会不稳定。
+
+---
+
+## 9. 结果展示设计
+
+## 9.1 结果页结构
+
+建议结果页按以下顺序展示：
+
+### 第一屏
+
+* 角色头像
+* 角色中英双语名
+* 一句话文艺结论
+* 类型码
+* 分享按钮
+
+### 第二屏：你最像谁
+
+* Top 3 角色卡片
+* 第一名长文分析
+* 最接近的 3 个维度
+* 差异提醒
+
+### 第三屏：你的理想伴侣
+
+* Top 3 伴侣卡片
+* 为什么适合
+* 相处建议
+* 冲突预警
+* 次选对象
+
+### 第四屏：最不适合的对象
+
+* Bottom 1 或 Bottom 3
+* 原因不宜过于负面，应写成“高冲突关系模式”
+
+### 第五屏：维度图
+
+* 8 维雷达图
+* 4 轴压缩结果
+* 百分比说明
+
+### 第六屏：农场生活推荐
+
+* 生活节奏建议
+* 社交参与建议
+* 节日活动偏好
+* 农场经营风格建议
+
+---
+
+## 9.2 分享卡片
+
+需要单独生成：
+
+* 角色头像
+* 类型码
+* 一句话文案
+* 理想伴侣名
+
+这是传播层，不是分析层。要简短，不要长篇。
+
+---
+
+## 10. 后续迭代设计
+
+你要求：
+
+* 手调权重
+* A/B 测试
+* 用户反馈后自动修正
+
+因此必须预留以下能力：
+
+### 10.1 可配置化
+
+维度权重、角色权重、冲突规则全部放 JSON 或 TS 配置，不写死在组件中。
+
+### 10.2 数据校验
+
+需要脚本检查：
+
+* 角色字段是否缺失
+* 题目是否引用了不存在的维度
+* 权重总和是否正确
+* 反向题是否标记正确
+
+### 10.3 短版测试
+
+预留 12 题版本：
+
+* 不重新设计模型
+* 从 50 题中抽取高区分度题
+* 用于快速分享和导流
+
+---
+
+# 需要你最终确认的高价值问题
+
+现在剩下的不是“很多问题”，而是少数几个真正决定实现质量的问题。下面这些必须定。
+
+## 1. 46 个角色的最终名单
+
+你说“都在 people 目录下”，但这对计划书不够。
+必须给出**明确名单**，因为后续要定义：
+
+* 哪些角色支持成熟恋爱态画像
+* 哪些角色有特殊规则
+* 哪些角色在伴侣池中属于“开放但低优先级”
+* 哪些角色需要特殊文案语气
+
+没有名单，算法层只能写空壳。
+
+## 2. 16 型的字母命名是否接受我上面的方案
+
+建议确认：
+
+* 你是否接受 `S/C, F/P, R/I, N/T` 这 4 轴
+* 或者你要改字母
+* 或者你想要更“星露谷味”的命名
+
+这是传播层关键设计。
+
+## 3. 性别与性取向的产品策略
+
+这里必须选一种：
+
+### 方案 A
+
+开始页直接问：
+
+* 你的性别
+* 你偏好的关系对象
+
+### 方案 B
+
+开始页只问性别，性取向完全通过题目软推断
+
+### 方案 C
+
+开始页直接问完整关系偏好，同时题目只是做微调
+
+**客观判断**：推荐 C。
+原因：软推断误差大，且容易把“审美偏好”误判成“关系取向”。
+
+## 4. 是否允许不可结婚角色进入伴侣 Top 1
+
+你说角色池一致，理论上允许。
+但这会影响用户预期。
+
+这里必须明确：
+
+* 是完全开放
+* 还是开放但标记为“非常规伴侣结果”
+* 还是不可结婚角色只能出现在 Top 3，不能 Top 1
+
+## 5. 角色 JSON 由谁录入
+
+你已经说希望手工整理结构化 JSON。还差最后一步：
+
+* 你自己手填
+* Claude Code 先生成模板文件，你再补值
+* Claude Code 根据 md 草拟初值，你人工修订
+
+**最合理**的是第三种：
+先自动生成模板初稿，再人工修订，不要全手填，也不要全自动信任。
+
+---
