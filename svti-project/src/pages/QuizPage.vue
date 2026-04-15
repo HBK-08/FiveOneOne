@@ -3,25 +3,9 @@
     <ProgressBar :current="quizStore.currentIndex + 1" :total="quizStore.totalQuestions" :percent="quizStore.progressPercent" />
 
     <BaseCard v-if="quizStore.currentQuestion" class="question-card">
-      <div class="question-header">
-        <span v-if="quizStore.currentQuestion.forRomanceOnly" class="romance-badge">伴侣题</span>
-        <span v-if="quizStore.currentQuestion.reverseScored" class="reverse-badge">反向</span>
-      </div>
-      <h3 class="prompt">{{ quizStore.currentQuestion.prompt }}</h3>
-      <p v-if="quizStore.currentQuestion.promptSupplement" class="supplement">
-        {{ quizStore.currentQuestion.promptSupplement }}
-      </p>
-
-      <ChoiceQuestion
-        v-if="quizStore.currentQuestion.type === 'choice'"
+      <QuestionCard
         :question="quizStore.currentQuestion"
         :model-value="currentAnswer"
-        @update:model-value="onAnswer"
-      />
-      <ScaleQuestion
-        v-else
-        :question="quizStore.currentQuestion"
-        :model-value="(currentAnswer as number)"
         @update:model-value="onAnswer"
       />
     </BaseCard>
@@ -44,8 +28,7 @@ import { loadAllData, computeVectors, computeSVTIType, matchCharacters, matchRom
 import BaseCard from '@/components/common/BaseCard.vue'
 import BaseButton from '@/components/common/BaseButton.vue'
 import ProgressBar from '@/components/quiz/ProgressBar.vue'
-import ChoiceQuestion from '@/components/quiz/ChoiceQuestion.vue'
-import ScaleQuestion from '@/components/quiz/ScaleQuestion.vue'
+import QuestionCard from '@/components/quiz/QuestionCard.vue'
 
 const router = useRouter()
 const quizStore = useQuizStore()
@@ -79,7 +62,8 @@ async function submit() {
     configStore.allowAllRomancePool,
     data,
   )
-  const consistency = checkConsistency(quizStore.questions, quizStore.answers)
+  // consistency check result is available for future use / warnings
+  checkConsistency(quizStore.questions, quizStore.answers)
 
   const dimensionScores = data.dimensions.map((d) => ({
     id: d.id,

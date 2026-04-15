@@ -1,0 +1,70 @@
+{
+  "id": "leah",
+  "nameZh": "莉亚",
+  "nameEn": "Leah",
+  "avatar": "/people/Leah.png",
+  "introShort": "住在林中小屋的雕塑家，热爱自然，追求真实的艺术生活。",
+  "introLong": "莉亚从城市逃离到农场镇，只为追求真正属于自己的艺术生活。她在森林边的小屋里创作木雕，采集野菜，过着简单而丰盛的日子。她对自然有着深厚的情感，也对人际关系有着清晰的边界感。过去一段伤痛的感情让她更加珍视独立，但她的内心依然渴望真实的情感连接。",
+  "tags": ["艺术型", "自然", "独立", "感性", "生活家"],
+  "traitVector": {
+    "social": 42,
+    "pace": 48,
+    "emotion": 62,
+    "value": 18,
+    "natureTech": 15,
+    "adventure": 50,
+    "bonding": 65,
+    "aesthetic": 92
+  },
+  "romanceProfile": {
+    "stability": 62,
+    "openness": 68,
+    "independence": 65,
+    "romance": 75,
+    "adventure": 45,
+    "domesticity": 72,
+    "socialPresence": 38,
+    "growthSupport": 80
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "aesthetic": 1.5,
+      "natureTech": 1.3,
+      "independence": 1.2,
+      "domesticity": 1.1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": [
+      {
+        "field": "domesticity",
+        "operator": "<",
+        "value": 28,
+        "penalty": 10,
+        "reason": "莉亚重视共同的家庭生活，完全漂泊的生活方式可能让她感到不安"
+      },
+      {
+        "field": "independence",
+        "operator": "<",
+        "value": 30,
+        "penalty": 8,
+        "reason": "过度依赖可能触及莉亚过去的伤痛，让她感到窒息"
+      }
+    ]
+  },
+  "copy": {
+    "oneLiner": "你的内心有一片森林，只待懂得欣赏的人驻足。",
+    "analysis": "你和莉亚一样，用艺术来理解这个世界。对自然和美有着天然的敏感度，不需要华丽的生活，却对精神世界有极高的追求。你可能也有过逃离喧嚣、回归本真的冲动，并在这种选择中找到了真正的自我。",
+    "getAlongAdvice": "与莉亚相处最好的方式是真诚欣赏她的艺术，一起在森林里散步，或者支持她举办展览。给她足够的个人空间去创作，不要把时间占满。共同做饭或者整理家园，会是你们关系中最温暖的时刻。",
+    "conflictWarning": "莉亚对个人边界比较敏感，如果感觉被控制或被忽视，可能会默默疏远。及时沟通感受比任何补救措施都更有效。她对过去感情经历比较谨慎，建立信任需要耐心。",
+    "farmLifeAdvice": "你可能会把农场经营成一个艺术与自然共存的地方，花园设计别出心裁，把美感融入每一寸土地。也许会在农场角落放上自制的木雕，或者用野花编织季节庆典的装饰。"
+  },
+  "meta": {
+    "marriageable": true,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

@@ -1,5 +1,3 @@
-import type { TraitVector, RomanceProfile } from './character'
-
 export interface DimensionScore {
   id: string
   nameZh: string

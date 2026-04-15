@@ -2,19 +2,19 @@
   {
     "id": "sq001",
     "version": "short",
-    "prompt": "春天的一个下午，你发现镇上正在举办复活节彩蛋寻宝活动。你会怎么做？",
+    "prompt": "春天的一个下午，镇上正在举办复活节彩蛋寻宝活动。你会怎么做？",
     "promptSupplement": "",
     "type": "choice",
     "options": [
-      { "label": "积极参与，和所有人竞争并享受节日气氛", "value": "a" },
+      { "label": "完全不去，宁愿在农场照料作物", "value": "a" },
       { "label": "去看看，但更喜欢站在一旁观察", "value": "b" },
-      { "label": "完全不去，宁愿在农场照料作物", "value": "c" }
+      { "label": "积极参与，和所有人竞争并享受节日气氛", "value": "c" }
     ],
     "scaleLabels": { "low": "", "mid": "", "high": "" },
     "targetVectors": {
       "trait": [
-        { "dimension": "social", "delta": 20 },
-        { "dimension": "adventure", "delta": 5 }
+        { "dimension": "social", "delta": 22 },
+        { "dimension": "adventure", "delta": 6 }
       ]
     },
     "primaryDimension": "social",
@@ -32,14 +32,14 @@
     "promptSupplement": "",
     "type": "choice",
     "options": [
-      { "label": "提前画好布局图，按季节严格轮作", "value": "a" },
-      { "label": "大致规划，允许根据心情调整", "value": "b" },
-      { "label": "想到什么种什么，享受意外收获", "value": "c" }
+      { "label": "想到什么种什么，享受意外收获", "value": "a" },
+      { "label": "大致规划，根据心情调整", "value": "b" },
+      { "label": "提前画好布局图，按季节严格轮作", "value": "c" }
     ],
     "scaleLabels": { "low": "", "mid": "", "high": "" },
     "targetVectors": {
       "trait": [
-        { "dimension": "pace", "delta": 25 }
+        { "dimension": "pace", "delta": 28 }
       ]
     },
     "primaryDimension": "pace",
@@ -53,6 +53,30 @@
   {
     "id": "sq003",
     "version": "short",
+    "prompt": "在表达自己的情感时，你通常是：",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "非常含蓄，习惯隐藏情绪", "mid": "视情况而定", "high": "非常直接，喜欢坦诚表达" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "emotion", "delta": 18 }
+      ],
+      "romance": [
+        { "dimension": "openness", "delta": 10 }
+      ]
+    },
+    "primaryDimension": "emotion",
+    "secondaryDimension": "bonding",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "emotion_expression"
+  },
+  {
+    "id": "sq004",
+    "version": "short",
     "prompt": "休息日里，你更愿意：",
     "promptSupplement": "",
     "type": "choice",
@@ -64,7 +88,7 @@
     "scaleLabels": { "low": "", "mid": "", "high": "" },
     "targetVectors": {
       "trait": [
-        { "dimension": "natureTech", "delta": 15 },
+        { "dimension": "natureTech", "delta": 18 },
         { "dimension": "social", "delta": 10 }
       ]
     },
@@ -75,5 +99,203 @@
     "forRomanceOnly": false,
     "weight": 1.0,
     "explanationKey": "nature_tech_preference"
+  },
+  {
+    "id": "sq005",
+    "version": "short",
+    "prompt": "面对未知的矿洞区域，你的第一反应是：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "不感兴趣，农场够了", "value": "a" },
+      { "label": "会去，但先做好充分准备", "value": "b" },
+      { "label": "立刻冲进去探险", "value": "c" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "adventure", "delta": 25 }
+      ]
+    },
+    "primaryDimension": "adventure",
+    "secondaryDimension": "pace",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "adventure_mine"
+  },
+  {
+    "id": "sq006",
+    "version": "short",
+    "prompt": "对你来说，农场的美观布局重要吗？",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "不重要，功能性优先", "mid": "适度美化即可", "high": "非常重要，美感是灵魂" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "aesthetic", "delta": 22 }
+      ]
+    },
+    "primaryDimension": "aesthetic",
+    "secondaryDimension": "value",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "aesthetic_farm"
+  },
+  {
+    "id": "sq007",
+    "version": "short",
+    "prompt": "在亲密关系中，你更希望：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "各自独立，偶尔相聚", "value": "a" },
+      { "label": "有各自空间，但常保持联系", "value": "b" },
+      { "label": "尽可能在一起，彼此成为彼此的世界", "value": "c" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "bonding", "delta": 25 }
+      ],
+      "romance": [
+        { "dimension": "independence", "delta": -15 }
+      ]
+    },
+    "primaryDimension": "bonding",
+    "secondaryDimension": "social",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.1,
+    "explanationKey": "bonding_closeness"
+  },
+  {
+    "id": "sq008",
+    "version": "short",
+    "prompt": "对于金钱与幸福，你更倾向于认为：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "精神满足比金钱重要", "value": "a" },
+      { "label": "两者同样重要", "value": "b" },
+      { "label": "物质稳定是幸福前提", "value": "c" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "value", "delta": 22 }
+      ]
+    },
+    "primaryDimension": "value",
+    "secondaryDimension": "aesthetic",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "value_money"
+  },
+  {
+    "id": "sq009",
+    "version": "short",
+    "prompt": "对于一段关系，稳定的日常比激情和冒险更重要。",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "完全不同意", "mid": "中立", "high": "完全同意" },
+    "targetVectors": {
+      "romance": [
+        { "dimension": "stability", "delta": 22 },
+        { "dimension": "adventure", "delta": -10 }
+      ],
+      "trait": [
+        { "dimension": "adventure", "delta": -6 }
+      ]
+    },
+    "primaryDimension": "adventure",
+    "secondaryDimension": "pace",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": true,
+    "weight": 1.2,
+    "explanationKey": "romance_stability"
+  },
+  {
+    "id": "sq010",
+    "version": "short",
+    "prompt": "当你遇到困难时，你更希望伴侣：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "安静陪伴，给我空间", "value": "a" },
+      { "label": "用温暖的话语鼓励我", "value": "b" },
+      { "label": "主动提供建议，帮我解决", "value": "c" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "romance": [
+        { "dimension": "independence", "delta": -12 },
+        { "dimension": "growthSupport", "delta": 15 }
+      ]
+    },
+    "primaryDimension": "bonding",
+    "secondaryDimension": "bonding",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": true,
+    "weight": 1.2,
+    "explanationKey": "romance_support_style"
+  },
+  {
+    "id": "sq011",
+    "version": "short",
+    "prompt": "我更喜欢自然手工（种植、木工），而非技术机械（编程、自动化）。",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "完全不同意，偏向技术", "mid": "两者都喜欢", "high": "完全同意，偏向自然手工" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "natureTech", "delta": -22 }
+      ]
+    },
+    "primaryDimension": "natureTech",
+    "secondaryDimension": "value",
+    "reverseScored": true,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "natureTech_preference"
+  },
+  {
+    "id": "sq012",
+    "version": "short",
+    "prompt": "在星露谷，最让你满足的时刻是：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "一个人安静看着丰收的农场", "value": "a" },
+      { "label": "和朋友一起庆祝节日", "value": "b" },
+      { "label": "在矿洞发现珍贵宝石后回家", "value": "c" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "social", "delta": 10 },
+        { "dimension": "adventure", "delta": 8 },
+        { "dimension": "aesthetic", "delta": 8 }
+      ]
+    },
+    "primaryDimension": "social",
+    "secondaryDimension": "aesthetic",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "holistic_satisfaction"
   }
 ]

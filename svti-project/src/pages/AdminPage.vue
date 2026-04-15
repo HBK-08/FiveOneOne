@@ -49,14 +49,15 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
+import type { DimensionDefinition, Question, Character } from '@/types'
 import { loadAllData, validateCharacter, validateQuestion } from '@/utils'
 import BaseCard from '@/components/common/BaseCard.vue'
 import BaseButton from '@/components/common/BaseButton.vue'
 
-const dimensions = ref<any[]>([])
-const questionsFull = ref<any[]>([])
-const questionsShort = ref<any[]>([])
-const characters = ref<any[]>([])
+const dimensions = ref<DimensionDefinition[]>([])
+const questionsFull = ref<Question[]>([])
+const questionsShort = ref<Question[]>([])
+const characters = ref<Character[]>([])
 const validation = ref({ ok: true, errors: [] as string[] })
 
 onMounted(async () => {

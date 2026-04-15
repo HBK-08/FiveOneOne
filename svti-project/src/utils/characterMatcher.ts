@@ -1,4 +1,4 @@
-import type { TraitVector, Character, TopCharacter } from '@/types'
+import type { TraitVector, TopCharacter } from '@/types'
 import type { LoadedData } from './contentLoader'
 
 const TRAIT_KEYS: Array<keyof TraitVector> = [
