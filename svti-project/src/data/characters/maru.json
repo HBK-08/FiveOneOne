@@ -1,0 +1,63 @@
+{
+  "id": "maru",
+  "nameZh": "玛鲁",
+  "nameEn": "Maru",
+  "avatar": "/people/Maru.png",
+  "introShort": "罗宾的女儿，兼职护士与天才发明家，用科技和创造力探索无限可能。",
+  "introLong": "玛鲁是鹈鹕镇最聪明的年轻人之一，在诊所担任护士的同时，也在家中的工作台上捣鼓各种令人惊叹的发明。她遗传了父亲德米特里斯对科学的热情，对天文、电子和机器人充满向往。她积极乐观、努力勤奋，内心充满对世界的好奇与热忱。她相信知识和创造力可以让生活变得更美好，也渴望与能够理解并欣赏她热情的人共同成长。",
+  "tags": ["理工达人", "发明家", "勤奋", "乐观", "科技"],
+  "traitVector": {
+    "social": 55,
+    "pace": 80,
+    "emotion": 55,
+    "value": 72,
+    "natureTech": 90,
+    "adventure": 58,
+    "bonding": 52,
+    "aesthetic": 55
+  },
+  "romanceProfile": {
+    "stability": 65,
+    "openness": 72,
+    "independence": 65,
+    "romance": 58,
+    "adventure": 60,
+    "domesticity": 55,
+    "socialPresence": 50,
+    "growthSupport": 80
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "natureTech": 1.5,
+      "growthSupport": 1.3,
+      "openness": 1.2,
+      "bonding": 0.9
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": [
+      {
+        "field": "natureTech",
+        "operator": "<",
+        "value": 20,
+        "penalty": 8,
+        "reason": "完全排斥技术和科学的人可能与玛鲁的核心兴趣产生巨大隔阂"
+      }
+    ]
+  },
+  "copy": {
+    "oneLiner": "你用智慧和双手改造世界，相信科技与创造力能让生活更美好。",
+    "analysis": "你和玛鲁一样，对知识有着天然的渴望，习惯用逻辑和实践去解决问题。你可能是那种拆开东西研究原理、或者深夜在网上钻研某个技术细节的人。你在关系中重视成长与相互启发，希望伴侣也能欣赏你的热情，而不仅仅是包容它。你的勤奋和专注让你值得被认真对待。",
+    "getAlongAdvice": "与玛鲁相处，对她的发明和研究表现出真诚的兴趣是打开关系的钥匙——哪怕你不懂技术，认真倾听也足以让她感到被珍视。一起参与动手类活动，比如组装、修理或观星，会让你们的关系更有默契。给她足够的工作时间和独立空间，不要强行打断她的创作状态。",
+    "conflictWarning": "玛鲁全情投入某个项目时可能会忽略周围的人，这对需要高度情感回应的伴侣来说会造成距离感。她有时过于理性，在情感问题上可能显得不够敏感，需要伴侣引导她用心感受而非分析。",
+    "farmLifeAdvice": "你可能会把农场变成一个实验基地——用喷水器优化灌溉、研究最高效的轮作方案，或者把矿石加工到极致效率。别忘了偶尔抬头看看星空，玛鲁会告诉你，那片夜空里藏着比任何机器都浩瀚的奇迹。"
+  },
+  "meta": {
+    "marriageable": true,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "haley",
+  "nameZh": "海莉",
+  "nameEn": "Haley",
+  "avatar": "/people/Haley.png",
+  "introShort": "时尚爱好者与摄影师，外表高冷，内心藏着温柔与成长。",
+  "introLong": "海莉初见时给人一种物质、自负的印象——她在乎外表，热衷时尚，对农村生活持有些许轻视。然而随着交往的深入，你会发现她外表之下藏着一颗真诚而柔软的心。她对摄影充满热情，用镜头捕捉美丽的瞬间，也在这个过程中学会了以更细腻的眼光看待世界。她的成长弧线是农场镇上最动人的故事之一：那个愿意在信任中卸下防御、展示真实自我的海莉，值得被温柔以待。",
+  "tags": ["时尚", "摄影", "外向", "成长型", "现实"],
+  "traitVector": {
+    "social": 80,
+    "pace": 48,
+    "emotion": 60,
+    "value": 72,
+    "natureTech": 25,
+    "adventure": 38,
+    "bonding": 65,
+    "aesthetic": 82
+  },
+  "romanceProfile": {
+    "stability": 58,
+    "openness": 55,
+    "independence": 62,
+    "romance": 72,
+    "adventure": 38,
+    "domesticity": 68,
+    "socialPresence": 82,
+    "growthSupport": 58
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "aesthetic": 1.5,
+      "social": 1.3,
+      "value": 1.1,
+      "adventure": 0.8
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": [
+      {
+        "field": "aesthetic",
+        "operator": "<",
+        "value": 18,
+        "penalty": 8,
+        "reason": "完全不在乎外在美感可能让海莉觉得难以共鸣"
+      }
+    ]
+  },
+  "copy": {
+    "oneLiner": "你知道表象之下藏着更深的自我，愿意在信任中展示那个真实的你。",
+    "analysis": "你和海莉一样，对外在的呈现有着自己的标准和坚持，但这并不妨碍你内心拥有更丰富的层次。你重视生活品质与社交场合的体验，在关系中你需要伴侣真正看见你——不只是表面，而是那个愿意在亲密关系中慢慢展开的真实自我。随着信任的加深，你会展现出令人意想不到的温柔与深度。",
+    "getAlongAdvice": "与海莉相处，初期不必急于突破她的防线，真诚而有耐心地欣赏她的审美与摄影作品是很好的开始。陪她参加节日活动，给予她得体的关注与赞美，让她感受到你在认真对待这段关系。随着信任建立，她会逐渐展示更真实、更温柔的一面。",
+    "conflictWarning": "海莉对物质和外在的重视在关系早期可能显得有些肤浅，过于追求表面可能与更注重内在的伴侣产生摩擦。她的直接甚至有些强势的表达方式也可能让敏感的伴侣感到受伤，需要双方在沟通方式上磨合。",
+    "farmLifeAdvice": "海莉会把农场变成一个充满美感的摄影场地——每个季节都有她用镜头记录的美丽画面。鼓励她在农场探索创作，帮她建立一个专属的摄影角落或暗房，将让农场生活成为你们共同的艺术项目。"
+  },
+  "meta": {
+    "marriageable": true,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "evelyn",
+  "nameZh": "伊芙琳",
+  "nameEn": "Evelyn",
+  "avatar": "/people/Evelyn.png",
+  "introShort": "乔治的妻子，镇上所有人心中的\"奶奶\"，用烘焙和园艺把温暖送进每一个人的日常。",
+  "introLong": "伊芙琳是镇上最年长的女性居民之一，住在鹈鹕镇南侧。她以精湛的烘焙手艺和一手好园艺闻名全镇，每当有人需要安慰，她的饼干总是比任何话语都管用。她对所有人都充满关爱，把镇上的年轻人都当作半个孙辈对待。她重视传统、珍视记忆，但并不保守固执——她的温柔里藏着一种历经岁月沉淀后的从容与智慧。照顾年迈且脾气不好的丈夫乔治，对她来说是责任，也是她用爱践行的人生功课。",
+  "tags": ["慈祥", "传统", "温暖", "园艺", "烘焙"],
+  "traitVector": {
+    "social": 75,
+    "pace": 45,
+    "emotion": 80,
+    "value": 55,
+    "natureTech": 22,
+    "adventure": 20,
+    "bonding": 90,
+    "aesthetic": 62
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你是那种用细腻的关怀滋养身边所有人、把\"家\"这个字活成一种信仰的人。",
+    "analysis": "与伊芙琳气质相近的人，情感世界极为丰富，且大部分热情都流向了身边的人。你天生具有照顾者的直觉，善于从细节中感知他人的需求，并用朴实的行动——一顿饭、一个拥抱、一件亲手做的小物——传递你的爱意。你不追求刺激或变化，慢节奏的生活对你来说是享受而非束缚。你重视传统与传承，相信时间沉淀下来的东西才是真正有价值的。偶尔你会因为太在乎而显得有些唠叨，但那背后是满满的真心。",
+    "getAlongAdvice": "和伊芙琳相处，最重要的是接受她的关心，不要推开她递来的饼干或建议——那对她来说是一种拒绝。多向她请教生活经验，她的人生智慧远比看起来深厚。表达感谢时要具体真诚，她比任何人都能感受到话语里的温度。",
+    "conflictWarning": "如果你习惯独立、不喜欢被照顾，伊芙琳偶发的\"关心攻势\"可能会让你感到压力；她的出发点永远是爱，但边界感有时需要你温柔地帮她建立。",
+    "farmLifeAdvice": "在农场开辟一块专属花园，种满季节性鲜花和蔬菜；每周抽时间烘焙一次，把亲手做的食物送给邻居，你会发现那种被需要的满足感是任何产出都无法替代的。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

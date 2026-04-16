@@ -1,0 +1,54 @@
+{
+  "id": "morris",
+  "nameZh": "莫里斯",
+  "nameEn": "Morris",
+  "avatar": "/people/Morris.png",
+  "introShort": "Joja超市的精明经理，以效率和利润为信仰，是小镇传统价值观的最大对立者。",
+  "introLong": "莫里斯是Joja超市在鹈鹕镇的驻场经理，他的存在代表着企业扩张对小镇社区的侵蚀。他说话精明圆滑，以数据和利润为决策依据，对人情味和传统毫无兴趣。他试图说服玩家购买Joja会员资格，并在镇上的每个角落推进Joja的商业计划。他并非邪恶，而是一个被体制完全塑造的人，以至于失去了对非效率事物的感知能力。",
+  "tags": ["企业代表", "功利主义", "对立角色", "效率至上"],
+  "traitVector": {
+    "social": 65,
+    "pace": 85,
+    "emotion": 18,
+    "value": 90,
+    "natureTech": 60,
+    "adventure": 30,
+    "bonding": 22,
+    "aesthetic": 18
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你相信效率和结果，习惯用数字衡量价值，在竞争中如鱼得水却对人情世故不太感冒。",
+    "analysis": "你和莫里斯一样，高度重视效率与可量化的成果，做事讲究目标明确、步骤清晰。你在竞争环境中能迅速找到自己的位置，不太容易被情绪左右，也因此在压力下能保持冷静。然而，这种功利倾向有时会让你在需要情感联结的场合显得疏离，甚至让周围的人感到你只关心结果、不关心过程中的人。",
+    "getAlongAdvice": "与莫里斯打交道，最有效的方式是用他理解的语言——数据、利益和效率。如果你能展示出合作对他有明确收益，沟通会顺畅很多。不要期待他在情感层面与你产生深度共鸣，把互动保持在务实、专业的层面会更舒适。",
+    "conflictWarning": "莫里斯对于非效率和感性决策几乎没有耐心，如果你是那种注重人情、慢节奏的人，与他的互动很容易产生根本性的价值摩擦。他的竞争本能也意味着他很难成为真正意义上的盟友。",
+    "farmLifeAdvice": "如果你带有莫里斯式的效率思维，不妨把农场运营当作一道最优化题：规划好每一格土地的产出比，算清楚每季作物的利润率。高效的农场虽然少了几分浪漫，但账本上的数字会让你感到踏实满足。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "marnie",
+  "nameZh": "马尼",
+  "nameEn": "Marnie",
+  "avatar": "/people/Marnie.png",
+  "introShort": "经营牧场的热情大姐，爱动物、爱家人，用温暖包容着身边的每一个人。",
+  "introLong": "马尼在鹈鹕镇南边经营着一家牧场，养着奶牛、鸡、猪等各种农场动物，是玩家购买牲畜和动物饲料的主要来源。她性格开朗热情，对动物充满爱心，也是谢恩的舅妈，在背后默默支撑着这个并不总是让人省心的侄子。她与镇长刘易斯之间有一段秘而不宣的恋情，这让她内心有时也会感到委屈。马尼是那种把家和感情看得比什么都重的人。",
+  "tags": ["牧场主", "热情", "家庭", "动物爱好者"],
+  "traitVector": {
+    "social": 72,
+    "pace": 48,
+    "emotion": 72,
+    "value": 58,
+    "natureTech": 20,
+    "adventure": 35,
+    "bonding": 80,
+    "aesthetic": 48
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你把家和感情看得比什么都重，愿意为爱你的人付出一切，也渴望被同样深情地回应。",
+    "analysis": "你和马尼一样，将情感联结放在生命的核心位置。你对身边的人充满热情与包容，善于照顾他人的需求，在关系中往往是那个主动付出的一方。你对动物或自然事物有一种本能的爱，这种温柔也延伸到你对待人际关系的方式上。你渴望稳定而有归属感的生活，但有时也会因为太在意感情而感到受伤。",
+    "getAlongAdvice": "与马尼相处，真诚和热情是最重要的钥匙。对她的牧场和动物表现出真实的兴趣，她会立刻打开心扉。多关心一下谢恩和相关的家庭话题，她会感到被理解。不要让她感到被忽视或被视为理所当然。",
+    "conflictWarning": "马尼情感丰富，有时会因为感情问题而陷入低落，如果你不擅长处理对方的情绪化反应，可能会感到不知所措。她对于家庭和亲密关系的高度重视，也可能让偏向独立的人感到有压力。",
+    "farmLifeAdvice": "养几头动物、悉心照料它们，会让你的农场生活充满马尼式的温情。清晨给奶牛刷毛、喂鸡收蛋，这些细小的日常仪式，会让你感受到踏实的满足与生命的联结。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

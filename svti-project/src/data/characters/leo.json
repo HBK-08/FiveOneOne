@@ -1,0 +1,54 @@
+{
+  "id": "leo",
+  "nameZh": "利奥",
+  "nameEn": "Leo",
+  "avatar": "/people/Leo.png",
+  "introShort": "在金格岛与鹦鹉共同长大的野孩子，不善言辞，却与自然融为一体。",
+  "introLong": "利奥是在金格岛的热带丛林中独自长大的孩子，鹦鹉是他的语言，树林是他的家。他不懂镇子里人与人之间那套复杂的规则，但他能听懂风的方向，感知到动物情绪的细微变化。他的世界是自由的、广阔的，同时也是孤独的。当他最终来到鹈鹕镇，他需要重新学习如何与人相处，而这对他来说是一段真正的冒险——也许比在岛上的任何探险都更陌生。",
+  "tags": ["野孩子", "金格岛", "鸟语", "自由", "成长"],
+  "traitVector": {
+    "social": 18,
+    "pace": 22,
+    "emotion": 45,
+    "value": 15,
+    "natureTech": 10,
+    "adventure": 82,
+    "bonding": 48,
+    "aesthetic": 52
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你有一种不被规则束缚的本能，在自然和探索中才能感受到真正的自由。",
+    "analysis": "你和利奥一样，对自然有着直觉般的亲近感，在开阔的环境里才能真正放松。你的节奏很快，喜欢用行动而不是语言来感受世界，可能不擅长复杂的社交礼仪，但你的感受力却异常敏锐。你正处于一个成长与探索的阶段，愿意去接触陌生的事物，即便那让你感到不安。",
+    "getAlongAdvice": "与利奥这样的孩子相处，最好的方式是一起去做些户外的事，而不是用语言解释太多。跟着他的节奏走进自然，耐心等待他主动靠近——那一刻到来时，会是真实而珍贵的连接。",
+    "conflictWarning": "利奥对人群和社交场合有明显的不适感。如果你试图用强迫或催促的方式让他融入，他会本能地退缩。他需要的是空间，而不是安排。",
+    "farmLifeAdvice": "农场最美妙的地方之一，就是它和自然的边界几乎不存在。留出一片野生的区域，不去过度整理，让那里成为生命自由生长的地方，就像利奥在岛上的家一样。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

@@ -1,4 +1,4 @@
-import type { Character, TopRomance, TraitVector } from '@/types'
+import type { Character, TopRomance, TraitVector, RomanceProfile } from '@/types'
 import type { LoadedData } from './contentLoader'
 
 const ROMANCE_KEYS = [
@@ -21,7 +21,6 @@ export function matchRomance(
   data: LoadedData,
 ): { top: TopRomance[]; bottom: TopRomance | null } {
   const needWeights = (data.scoringRules.romanceMatch?.needWeights || {}) as Record<string, number>
-  const conflictConfig = data.scoringRules.romanceMatch?.conflictPenalty
   const hardFilters = data.scoringRules.romanceMatch?.hardFilters
 
   const scored = data.characters
@@ -34,7 +33,7 @@ export function matchRomance(
       let score = 50
       for (const key of ROMANCE_KEYS) {
         const need = userLoveNeed[key] ?? 50
-        const profile = (c.romanceProfile as Record<string, number | null>)[key] ?? 50
+        const profile = (c.romanceProfile as unknown as Record<string, number | null>)[key] ?? 50
         const w = needWeights[key] ?? 1
         score -= Math.abs(need - profile) * 0.5 * w
       }
@@ -50,7 +49,7 @@ export function matchRomance(
         }
       }
 
-      const penalties = computeConflictPenalties(userLoveNeed, c, conflictConfig)
+      const penalties = computeConflictPenalties(userLoveNeed, c)
       score -= penalties.total
 
       return {
@@ -91,7 +90,7 @@ export function matchRomance(
 function passHardFilters(
   c: Character,
   userGender: string,
-  userPreference: string[],
+  _userPreference: string[],
   allowAllPool: boolean,
   hardFilters: unknown,
 ): boolean {
@@ -109,7 +108,6 @@ function passHardFilters(
 function computeConflictPenalties(
   userLoveNeed: Record<string, number>,
   c: Character,
-  conflictConfig: unknown,
 ): { total: number; reasons: string[] } {
   let total = 0
   const reasons: string[] = []
@@ -142,6 +140,7 @@ function computeConflictPenalties(
   return { total, reasons }
 }
 
-function isNullRomanceProfile(profile: Record<string, number | null>): boolean {
-  return ROMANCE_KEYS.every((k) => profile[k] === null)
+function isNullRomanceProfile(profile: RomanceProfile): boolean {
+  const p = profile as unknown as Record<string, number | null>
+  return ROMANCE_KEYS.every((k) => p[k] === null)
 }

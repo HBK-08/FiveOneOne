@@ -1,0 +1,54 @@
+{
+  "id": "henchman-portrait-1",
+  "nameZh": "手下",
+  "nameEn": "Henchman",
+  "avatar": "/people/Henchman Portrait 1.png",
+  "introShort": "女巫沼泽的神秘守卫，沉默地站在门口，不允许任何人轻易通过。",
+  "introLong": "手下是女巫沼泽入口处那道沉默的屏障，身形模糊，来历不明。他不像普通的人类，更像是某种被施了咒术的存在，被永久地绑在这个阴暗湿冷的地方。他不主动攻击，也不主动交谈，只是用他的存在告诉所有靠近的人：这里不欢迎你，除非你能证明自己有资格进入。在他身上，神秘与忠诚奇异地交织在一起，让人无法简单地将他归类为善或恶。",
+  "tags": ["神秘生物", "忠诚", "沉默", "守卫"],
+  "traitVector": {
+    "social": 12,
+    "pace": 45,
+    "emotion": 8,
+    "value": 35,
+    "natureTech": 20,
+    "adventure": 28,
+    "bonding": 10,
+    "aesthetic": 15
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你是一个把职责放在首位、不需要被人理解也能坚守立场的人。",
+    "analysis": "你和手下一样，有极强的执行力与忠诚感，一旦认定了某件事或某个人，便会默默坚守。你对情绪的表达极为内敛，甚至在他人眼中显得冷漠，但这并不代表你没有感受，只是你选择把它深深收藏起来。你不需要他人的认可或理解，只要内心认定的事是对的，你就会义无反顾地坚持。",
+    "getAlongAdvice": "与手下型的人相处，关键是了解他们守护的是什么。不要试图用言语或情感说动他们，而是去真正理解并尊重他们的边界。一旦你通过了他们内心的考验，就会发现他们是最可靠的同行者。",
+    "conflictWarning": "极低的情感表达和几乎封闭的内心世界，会让大多数人感到无从接触。他不擅长也不愿意解释自己，沟通障碍在所难免。",
+    "farmLifeAdvice": "农场需要一些东西来划定边界——无论是围栏、水渠还是森林。清晰的边界不只是保护财产，也是让自己安心专注的方式。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

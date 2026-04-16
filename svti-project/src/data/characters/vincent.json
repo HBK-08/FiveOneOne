@@ -1,0 +1,54 @@
+{
+  "id": "vincent",
+  "nameZh": "文森特",
+  "nameEn": "Vincent",
+  "avatar": "/people/Vincent.png",
+  "introShort": "山姆的小弟弟，总是跑跳不停，和贾斯是最好的玩伴。",
+  "introLong": "文森特是山姆的弟弟，一个精力旺盛得让大人头疼的小男孩。他跑起来从不停歇，说话也是一嘴接一嘴，对任何事情都充满好奇，对任何人都毫无防备。他和贾斯是最好的玩伴，两人一静一动，构成了鹈鹕镇童年风景里最鲜活的一幅画。文森特不懂得什么是烦恼，他的世界是当下的、具体的，每一个新奇的事物都足以让他欢呼雀跃。",
+  "tags": ["孩子", "活泼", "Sam的弟弟", "无忧无虑"],
+  "traitVector": {
+    "social": 80,
+    "pace": 22,
+    "emotion": 75,
+    "value": 18,
+    "natureTech": 22,
+    "adventure": 78,
+    "bonding": 70,
+    "aesthetic": 38
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你活在当下，对世界的热情是你最大的魅力，无论走到哪里都能带动气氛。",
+    "analysis": "你和文森特一样，天生拥有旺盛的社交能量，能够毫不费力地与各种人建立连接。你情绪透明，喜怒哀乐都写在脸上，不善于掩饰也不需要掩饰。你对冒险和新体验有强烈的渴望，无聊是你最难忍受的状态。你对身边的人充满热情，愿意用行动表达你的喜爱。",
+    "getAlongAdvice": "与文森特这样的孩子相处，最好的方式是跟上他的节奏，和他一起找乐子。给他展示新奇的事物，参与他发起的小探险，让他感受到你真的愿意和他玩——那对他来说是最高的认可。",
+    "conflictWarning": "文森特的高能量和低专注度，在需要安静和秩序的场合可能让人抓狂。他不善于察觉他人需要安静的信号，边界感对他来说还是一门需要慢慢学习的功课。",
+    "farmLifeAdvice": "农场里最适合文森特的时刻，是每一个充满新鲜感的季节更替。种下不同的作物、养不同的动物、尝试不同的工艺——永远保持对农场新可能性的好奇心，就像文森特看待每一个新的一天那样。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

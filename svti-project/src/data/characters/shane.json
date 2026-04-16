@@ -1,0 +1,71 @@
+{
+  "id": "shane",
+  "nameZh": "肖恩",
+  "nameEn": "Shane",
+  "avatar": "/people/Shane.png",
+  "introShort": "在JojaMart工作的冷漠青年，用讽刺和距离保护着自己脆弱的内心，却对那些小鸡温柔无比。",
+  "introLong": "肖恩的日子过得很沉重。日复一日的流水线工作、酒精带来的短暂麻木，以及那些他不愿对任何人提起的黑暗念头。他用冷淡和讽刺筑起高墙，但那堵墙后面住着一个渴望被真正看见、被接纳的人。他对养鸡出人意料地上心，那是他不需要伪装的地方。随着信任的建立，肖恩会慢慢展现出他深沉而真实的一面——那不是表演出来的温柔，而是历经挣扎后真正留下的东西。",
+  "tags": ["内向沉郁", "讽刺冷漠", "成长弧线", "养鸡达人", "真实感强", "需要耐心", "深沉情感"],
+  "traitVector": {
+    "social": 22,
+    "pace": 32,
+    "emotion": 25,
+    "value": 65,
+    "natureTech": 30,
+    "adventure": 25,
+    "bonding": 32,
+    "aesthetic": 28
+  },
+  "romanceProfile": {
+    "stability": 38,
+    "openness": 35,
+    "independence": 72,
+    "romance": 45,
+    "adventure": 25,
+    "domesticity": 55,
+    "socialPresence": 18,
+    "growthSupport": 40
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 0.6,
+      "adventure": 0.7,
+      "bonding": 1.3,
+      "emotion": 1.2,
+      "value": 1.0
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": [
+      {
+        "field": "socialPresence",
+        "op": ">",
+        "val": 78,
+        "penalty": 15,
+        "reason": "高社交展示需求与肖恩对私密关系的保护欲产生根本冲突"
+      },
+      {
+        "field": "openness",
+        "op": "<",
+        "val": 15,
+        "penalty": 8,
+        "reason": "完全封闭的情感状态会让肖恩的孤立感加剧"
+      }
+    ]
+  },
+  "copy": {
+    "oneLiner": "你在沉默里藏着深刻的感受，等待那个不会让你感到被评判的人。",
+    "analysis": "肖恩不是一个容易靠近的人，但那些愿意慢慢走近他的人，往往会发现一段意外深刻的关系。他的冷淡不是冷漠，而是自我保护的盔甲。他不需要你帮他「修好」什么，他需要的是一个不会因为他的挣扎而退缩的人。与肖恩匹配的伴侣，通常自己也有一定的情感深度，能在平静中感受到安全感，不依赖热闹和表演来确认感情。",
+    "getAlongAdvice": "不要试图强行打开他，也不要把他的冷淡当成拒绝。陪他做他喜欢的事——哪怕只是一起看球赛、喝啤酒——比强迫他倾诉更有效。对他的进步给予真诚肯定，而不是施压。耐心是打开肖恩的唯一钥匙。",
+    "conflictWarning": "如果你需要一段热情洋溢、充满仪式感的恋爱，肖恩很可能让你感到失望。他的表达方式含蓄而迟缓，需要你有足够的安全感，不依赖频繁的情感确认。",
+    "farmLifeAdvice": "肖恩在农场生活中能找到真正的疗愈。让他负责照料动物，尤其是鸡舍，他会出乎意料地尽心。安静的农场日落和两人之间不需要填满的沉默，是你们关系最舒适的底色。"
+  },
+  "meta": {
+    "marriageable": true,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

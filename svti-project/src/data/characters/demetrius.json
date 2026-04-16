@@ -1,0 +1,54 @@
+{
+  "id": "demetrius",
+  "nameZh": "德米特里",
+  "nameEn": "Demetrius",
+  "avatar": "/people/Demetrius.png",
+  "introShort": "镇上的科学家，罗宾的丈夫，用严谨的研究精神丈量这个世界，但有时会忘记情感和关系同样需要用心经营。",
+  "introLong": "德米特里是一位专注于自然科学研究的学者，在家中设有专属实验室。他相信数据与事实，凡事讲求证据，是镇上最理性的一号人物。他对研究投入的热情堪称全力以赴，也因此有时会忽视家人的感受——尤其是继子塞巴斯蒂安，两人之间的摩擦折射出他在情感沟通上的局限性。他并非冷漠，只是习惯用科学家的视角审视一切，包括家庭关系。他的严谨是优点，也是他与世界之间那道隐形的距离感。",
+  "tags": ["科学家", "理性", "严谨", "家庭责任"],
+  "traitVector": {
+    "social": 52,
+    "pace": 78,
+    "emotion": 42,
+    "value": 80,
+    "natureTech": 88,
+    "adventure": 52,
+    "bonding": 48,
+    "aesthetic": 38
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你是那种用逻辑和数据导航人生、在专业领域卓有建树、却有时忽略了身边人情感需求的人。",
+    "analysis": "与德米特里气质相近的人，往往拥有强烈的求知欲和对秩序的偏好。你相信问题都有答案，只要方法正确；你做事有计划，重视效率，不喜欢模糊和随意。你对科学、技术或某个专业领域有着近乎痴迷的热情，这份专注让你在领域内卓有成就。然而，你也可能在不自知的情况下用\"理性框架\"评判他人的情感诉求，让亲近的人觉得被忽视或不被理解。你并非不关心家人，只是\"关心\"的表达方式需要更多的有意练习。",
+    "getAlongAdvice": "和德米特里相处，用他感兴趣的话题——自然科学、研究进展、新发现——打开他的话匣子，你会发现他其实非常健谈。不要用情绪化的方式表达需求，给他具体的、可操作的反馈他更容易接收。同时，也要有耐心接受他偶尔\"钻进研究忘了时间\"的状态，那是他的本能，不是对你的漠视。",
+    "conflictWarning": "如果你习惯依靠直觉和情感做判断，和德米特里可能会因为\"为什么要这么做\"而产生频繁摩擦；他会一再要求你用逻辑说服他，而这个过程会让情感敏感的人感到疲惫。",
+    "farmLifeAdvice": "适合系统规划农场的作物轮种与科学施肥，建立数据记录习惯；也可以为蘑菇屋或温室设立研究课题，让农场生活多一分探索的意义。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

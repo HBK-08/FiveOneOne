@@ -1,0 +1,54 @@
+{
+  "id": "kent",
+  "nameZh": "肯特",
+  "nameEn": "Kent",
+  "avatar": "/people/Kent.png",
+  "introShort": "从战场归来的老兵，带着难以言说的创伤重新学习做父亲和丈夫，在平静的农村生活里寻找一种新的秩序。",
+  "introLong": "肯特在游戏开始后第二年才回到鹈鹕镇，此前一直在外服役。他是一个沉默而坚韧的男人，战争在他身上留下了PTSD的烙印——某些突然的声响或特定的场景会让他瞬间回到那段噩梦。他努力融入家庭生活，重新建立和儿子萨姆、妻子乔迪之间的连接，但这条路并不容易走。他有强烈的责任感，也有对家人深沉的爱，只是有时不知道如何开口。他的坚强背后，藏着一个需要被理解、被允许脆弱的灵魂。",
+  "tags": ["退伍军人", "创伤后应激", "坚强", "家庭"],
+  "traitVector": {
+    "social": 45,
+    "pace": 65,
+    "emotion": 35,
+    "value": 75,
+    "natureTech": 48,
+    "adventure": 55,
+    "bonding": 65,
+    "aesthetic": 25
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你是那种用沉默承担一切、拒绝示弱却在某个深夜独自消化所有的人。",
+    "analysis": "与肯特气质相近的人，往往有着极强的责任心和自我要求。你习惯把困难扛在自己肩上，不喜欢给别人添麻烦，也不擅长主动寻求帮助。你有明确的行事原则，做事讲究规范和秩序，这让你在压力下依然能保持运转。然而，长期压抑自己的情感需求会留下隐患——你可能在某个毫无预兆的时刻崩溃，而周围的人会因为此前从未看见你的脆弱而感到措手不及。学会在安全的环境中放下防备，是你最重要的人生课题之一。",
+    "getAlongAdvice": "和肯特相处，不要追问他不想谈的过去，给他充分的时间和空间是最大的尊重。如果他偶尔沉默或退缩，不要强行拉他出来，安静地陪着他往往比任何话语都更有力量。他会通过实际行动来表达关心，当他愿意做某件事帮助你的时候，那就是他在说\"我在乎你\"。",
+    "conflictWarning": "如果你是一个高度情感需求、期待频繁深度沟通的人，肯特的内敛与偶发的情绪波动可能会让关系产生张力；了解创伤应激反应的基本知识，有助于你以更多理解代替误解。",
+    "farmLifeAdvice": "在农场建立清晰的日常规律，规律感对你来说既是生产力的保障，也是心理稳定的锚点；尝试发展一项需要专注和手作的副业——比如酿造或钓鱼——那种专注当下的状态，有时是最好的疗愈。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

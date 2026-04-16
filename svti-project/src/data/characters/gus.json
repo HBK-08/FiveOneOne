@@ -1,0 +1,54 @@
+{
+  "id": "gus",
+  "nameZh": "格斯",
+  "nameEn": "Gus",
+  "avatar": "/people/Gus.png",
+  "introShort": "星落酒馆的老板兼大厨，用一锅热汤和一声问候让每个来客都感受到宾至如归——这是他的天赋，也是他的事业。",
+  "introLong": "格斯是鹈鹕镇星落酒馆的主人，既是调酒师，也是厨师，更是无数个深夜里愿意倾听你说话的人。他天生热情，见到谁都笑得真诚，是镇上社交网络的核心节点之一。他把让人感到舒适和受欢迎当作人生使命，无论是镇上的常客还是初来乍到的陌生人，都能在他的酒馆里找到一种\"家\"的感觉。他可靠、稳定，不喜欢折腾，最大的成就感来自看着每张桌子上的人都吃得心满意足。",
+  "tags": ["热情好客", "大厨", "社交达人", "可靠"],
+  "traitVector": {
+    "social": 88,
+    "pace": 55,
+    "emotion": 72,
+    "value": 68,
+    "natureTech": 42,
+    "adventure": 48,
+    "bonding": 82,
+    "aesthetic": 58
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你是那种走进任何一个房间都能让气氛热起来、让人不自觉地放松警惕的人。",
+    "analysis": "与格斯气质相近的人，往往是天生的\"连接者\"。你享受人与人之间的互动，擅长让不同背景的人坐到同一张桌子前；你的情感表达自然流露，笑声和关心都是发自内心的。你对稳定性有相当程度的追求，喜欢在一个熟悉的环境里深耕，用日复一日的用心经营赢得他人的信任和喜爱。你不是追求刺激的冒险家，而是那个让别人安心去冒险后有地方回来的人。你的存在本身，就是一种温暖的力量。",
+    "getAlongAdvice": "和格斯相处简单而愉快——只要你真心投入，他能立刻感受到。常来酒馆坐坐，哪怕只是点一杯饮料聊几句；他记性好，会记住你喜欢什么、上次聊了什么。如果你遇到困难，不妨直接说出来，他不会评判你，只会想办法帮你。",
+    "conflictWarning": "如果你是一个喜欢安静独处、不喜欢寒暄的人，格斯无处不在的热情可能会让你感到些许疲惫；他并无恶意，只是他的\"关心\"总是以言语和互动的形式出现，需要你主动告诉他你的边界。",
+    "farmLifeAdvice": "把农场出产的食材送到酒馆作为合作食材供应，建立和格斯之间的商业与情感双重纽带；定期在酒馆举办的聚会上亮相，那是维系镇上人脉最轻松高效的方式。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

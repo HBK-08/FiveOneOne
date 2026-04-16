@@ -1,0 +1,54 @@
+{
+  "id": "caroline",
+  "nameZh": "卡洛琳",
+  "nameEn": "Caroline",
+  "avatar": "/people/Caroline.png",
+  "introShort": "皮埃尔的妻子，镇上的贤内助，在屋后藏着一方私密的茶园，还是镇上有氧健身课的忠实参与者。",
+  "introLong": "卡洛琳是镇上杂货店老板皮埃尔的妻子，也是阿比盖尔的妈妈。她表面上是一位普通的家庭主妇，却在屋后精心打理着一座外人鲜少知晓的私密茶园——那是属于她自己的小天地。她热爱大自然，每周坚持参加有氧健身课，活力满满。偶尔她也会流露出一丝神秘感，仿佛内心深处藏着一些说不清道不明的想法。她爱家人，但同样珍视属于自己的那片安静。",
+  "tags": ["贤妻良母", "自然爱好者", "神秘感", "活力"],
+  "traitVector": {
+    "social": 68,
+    "pace": 60,
+    "emotion": 62,
+    "value": 65,
+    "natureTech": 30,
+    "adventure": 40,
+    "bonding": 75,
+    "aesthetic": 55
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你是那种把家庭经营得井井有条、却始终在内心留一块只属于自己的小角落的人。",
+    "analysis": "与卡洛琳气质相近的人，往往兼具责任感与自我意识。你重视家庭与人际连接，乐于为身边的人付出，但你并不会把自己完全消融在关系里——无论多忙，你都会为自己保留一处喘息的空间。你喜欢自然，偏好简单而真实的生活方式，对过度科技化的节奏有些抵触。你的情绪表达适中，不会喜怒形于色，但在亲近的人面前偶尔会展露真实的感受。你的神秘感并非刻意为之，而是你内心世界丰富的自然流露。",
+    "getAlongAdvice": "和卡洛琳相处，尊重她的个人空间是第一要务——不要试图闯入她的\"茶园\"，无论那是字面意义上的还是比喻意义上的。多聊聊生活里的小美好，比如花园的新变化、今天健身课的感受；她欣赏真实、接地气的交流，不喜欢夸夸其谈。偶尔一起喝杯茶，比任何刻意的社交都更能拉近距离。",
+    "conflictWarning": "如果你习惯于事事刨根问底、要求对方完全透明，可能会让卡洛琳感到窒息；她的\"神秘感\"是她的保护色，过度追问只会让她退缩。",
+    "farmLifeAdvice": "适合在农场辟出一角专门种植茶叶或香草，给自己留一个\"只属于自己的角落\"；同时规律参与镇上的社区活动，在付出与自我滋养之间找到平衡。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

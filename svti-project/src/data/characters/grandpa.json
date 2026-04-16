@@ -1,0 +1,54 @@
+{
+  "id": "grandpa",
+  "nameZh": "爷爷",
+  "nameEn": "Grandpa",
+  "avatar": "/people/Grandpa.png",
+  "introShort": "将农场托付给你的爷爷，用一封信将农业的梦想传递给了下一代。",
+  "introLong": "爷爷是整个故事的起点，是那个在临终前写下一封信、将毕生心血托付给你的男人。他不在了，却无处不在——在那片土地里，在那栋老屋里，在每一个黎明破土而出的嫩芽里。他是农场精神的具象化，代表着一种质朴、缓慢却充满温度的生活哲学。在第三年末，他会再次出现，以一种温柔而庄重的方式，看着你走过的路，给出他的评价。",
+  "tags": ["智慧", "农场传承", "家庭", "精神引领"],
+  "traitVector": {
+    "social": 65,
+    "pace": 40,
+    "emotion": 72,
+    "value": 50,
+    "natureTech": 18,
+    "adventure": 55,
+    "bonding": 88,
+    "aesthetic": 58
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你是那种会把最重要的东西留给真正在乎的人、并相信他们能够守护它的人。",
+    "analysis": "你和爷爷一样，把家庭与传承看得比一切都重要。你的情感世界温暖而深厚，对在乎的人有强烈的保护欲和期待。你相信土地、劳动和时间的价值，不喜欢浮躁的速成主义。你有一种让人安心的气场，能够在不说很多话的情况下传递出深沉的爱意与鼓励。",
+    "getAlongAdvice": "爷爷型的人不需要你时刻陪伴，但他们希望你活得认真、活出意义。定期回顾自己的成长，诚实地面对自己的不足，会让他们感到欣慰。记住他们说过的话，那往往是多年经验凝缩的智慧。",
+    "conflictWarning": "爷爷对你抱有期望，这份期望有时可能变成一种隐性的压力。如果你正在寻找自己的方向，过重的传承责任感可能会让你喘不过气。",
+    "farmLifeAdvice": "这片农场是爷爷对你最深沉的礼物。用心经营它，不只是为了盈利，更是为了感受土地与劳动本身带来的满足感——这正是爷爷最希望你找到的东西。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

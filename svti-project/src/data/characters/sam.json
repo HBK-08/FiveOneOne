@@ -1,0 +1,64 @@
+{
+  "id": "sam",
+  "nameZh": "山姆",
+  "nameEn": "Sam",
+  "avatar": "/people/Sam.png",
+  "introShort": "充满活力的音乐少年，用吉他和滑板在小镇上留下自己的印记。他的笑声是最好的阳光。",
+  "introLong": "山姆是鹈鹕镇里最活力四射的年轻人之一。他热爱音乐、滑板、电子游戏和披萨，对朋友忠诚到骨子里。虽然他有时显得有些不成熟，但那份纯粹的热情和对生活的乐观态度让他成为任何团体中不可或缺的存在。他深爱自己的家人，尤其是弟弟文森特，会在父亲入伍期间默默承担更多家庭责任。与山姆在一起，你永远不会感到无聊。",
+  "tags": ["音乐人", "滑板少年", "阳光开朗", "忠诚", "游戏迷", "家庭责任感", "创意十足"],
+  "traitVector": {
+    "social": 82,
+    "pace": 28,
+    "emotion": 78,
+    "value": 25,
+    "natureTech": 55,
+    "adventure": 80,
+    "bonding": 75,
+    "aesthetic": 65
+  },
+  "romanceProfile": {
+    "stability": 42,
+    "openness": 80,
+    "independence": 62,
+    "romance": 72,
+    "adventure": 82,
+    "domesticity": 48,
+    "socialPresence": 75,
+    "growthSupport": 68
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1.2,
+      "adventure": 1.5,
+      "bonding": 1.2,
+      "emotion": 1.0,
+      "aesthetic": 0.8
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": [
+      {
+        "field": "adventure",
+        "op": "<",
+        "val": 15,
+        "penalty": 10,
+        "reason": "完全拒绝冒险和玩乐可能与山姆活泼跳脱的生活方式格格不入"
+      }
+    ]
+  },
+  "copy": {
+    "oneLiner": "你用热情和笑声感染身边的人，在平凡的每一天里创造属于自己的派对。",
+    "analysis": "山姆是那种能把普通的周二夜晚变成难忘回忆的人。他的情感表达直接而真诚，喜欢就说喜欢，开心就笑出来。他不太擅长长远规划，更倾向于活在当下，但这种自发性恰恰让相处变得轻松有趣。他对家人和朋友有着强烈的保护欲和责任感，在嬉皮外表下藏着一颗认真的心。与山姆匹配的伴侣，往往也是那种能欣赏生活小乐趣、不过分在意规则的人。",
+    "getAlongAdvice": "和山姆相处的秘诀是保持轻松，愿意随时来一场即兴冒险。对他的音乐和爱好表示真诚的兴趣，而不只是敷衍。偶尔一起打游戏或者分享一块披萨，比任何精心安排的约会都更能拉近距离。不要试图让他变得更「成熟」，他的赤子之心正是最珍贵的地方。",
+    "conflictWarning": "如果你需要一个事事都有计划、永远准时的伴侣，山姆可能会让你抓狂。他的随性和偶尔的不靠谱需要你有足够的包容心。",
+    "farmLifeAdvice": "山姆会是农场生活中最好的玩伴——一起挖矿探险、节日活动绝对少不了他。他不一定是最勤劳的农夫，但他能让农场充满欢笑和音乐。"
+  },
+  "meta": {
+    "marriageable": true,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

@@ -296,3 +296,88 @@
 | `TopRomance` | `result.ts` | 理想伴侣结果 |
 | `SVTIType` | `result.ts` | 四字母类型 |
 | `DimensionScore` | `result.ts` | 单维度得分 |
+
+---
+
+## 8. 算法说明
+
+### A. 类型码计算（`src/utils/typeEngine.ts`）
+
+```
+输入: TraitVector (8 维, 各 0-100)
+输出: SVTIType { code: "SPIN", axisScores: { SC:62, FP:45, RI:70, NT:38 } }
+
+步骤:
+1. 对每条轴 (SC/FP/RI/NT)，取相关维度的加权平均：
+   axisScore = 50 + Σ (dimValue - 50) × weight
+2. axisScore ≥ 50 → 高分字母；< 50 → 低分字母
+3. 四轴拼接 → 类型码
+```
+
+| 轴 | 低分字母 | 高分字母 | 相关维度 |
+|----|---------|---------|---------|
+| SC | S (独处) | C (社群) | social×0.6 + bonding×0.4 |
+| FP | F (随性) | P (规划) | pace×1.0 |
+| RI | R (务实) | I (理想) | value×0.8 + aesthetic×0.4 + emotion×0.2 |
+| NT | N (自然) | T (技术) | natureTech×0.7 + adventure×0.3 |
+
+### B. 最像角色匹配（`src/utils/characterMatcher.ts`）
+
+```
+输入: userTraitVector, 角色列表, 匹配权重
+输出: TopCharacter[] (前3名)
+
+步骤:
+1. 过滤: 排除 traitVector 全为 null 的角色
+2. 计算加权曼哈顿距离:
+   distance = Σ |userDim - charDim| × weight[dim]
+3. score = max(0, 100 - distance / 8)
+4. 排序取前3
+5. 分析最接近的3个维度 & 差异最大的2个维度
+```
+
+### C. 理想伴侣匹配（`src/utils/romanceMatcher.ts`）
+
+```
+输入: userLoveNeedVector, userTraitVector, 用户性别/偏好, 角色列表
+输出: { top: TopRomance[3], bottom: TopRomance }
+
+步骤:
+1. 硬门槛过滤: orientationMismatch → 直接排除 (allowAllPool=true 时跳过)
+2. 基础匹配分:
+   score = 50 - Σ |need - romanceProfile[dim]| × 0.5 × needWeight[dim]
+3. 互补加成: 用户 social 与角色 bonding 差距 >20 → +bonus
+4. 冲突惩罚: 检查角色的 conflictRules，触发则扣分
+5. 排序: 最高3名=理想伴侣, 最低1名=最不适合
+```
+
+### D. 一致性检测（`src/utils/consistencyCheck.ts`）
+
+对 `consistencyTag` 相同的正向题和反向题进行交叉检验。  
+若两题答案差异超过阈值（默认 2 分），生成警告。  
+当前仅用于调试显示，不影响最终得分。
+
+---
+
+## 9. 数据扩展指南
+
+### 新增角色
+
+1. 将角色头像放入 `public/people/<NameEn>.png`
+2. 在 `src/data/characters/` 创建 `<id>.json`（参考已有文件格式）
+3. 填写 `traitVector`（8 维，各 0–100）和 `romanceProfile`
+4. 运行 `npm run validate` 验证
+
+### 新增题目
+
+1. 在 `src/data/questions.full.json` 追加题目对象
+2. 遵循字段规范（见本文第 3 节）
+3. 运行 `npm run validate`
+
+### 调整权重
+
+直接修改 `src/data/scoring.rules.json` 中的权重值，无需改动代码。
+
+### 新增类型描述
+
+`src/data/type-map.json` 中每个键对应一种 4 字母类型码（全 16 种），可修改 `title`、`keywords`、`description`。

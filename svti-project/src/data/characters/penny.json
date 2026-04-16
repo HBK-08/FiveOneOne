@@ -1,0 +1,63 @@
+{
+  "id": "penny",
+  "nameZh": "潘妮",
+  "nameEn": "Penny",
+  "avatar": "/people/Penny.png",
+  "introShort": "温柔而坚韧的村里教师，用爱与耐心守护着孩子们，也守护着对美好家庭生活的向往。",
+  "introLong": "潘妮在简陋的拖车里和酗酒的母亲潘姆一起生活，却从未让这段经历磨灭她对温暖家庭的渴望。她在镇上义务教导孩子们读书识字，把教育视为改变命运的礼物。她热爱文学，闲暇时常捧着书坐在河边阅读。她内敛而善良，对人充满同理心，在感情中渴望稳定、相互尊重与真正的归属感。与潘妮在一起，你会感受到那种细水长流的温柔与踏实。",
+  "tags": ["温柔", "家庭型", "文学", "耐心", "坚韧"],
+  "traitVector": {
+    "social": 55,
+    "pace": 55,
+    "emotion": 75,
+    "value": 42,
+    "natureTech": 15,
+    "adventure": 28,
+    "bonding": 85,
+    "aesthetic": 62
+  },
+  "romanceProfile": {
+    "stability": 82,
+    "openness": 65,
+    "independence": 42,
+    "romance": 78,
+    "adventure": 28,
+    "domesticity": 88,
+    "socialPresence": 48,
+    "growthSupport": 85
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "domesticity": 1.5,
+      "stability": 1.4,
+      "growthSupport": 1.2,
+      "adventure": 0.6
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": [
+      {
+        "field": "domesticity",
+        "operator": "<",
+        "value": 22,
+        "penalty": 12,
+        "reason": "对家庭生活完全漠视的态度会触动潘妮内心深处对稳定家庭的渴望"
+      }
+    ]
+  },
+  "copy": {
+    "oneLiner": "你把温柔和耐心当作礼物，用心经营每一段值得珍视的关系。",
+    "analysis": "你和潘妮一样，把情感联结与家庭归属看得比什么都重要。你可能是那种会记住朋友生日、在别人难过时第一个出现的人。书籍、文字或者某种安静的爱好，是你与世界建立联结的方式。你在感情中全情投入，希望拥有一个稳定、真实、可以共同生长的关系，而不只是短暂的激情。",
+    "getAlongAdvice": "与潘妮相处，真诚和稳定是最重要的。不要轻易许诺后又食言，因为她对失望格外敏感。一起做一顿饭、共读一本书，或者陪她辅导孩子——这些日常小事对她来说意义深远。尊重她对家庭价值观的坚持，不要嘲笑她的理想主义。",
+    "conflictWarning": "潘妮对家庭稳定的渴望有时会让她显得保守，难以接受过于冒险或变化剧烈的生活方式。她在面对冲突时倾向于压抑自我，久而久之可能积累委屈——需要伴侣主动创造安全的沟通空间。",
+    "farmLifeAdvice": "你会把农场打理得像一个真正的家——花圃整齐，厨房飘着食物的香气，也许还有一个给孩子们玩的角落。试着在农场种上一些花和草本植物，不只是为了卖钱，而是因为美本身就是生活的一部分。"
+  },
+  "meta": {
+    "marriageable": true,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

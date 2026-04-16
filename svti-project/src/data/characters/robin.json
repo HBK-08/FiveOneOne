@@ -1,0 +1,54 @@
+{
+  "id": "robin",
+  "nameZh": "罗宾",
+  "nameEn": "Robin",
+  "avatar": "/people/Robin.png",
+  "introShort": "镇上的木匠，能干热情，是蒂米修斯的妻子、玛鲁和塞巴斯蒂安的母亲，用双手建造了无数个家。",
+  "introLong": "罗宾经营着鹈鹕镇的木工坊，是玩家升级农场建筑的主要合作伙伴。她精力充沛、手艺精湛，对木工和建筑充满热忱。她与科学家丈夫蒂米修斯的关系有时存在张力，而她对两个性格迥异的孩子——阳光的玛鲁和叛逆的塞巴斯蒂安——都付出了真诚的关爱。罗宾是那种用行动说话的人，她的勤劳和乐观感染着周围所有人。",
+  "tags": ["木匠", "能干", "母亲", "社交活跃", "手艺人"],
+  "traitVector": {
+    "social": 75,
+    "pace": 68,
+    "emotion": 68,
+    "value": 65,
+    "natureTech": 55,
+    "adventure": 52,
+    "bonding": 72,
+    "aesthetic": 55
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你是一个用双手创造世界的人，擅长把想法变成看得见摸得着的成果，活力与温情并存。",
+    "analysis": "你和罗宾一样，相信实干的力量，享受把事情从无到有地建立起来的过程。你在人际关系中热情投入，既能独当一面，又不排斥团队协作。你对家庭有强烈的责任感，会努力在不同的家庭成员需求之间寻找平衡。你不喜欢无聊的重复，总在寻找新的挑战和改进空间。",
+    "getAlongAdvice": "与罗宾相处，对她的手艺表示真诚的欣赏是最快建立好感的方式。聊聊你对农场建筑的想法，她会立刻来了精神。关心玛鲁和塞巴斯蒂安的近况，她会感到被当作完整的人来对待，而不仅仅是一个工匠。",
+    "conflictWarning": "罗宾节奏很快，对拖延和优柔寡断缺乏耐心。如果你在建筑规划上反复改主意，或者对家庭关系中的摩擦漠不关心，可能会让她感到沮丧。她有时也会在繁忙的工作中忽略了情感表达的细腻部分。",
+    "farmLifeAdvice": "与罗宾合作升级农场建筑，是让农场快速蜕变的最佳选择。不要一直拖到最后才扩建——提前规划好建筑布局，给动物圈舍和仓库留足空间，你会发现农场的运转效率和生活体验都会大幅提升。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

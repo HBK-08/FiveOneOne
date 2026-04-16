@@ -1,0 +1,54 @@
+{
+  "id": "sandy",
+  "nameZh": "桑迪",
+  "nameEn": "Sandy",
+  "avatar": "/people/Sandy.png",
+  "introShort": "独自经营绿洲商店的热情女孩，用灿烂的笑容填满沙漠的寂寞，渴望着远方的联结。",
+  "introLong": "桑迪独自经营着卡利科沙漠中的绿洲商店，常年与广袤的沙丘为伴。她性格开朗、热情友善，对每一位前来拜访的客人都充满好奇与热情，因为这里的访客实在太少了。她心中有时会泛起一丝孤独——沙漠的美丽与隔绝是硬币的两面。她渴望与外界建立联系，每一次与玩家的交谈对她来说都是真心珍视的礼物。",
+  "tags": ["沙漠商人", "热情", "孤独", "友善"],
+  "traitVector": {
+    "social": 70,
+    "pace": 48,
+    "emotion": 72,
+    "value": 48,
+    "natureTech": 28,
+    "adventure": 55,
+    "bonding": 62,
+    "aesthetic": 68
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你用热情感染身边每一个人，内心藏着一份对深度联结的渴望，独处时也能找到属于自己的美。",
+    "analysis": "你和桑迪一样，在社交上充满活力，对新朋友充满真诚的好奇。你情感细腻，善于感受并表达情绪，对美和生活质感有自己独特的体会。你有时也会在喧嚣之外感受到一种深层的孤独，但这种孤独并非负担，而是提醒你珍视每一段真实的连接。你对冒险和新体验持开放态度，但也享受有温度的日常。",
+    "getAlongAdvice": "与桑迪相处，最重要的是真诚地出现——定期去拜访她，分享你的近况和农场故事。她非常珍视来访者，你的主动联系对她意义重大。对她的商品表示兴趣，或者聊聊沙漠的生活，她会感到被看见和被珍视。",
+    "conflictWarning": "桑迪的热情和情感投入有时会让不擅长情感回应的人感到压力。她对于联结的渴望如果得不到相应的回应，可能会让她感到失落。如果你是那种不常主动联系朋友的人，要注意给她一些温度的反馈。",
+    "farmLifeAdvice": "去卡利科沙漠时，别忘了给桑迪带去你农场最骄傲的产品作为礼物——她会非常开心。在农场里种一片充满异域风情的植物，或者布置一个带有沙漠美学的小角落，会让你感受到桑迪式的浪漫情趣。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

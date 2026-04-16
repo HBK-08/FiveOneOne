@@ -1,0 +1,54 @@
+{
+  "id": "gunther",
+  "nameZh": "根特博士",
+  "nameEn": "Gunther",
+  "avatar": "/people/Gunther.png",
+  "introShort": "图书馆与博物馆的馆长，对每一件捐赠文物都如数家珍，眼里放光。",
+  "introLong": "根特博士是鹈鹕镇图书馆兼博物馆的守护者，他的一生几乎都花在整理、研究与等待捐赠上。每当有人带来新的矿物、文物或古籍，他的眼睛就会放出不同寻常的光芒。他对历史有着近乎宗教般的热忱，认为每一件物品背后都藏着一段值得被铭记的故事。博物馆在他手中从空旷逐渐充实，这个过程本身，就是他觉得最有意义的事情。",
+  "tags": ["博物馆馆长", "收藏家", "学术", "历史爱好者"],
+  "traitVector": {
+    "social": 48,
+    "pace": 65,
+    "emotion": 45,
+    "value": 62,
+    "natureTech": 58,
+    "adventure": 55,
+    "bonding": 38,
+    "aesthetic": 75
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你对知识与美有天然的执念，任何有深度的东西都能让你忘记时间。",
+    "analysis": "你和根特博士一样，对知识与文化遗存有强烈的兴趣，享受在收集与整理中建立秩序感的过程。你的审美意识较强，对事物的细节和背景有超出常人的好奇心。你做事有条理、讲究积累，相信每一点付出都会在某个时刻产生意义。你的热情在于专业领域的深耕，而非广泛的社交扩张。",
+    "getAlongAdvice": "与根特博士相处，最好的方式是带着好奇心去请教，他会非常乐意分享他的知识。定期把挖掘到的文物和矿物捐给博物馆，你会看到他最真实、最动人的一面。",
+    "conflictWarning": "根特博士对博物馆事业的专注有时会显得过于单一，话题容易局限在他的专业范畴内。如果你对历史文化兴趣有限，可能会觉得与他的交流有些枯燥。",
+    "farmLifeAdvice": "矿洞探索不只是为了矿石，那些文物与化石捐给博物馆后，能解锁新的知识与奖励。把收集当作一种乐趣，让农场生活多一层探索的维度。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

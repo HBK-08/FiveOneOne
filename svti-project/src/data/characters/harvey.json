@@ -1,0 +1,63 @@
+{
+  "id": "harvey",
+  "nameZh": "哈维",
+  "nameEn": "Harvey",
+  "avatar": "/people/Harvey.png",
+  "introShort": "镇上唯一的医生，内敛而细心，用责任感和温柔守护着每一位村民的健康。",
+  "introLong": "哈维是鹈鹕镇的全科医生，性格内向、容易焦虑，却对医学事业怀有真诚的热忱。他热爱老式无线电和航空，常在诊所二楼架起无线电设备，独自沉浸在远方传来的声音里。他不善于社交，却始终把关心他人放在第一位，把照顾视为一种无声的爱的表达方式。与他相处，你会感受到一种踏实而安静的温暖。",
+  "tags": ["内敛", "责任感", "知识型", "体贴", "焦虑"],
+  "traitVector": {
+    "social": 28,
+    "pace": 78,
+    "emotion": 42,
+    "value": 75,
+    "natureTech": 72,
+    "adventure": 45,
+    "bonding": 55,
+    "aesthetic": 38
+  },
+  "romanceProfile": {
+    "stability": 78,
+    "openness": 55,
+    "independence": 60,
+    "romance": 58,
+    "adventure": 38,
+    "domesticity": 72,
+    "socialPresence": 32,
+    "growthSupport": 82
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "stability": 1.5,
+      "growthSupport": 1.3,
+      "domesticity": 1.2,
+      "adventure": 0.7
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": [
+      {
+        "field": "stability",
+        "operator": "<",
+        "value": 20,
+        "penalty": 10,
+        "reason": "过于不稳定的生活方式会加重哈维的焦虑感，让他难以安心"
+      }
+    ]
+  },
+  "copy": {
+    "oneLiner": "你以细心和责任感守护着身边的人，把照顾他人当作一种表达爱的方式。",
+    "analysis": "你和哈维一样，在内敛的外表下藏着对他人深切的关怀。你注重条理与计划，相信踏实的行动比华丽的言辞更有分量。你可能也有自己独特的「小世界」——一个让你充电的私人角落，无论是书籍、收藏品还是某种技术爱好。在感情中，你不善于主动示爱，却用行动把爱藏进每一个细节里。",
+    "getAlongAdvice": "与哈维相处，给他足够的安全感比什么都重要——不要突然改变计划，尽量保持稳定的日常节奏。对他的航空和无线电爱好表现出真诚的好奇，他会因此打开心扉。如果他因为焦虑而退缩，耐心陪伴而不是施压，会让他慢慢放松下来。",
+    "conflictWarning": "哈维的谨慎有时会显得优柔寡断，这对喜欢快节奏决策的人来说可能令人沮丧。他偶尔会因过度担忧而钻牛角尖，需要伴侣给予理性的引导而非情绪化的反应。",
+    "farmLifeAdvice": "你可能会把农场管理得井井有条——每块田地都有计划，每一季的作物都提前安排好。试着在农场一角开辟一个「慢下来」的空间，比如一棵果树或一片药草园，让辛劳之余也有片刻的宁静。"
+  },
+  "meta": {
+    "marriageable": true,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}
