@@ -12,6 +12,17 @@ const ROMANCE_KEYS = [
   'growthSupport',
 ] as const
 
+const ROMANCE_LABELS: Record<(typeof ROMANCE_KEYS)[number], string> = {
+  stability: '稳定感',
+  openness: '开放沟通',
+  independence: '独立空间',
+  romance: '浪漫表达',
+  adventure: '冒险体验',
+  domesticity: '居家默契',
+  socialPresence: '社交参与',
+  growthSupport: '成长支持',
+}
+
 export function matchRomance(
   userLoveNeed: Record<string, number>,
   userTrait: TraitVector,
@@ -27,15 +38,21 @@ export function matchRomance(
     .filter((c) => c.romanceProfile && !isNullRomanceProfile(c.romanceProfile))
     .map((c) => {
       if (!passHardFilters(c, userGender, userPreference, allowAllPool, hardFilters)) {
-        return { character: c, score: -Infinity }
+        return { character: c, score: -Infinity, reasons: [], conflictWarnings: [] as string[] }
       }
 
       let score = 50
+      const needDiffs: Array<{ key: (typeof ROMANCE_KEYS)[number]; diff: number; weightedDiff: number }> = []
+
       for (const key of ROMANCE_KEYS) {
         const need = userLoveNeed[key] ?? 50
         const profile = (c.romanceProfile as unknown as Record<string, number | null>)[key] ?? 50
         const w = needWeights[key] ?? 1
-        score -= Math.abs(need - profile) * 0.5 * w
+        const diff = Math.abs(need - profile)
+        const weightedDiff = diff * w
+
+        needDiffs.push({ key, diff, weightedDiff })
+        score -= diff * 0.5 * w
       }
 
       const complement = data.scoringRules.romanceMatch?.complementBonus
@@ -55,6 +72,8 @@ export function matchRomance(
       return {
         character: c,
         score: Math.round(score * 10) / 10,
+        reasons: buildReasons(needDiffs, c),
+        conflictWarnings: buildConflictWarnings(penalties.reasons, c),
       }
     })
     .filter((item) => item.score > -Infinity)
@@ -67,8 +86,8 @@ export function matchRomance(
     nameEn: item.character.nameEn,
     avatar: item.character.avatar,
     score: item.score,
-    reasons: ['需求匹配度较高'],
-    conflictWarnings: [],
+    reasons: item.reasons,
+    conflictWarnings: item.conflictWarnings,
   }))
 
   const bottomItem = scored.length > 0 ? scored[scored.length - 1] : null
@@ -79,8 +98,10 @@ export function matchRomance(
         nameEn: bottomItem.character.nameEn,
         avatar: bottomItem.character.avatar,
         score: bottomItem.score,
-        reasons: [],
-        conflictWarnings: ['关系模式差异较大，可能需要更多磨合'],
+        reasons: bottomItem.reasons.slice(0, 1),
+        conflictWarnings: bottomItem.conflictWarnings.length > 0
+          ? bottomItem.conflictWarnings
+          : ['关系模式差异较大，可能需要更多磨合'],
       }
     : null
 
@@ -94,7 +115,12 @@ function passHardFilters(
   allowAllPool: boolean,
   hardFilters: unknown,
 ): boolean {
+  if (!allowAllPool && !c.meta?.marriageable) {
+    return false
+  }
+
   if (allowAllPool) return true
+
   const hf = (hardFilters as { orientationMismatch?: { enabled: boolean; strategy: string } }) || {}
   if (hf.orientationMismatch?.enabled) {
     const preferred = c.partnerPreference?.preferredGender || []
@@ -103,6 +129,38 @@ function passHardFilters(
     }
   }
   return true
+}
+
+function buildReasons(
+  needDiffs: Array<{ key: (typeof ROMANCE_KEYS)[number]; diff: number; weightedDiff: number }>,
+  c: Character,
+): string[] {
+  const bestMatches = [...needDiffs]
+    .sort((a, b) => a.weightedDiff - b.weightedDiff)
+    .slice(0, 2)
+    .map((item) => ROMANCE_LABELS[item.key])
+
+  const reasons: string[] = []
+
+  if (bestMatches.length > 0) {
+    reasons.push(`${bestMatches.join('、')}更契合你的关系期待`)
+  }
+
+  if (c.copy?.oneLiner) {
+    reasons.push(c.copy.oneLiner)
+  }
+
+  return reasons.slice(0, 2)
+}
+
+function buildConflictWarnings(reasons: string[], c: Character): string[] {
+  const warnings = [...reasons]
+
+  if (c.copy?.conflictWarning) {
+    warnings.push(c.copy.conflictWarning)
+  }
+
+  return warnings.slice(0, 2)
 }
 
 function computeConflictPenalties(

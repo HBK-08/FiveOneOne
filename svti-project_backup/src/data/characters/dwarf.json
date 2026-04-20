@@ -1,0 +1,54 @@
+{
+  "id": "dwarf",
+  "nameZh": "矮人",
+  "nameEn": "Dwarf",
+  "avatar": "/people/Dwarf.png",
+  "introShort": "矿洞中古老的矮人族存在，说着无人能懂的语言，藏着矿脉深处的秘密。",
+  "introLong": "矮人是栖居于矿洞深处的古老存在，属于一个几乎被世界遗忘的种族。他用一种已无人通晓的语言说话，与外界的沟通充满障碍，却并不因此而失去自我。他的身上积淀着矿脉一般深厚的历史，每一道岩层都是一段故事。他独居在黑暗的洞穴中，与矿石为伴，对地底世界的了解远超任何人类。接触矮人，需要时间和努力去跨越语言的鸿沟，但一旦建立了连接，你会发现他的内心世界远比外表神秘丰富。",
+  "tags": ["矿洞居民", "古老", "神秘语言", "独居"],
+  "traitVector": {
+    "social": 18,
+    "pace": 42,
+    "emotion": 35,
+    "value": 35,
+    "natureTech": 62,
+    "adventure": 45,
+    "bonding": 30,
+    "aesthetic": 55
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你是一个有着独特知识体系与审美品味的人，不在意主流，只在意深度。",
+    "analysis": "你和矮人一样，对世界有着自己独特的理解框架，不轻易被外界定义。你对专业领域有深厚的钻研兴趣，乐于在别人看不到的地方挖掘宝藏。你的社交圈可能很小，但你并不觉得这是缺失——真正有价值的连接，往往需要付出时间与耐心才能建立。你身上有一种来自积累的沉稳，以及对细节与工艺的敏锐感知。",
+    "getAlongAdvice": "想要走近矮人，需要先付出学习的努力——去理解他的语言，他的世界。耐心是最重要的钥匙，不要急于求成。带着好奇心而非功利心靠近，他会感受到你的诚意，慢慢打开自己。",
+    "conflictWarning": "沟通障碍是与矮人相处的最大挑战。如果你习惯快速的信息交流，或对晦涩深奥的话题缺乏兴趣，可能会觉得与他的互动费力且低效。",
+    "farmLifeAdvice": "挖矿是农场生活不可或缺的一部分，矿石与宝石能为农场带来丰厚的资源。花时间深入矿洞，掌握每一个矿层的规律，就像矮人一样，把地底世界变成你的主场。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

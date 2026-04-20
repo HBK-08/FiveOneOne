@@ -1,0 +1,54 @@
+{
+  "id": "clint",
+  "nameZh": "克林特",
+  "nameEn": "Clint",
+  "avatar": "/people/Clint.png",
+  "introShort": "镇上的铁匠，手艺精湛却极度内向，暗恋艾米丽多年却始终开不了口，是那种把孤独活成了一门手艺的人。",
+  "introLong": "克林特是鹈鹕镇的铁匠，每天在炉火旁锤打矿石，把全部热情都倾注进金属与工艺之中。他技术过硬，却在社交上极度笨拙——尤其面对喜欢的人艾米丽时，总是支支吾吾、进退两难。他不是不想改变，只是迈出那一步对他来说难如登天。独自坐在酒馆角落喝酒的夜晚，是他最真实的日常写照。他的孤独并非来自冷漠，而是来自长期的自我封闭与对拒绝的深深恐惧。",
+  "tags": ["技术型", "内向", "暗恋", "孤独", "手艺人"],
+  "traitVector": {
+    "social": 22,
+    "pace": 62,
+    "emotion": 28,
+    "value": 72,
+    "natureTech": 75,
+    "adventure": 28,
+    "bonding": 38,
+    "aesthetic": 32
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你是那种把全部热情藏在专业技能里、在人群中总是沉默却在独处时最自在的人。",
+    "analysis": "与克林特气质相近的人，往往是技术或手艺领域的深度耕耘者。你更相信\"做\"胜于\"说\"，用作品和能力证明自己的价值，而不是靠言辞和社交魅力。你对人情世故有些迟钝，不是因为不在乎，而是因为情感表达对你来说始终像一道难关。内心深处你渴望被理解、被接纳，但主动靠近的第一步总是迈不出去。你的可靠和专注是被人低估的品质，等待你的是那个有耐心慢慢了解你的人。",
+    "getAlongAdvice": "和克林特相处，别急着打破沉默，给他时间和空间是最大的尊重。聊技术、聊手艺，他会立刻打开话匣子；避免在人多的场合把他推到聚光灯下，那只会让他更退缩。如果你想让他迈出一步，不如你先主动一些——他需要的不是推力，而是一个安全的信号。",
+    "conflictWarning": "如果你期待对方主动表达情感、积极维系关系，克林特很可能会让你失望；他不是不在乎，只是他的\"在乎\"藏得太深，需要你用更多的耐心才能看见。",
+    "farmLifeAdvice": "专注发展矿洞探索和金属加工路线，每天规律地采矿锻炼心志；偶尔去酒馆坐坐，哪怕只是默默看着人来人往，也是一种和世界保持连接的方式。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

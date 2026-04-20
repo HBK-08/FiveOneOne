@@ -1,0 +1,54 @@
+{
+  "id": "george",
+  "nameZh": "乔治",
+  "nameEn": "George",
+  "avatar": "/people/George.png",
+  "introShort": "伊芙琳的丈夫，坐在轮椅上的老固执，嘴上不饶人，心里却藏着比谁都深的情义。",
+  "introLong": "乔治是鹈鹕镇上最出了名的\"怪老头\"，因为双腿不便而长年使用轮椅，大部分时间待在家里看电视。他对外来者不友好，对新事物充满抵触，说话直接甚至有些刻薄——但这层硬壳背后，是一个真正经历过岁月洗礼的老兵的骄傲与脆弱。随着你和他渐渐熟络，会发现他内心深处藏着对家人深沉的爱，以及一丝他绝不轻易示人的温柔。他的固执来自一生的坚持，他的冷漠是对受伤的自我保护。",
+  "tags": ["固执", "传统", "外硬内软", "老兵"],
+  "traitVector": {
+    "social": 18,
+    "pace": 50,
+    "emotion": 22,
+    "value": 78,
+    "natureTech": 35,
+    "adventure": 15,
+    "bonding": 55,
+    "aesthetic": 20
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你是那种外表强硬、不轻易低头，却在某个不经意的瞬间会让人看见你内心深处柔软的人。",
+    "analysis": "与乔治气质相近的人，往往有着强烈的自尊心和根深蒂固的原则。你不轻易示弱，也不喜欢被人怜悯，宁可用刻薄的话把人推远，也不愿暴露自己的脆弱。你对现实有着清醒甚至有些悲观的认知，不相信那些听起来太美好的承诺。你珍视忠诚与实际的付出，胜过任何华丽的言辞。随着时间推移，当你真正信任一个人，那份情感会比任何人都来得深沉和持久——只是这个过程，需要对方极大的耐心。",
+    "getAlongAdvice": "和乔治相处，千万不要一开始就表现得过于热情或同情——他会立刻筑起高墙。用实际行动表示尊重，比如帮他做点实用的事，或者认真听他讲以前的故事；慢慢地，他会用他自己的方式回应你。遇到他言语刻薄时，不必针锋相对，也不用忍气吞声，平静地表明立场反而会赢得他的尊重。",
+    "conflictWarning": "如果你是一个情感外露、需要对方频繁表达关心的人，乔治的相处方式可能会让你长期感到\"不被重视\"；他的爱是藏在行动里的，而不是挂在嘴边的。",
+    "farmLifeAdvice": "选择一条脚踏实地的农场路线，不追求花里胡哨，重视产出和可靠性；偶尔去乔治家探望，那些看似漫不经心的拜访，会在不知不觉中成为他一天里的亮点。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

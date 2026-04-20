@@ -40,26 +40,26 @@ export function computeVectors(
   questions: Question[],
   answers: Record<string, string | number>,
 ): UserVectors {
-  const traitAcc: Record<keyof TraitVector, { sum: number; count: number; weights: number }> = {
-    social: { sum: 0, count: 0, weights: 0 },
-    pace: { sum: 0, count: 0, weights: 0 },
-    emotion: { sum: 0, count: 0, weights: 0 },
-    value: { sum: 0, count: 0, weights: 0 },
-    natureTech: { sum: 0, count: 0, weights: 0 },
-    adventure: { sum: 0, count: 0, weights: 0 },
-    bonding: { sum: 0, count: 0, weights: 0 },
-    aesthetic: { sum: 0, count: 0, weights: 0 },
+  const traitAcc: Record<keyof TraitVector, { signal: number; maxSignal: number; exposure: number }> = {
+    social: { signal: 0, maxSignal: 0, exposure: 0 },
+    pace: { signal: 0, maxSignal: 0, exposure: 0 },
+    emotion: { signal: 0, maxSignal: 0, exposure: 0 },
+    value: { signal: 0, maxSignal: 0, exposure: 0 },
+    natureTech: { signal: 0, maxSignal: 0, exposure: 0 },
+    adventure: { signal: 0, maxSignal: 0, exposure: 0 },
+    bonding: { signal: 0, maxSignal: 0, exposure: 0 },
+    aesthetic: { signal: 0, maxSignal: 0, exposure: 0 },
   }
 
-  const romanceAcc: Record<keyof typeof EMPTY_ROMANCE, { sum: number; count: number; weights: number }> = {
-    stability: { sum: 0, count: 0, weights: 0 },
-    openness: { sum: 0, count: 0, weights: 0 },
-    independence: { sum: 0, count: 0, weights: 0 },
-    romance: { sum: 0, count: 0, weights: 0 },
-    adventure: { sum: 0, count: 0, weights: 0 },
-    domesticity: { sum: 0, count: 0, weights: 0 },
-    socialPresence: { sum: 0, count: 0, weights: 0 },
-    growthSupport: { sum: 0, count: 0, weights: 0 },
+  const romanceAcc: Record<keyof typeof EMPTY_ROMANCE, { signal: number; maxSignal: number; exposure: number }> = {
+    stability: { signal: 0, maxSignal: 0, exposure: 0 },
+    openness: { signal: 0, maxSignal: 0, exposure: 0 },
+    independence: { signal: 0, maxSignal: 0, exposure: 0 },
+    romance: { signal: 0, maxSignal: 0, exposure: 0 },
+    adventure: { signal: 0, maxSignal: 0, exposure: 0 },
+    domesticity: { signal: 0, maxSignal: 0, exposure: 0 },
+    socialPresence: { signal: 0, maxSignal: 0, exposure: 0 },
+    growthSupport: { signal: 0, maxSignal: 0, exposure: 0 },
   }
 
   for (const q of questions) {
@@ -74,9 +74,9 @@ export function computeVectors(
       for (const delta of q.targetVectors.trait) {
         const dim = delta.dimension as keyof TraitVector
         if (traitAcc[dim]) {
-          traitAcc[dim].sum += (50 + normalized * delta.delta) * weight
-          traitAcc[dim].count += 1
-          traitAcc[dim].weights += weight
+          traitAcc[dim].signal += normalized * delta.delta * weight
+          traitAcc[dim].maxSignal += Math.abs(delta.delta) * weight
+          traitAcc[dim].exposure += weight
         }
       }
     }
@@ -85,9 +85,9 @@ export function computeVectors(
       for (const delta of q.targetVectors.romance) {
         const dim = delta.dimension as keyof typeof EMPTY_ROMANCE
         if (romanceAcc[dim]) {
-          romanceAcc[dim].sum += (50 + normalized * delta.delta) * weight
-          romanceAcc[dim].count += 1
-          romanceAcc[dim].weights += weight
+          romanceAcc[dim].signal += normalized * delta.delta * weight
+          romanceAcc[dim].maxSignal += Math.abs(delta.delta) * weight
+          romanceAcc[dim].exposure += weight
         }
       }
     }
@@ -96,16 +96,26 @@ export function computeVectors(
   const trait: TraitVector = { ...EMPTY_TRAIT }
   for (const key of Object.keys(traitAcc) as Array<keyof TraitVector>) {
     const acc = traitAcc[key]
-    trait[key] = acc.weights > 0 ? clamp(acc.sum / acc.weights, 0, 100) : EMPTY_TRAIT[key]
+    trait[key] = projectScore(acc.signal, acc.maxSignal, acc.exposure)
   }
 
   const romance = { ...EMPTY_ROMANCE }
   for (const key of Object.keys(romanceAcc) as Array<keyof typeof EMPTY_ROMANCE>) {
     const acc = romanceAcc[key]
-    romance[key] = acc.weights > 0 ? clamp(acc.sum / acc.weights, 0, 100) : EMPTY_ROMANCE[key]
+    romance[key] = projectScore(acc.signal, acc.maxSignal, acc.exposure)
   }
 
   return { trait, romance }
+}
+
+function projectScore(signal: number, maxSignal: number, exposure: number): number {
+  if (maxSignal <= 0) return 50
+
+  const normalizedSignal = clamp(signal / maxSignal, -1, 1)
+  // Fewer questions means lower confidence, so we shrink lightly toward the midpoint.
+  const confidence = 1 - Math.exp(-exposure / 3)
+
+  return clamp(50 + normalizedSignal * 50 * confidence, 0, 100)
 }
 
 function normalizeScore(raw: number, reverse: boolean): number {

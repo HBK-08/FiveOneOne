@@ -1,0 +1,54 @@
+{
+  "id": "jodi",
+  "nameZh": "乔迪",
+  "nameEn": "Jodi",
+  "avatar": "/people/Jodi.png",
+  "introShort": "萨姆和文森特的妈妈，肯特的妻子，一个人把家撑起来、却始终在信箱旁等待远方消息的女人。",
+  "introLong": "乔迪是一位全职母亲，丈夫肯特长年服役在外，家里大小事都压在她一个人肩上。她温柔、体贴，把两个儿子的成长放在心上，同时努力维持家庭的正常运转。她善于表达情感，在镇上有不少朋友，和卡洛琳关系尤其亲近。表面上她总是笑着，但思念与担忧从未离开过她——那份等待的重量，只有她自己知道有多沉。肯特回来后，她又要慢慢学着和一个带着战争创伤回家的丈夫重新生活在一起。",
+  "tags": ["母亲", "家庭", "温柔", "思念"],
+  "traitVector": {
+    "social": 70,
+    "pace": 62,
+    "emotion": 75,
+    "value": 60,
+    "natureTech": 20,
+    "adventure": 28,
+    "bonding": 85,
+    "aesthetic": 50
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你是那种把心里大半的空间都留给家人和所爱之人、在等待与坚守中书写自己故事的人。",
+    "analysis": "与乔迪气质相近的人，情感深沉而专注，关系对你来说不是生活的附属，而是核心本身。你愿意为所爱的人承担更多，哪怕这意味着自己要独自扛过很多艰难时刻。你情绪感知能力很强，能敏锐察觉他人的变化，同时也很容易被周围人的情绪所感染。你不特别追求冒险或变化，内心深处渴望的是稳定、温暖、有人陪伴的日子。当这种稳定被打破时，你的韧性会让所有人惊讶——你比自己以为的更能扛。",
+    "getAlongAdvice": "和乔迪相处，真诚地问一句\"你还好吗\"就能让她感到被看见。她很少主动诉说自己的难处，但如果你给她创造一个安全的空间，她会把内心的真实感受慢慢说出来。一起做家常事——烹饪、聊孩子的近况、分享生活里的小细节——是和她建立深厚感情最自然的方式。",
+    "conflictWarning": "如果你是一个不善于处理他人情绪、或者对\"家庭话题\"感到厌倦的人，和乔迪长期相处可能会觉得话题有些单一；她的世界以家庭为圆心，这既是她的力量，也是她的边界。",
+    "farmLifeAdvice": "在农场发展多元化的食材种植，为家人和朋友烹制美食；当生活压力积累时，试着去拜访卡洛琳或参加镇上的聚会，让自己从\"给予者\"暂时切换成\"被接纳者\"，也是一种滋养。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "lewis",
+  "nameZh": "刘易斯",
+  "nameEn": "Lewis",
+  "avatar": "/people/Lewis.png",
+  "introShort": "鹈鹕镇的德高望重的镇长，维护社区秩序，却也珍藏着一段不为人知的秘密恋情。",
+  "introLong": "刘易斯是鹈鹕镇的老镇长，几十年来以权威与秩序的形象治理这座小镇。他重视声誉与面子，热心于社区活动，春季祭典与收获节都由他一手操持。然而在体面的外表背后，他与马尼之间保持着一段不愿公开的恋情，这让他显得有几分自相矛盾。他固守传统，对外来变化持保守态度，但内心深处或许也明白，有些事情比面子更重要。",
+  "tags": ["镇长", "面子工程", "权威", "秘密恋情"],
+  "traitVector": {
+    "social": 82,
+    "pace": 72,
+    "emotion": 35,
+    "value": 80,
+    "natureTech": 32,
+    "adventure": 28,
+    "bonding": 52,
+    "aesthetic": 42
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你是一个注重规则与体面的人，习惯用社交形象来维护自己的权威地位。",
+    "analysis": "你和刘易斯一样，看重声誉与社会评价，做事讲究规范流程，不轻易让人看见自己的软肋。你在公众场合游刃有余，擅长维系人际关系，却在私下里保留着自己的一片小世界。你对现有秩序有高度的信任和维护意愿，有时这会让你在面对改变时显得保守甚至有些固执。",
+    "getAlongAdvice": "与刘易斯打交道时，尊重他的权威地位和社区角色会让关系更顺畅。多参与他组织的镇上活动，展示对社区的归属感。避免当众质疑他的决策，若有异议，私下沟通往往比公开争论更有效。",
+    "conflictWarning": "刘易斯对于面子和声誉极为看重，若你倾向于打破规矩或公开挑战权威，很容易触发摩擦。他处理私人感情的方式也比较回避，情感上直来直去的人可能会对他的保守感到沮丧。",
+    "farmLifeAdvice": "将自己的农场打理得整洁有序，积极参与镇上的节日比赛，会让刘易斯对你留下好印象。赢得他的认可，往往能在镇上打开更多人际关系的大门。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

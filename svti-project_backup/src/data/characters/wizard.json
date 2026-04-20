@@ -1,0 +1,54 @@
+{
+  "id": "wizard",
+  "nameZh": "魔法师",
+  "nameEn": "Wizard",
+  "avatar": "/people/Wizard.png",
+  "introShort": "隐居魔法塔的神秘占星师，掌握着小镇不为人知的魔法秘密，以美学与玄学感知世界。",
+  "introLong": "魔法师（又称M. Rasmodius）独居于鹈鹕镇南端的神秘塔楼，是小镇上唯一懂得魔法的人。他精通占星、炼金与森林魔法，与树精有着神秘的联系，也是理解许多镇上奇异现象的关键所在。他离群索居，对世俗事务几乎漠不关心，但对真正寻求知识的人会给予意想不到的帮助。他的内心世界深邃而繁复，美学与玄学是他认知世界的两扇窗。",
+  "tags": ["魔法师", "神秘", "智慧", "遗世独立", "玄学"],
+  "traitVector": {
+    "social": 22,
+    "pace": 40,
+    "emotion": 48,
+    "value": 10,
+    "natureTech": 35,
+    "adventure": 58,
+    "bonding": 28,
+    "aesthetic": 88
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你活在一个大多数人看不见的维度里，用美学与玄思触碰这个世界最幽深的角落。",
+    "analysis": "你和魔法师一样，对世俗的功名利禄兴趣寥寥，更关注那些无法用数字衡量的事物——美、神秘、意义与超验体验。你有极高的审美敏感度，对艺术、象征和形而上学有天然的亲和力。你不需要太多人的认可，宁可深度孤独也不愿意浅度喧嚣，但在真正气味相投的人面前，你会打开一扇旁人意想不到的大门。",
+    "getAlongAdvice": "与魔法师接触，需要真诚的好奇心和对玄学、魔法话题的开放态度。不要试图用逻辑或现实利益说服他做任何事，而是用真诚的求知欲去叩门。准备好一些稀有的魔法材料作为礼物，或者就某个神秘现象请教他的见解，他会以同等的真诚回应。",
+    "conflictWarning": "魔法师对世俗价值观几乎没有认同感，如果你是那种以社会地位、金钱或效率为优先的人，很难在他身上找到共鸣。他的遗世独立也意味着情感上的距离感，如果你需要有温度的日常陪伴，他可能不是最合适的伙伴。",
+    "farmLifeAdvice": "学会制作魔法物品、升级腰包以携带更多物品，是与魔法师建立联系最实际的收益。在农场布置上加入一些神秘美学的元素——比如魔法塔的缩影或奇异的装饰，会让你的农场散发出一种超凡脱俗的气质。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

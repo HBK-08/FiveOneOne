@@ -1,0 +1,63 @@
+{
+  "id": "emily",
+  "nameZh": "艾米丽",
+  "nameEn": "Emily",
+  "avatar": "/people/Emily.png",
+  "introShort": "在酒馆工作的灵性女孩，用水晶、布料和星光感知世界。",
+  "introLong": "艾米丽在农场镇的酒馆里工作，却活在一个截然不同的精神世界里。她痴迷于水晶、缝纫和灵性体验，相信万物皆有能量，每一块石头、每一缕光都承载着独特的意义。她个性温暖而开放，从不评判他人，总是以最大的善意去理解不同的存在方式。她的创造力和对精神世界的探索让她在人群中显得与众不同，但她真诚的善良让所有人都愿意靠近她。",
+  "tags": ["灵性", "创意", "温暖", "开放", "艺术"],
+  "traitVector": {
+    "social": 72,
+    "pace": 42,
+    "emotion": 85,
+    "value": 18,
+    "natureTech": 28,
+    "adventure": 75,
+    "bonding": 78,
+    "aesthetic": 88
+  },
+  "romanceProfile": {
+    "stability": 45,
+    "openness": 90,
+    "independence": 65,
+    "romance": 78,
+    "adventure": 72,
+    "domesticity": 55,
+    "socialPresence": 70,
+    "growthSupport": 85
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "openness": 1.6,
+      "aesthetic": 1.4,
+      "adventure": 1.2,
+      "value": 0.7
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": [
+      {
+        "field": "openness",
+        "operator": "<",
+        "value": 20,
+        "penalty": 12,
+        "reason": "封闭守旧的世界观可能让艾米丽感到无法真正连接"
+      }
+    ]
+  },
+  "copy": {
+    "oneLiner": "你对世界充满好奇与温柔，相信每一块石头、每一缕光都有它独特的意义。",
+    "analysis": "你和艾米丽一样，以开放而敏感的心灵感知这个世界。你对精神层面、创造性表达或非主流的生活方式有着天然的亲近感，不喜欢被条条框框束缚。在关系中，你既渴望深度的情感连结，也珍视彼此的精神成长空间，会真心支持伴侣去探索属于自己的可能性。",
+    "getAlongAdvice": "与艾米丽相处，保持开放和好奇的心态是关键。可以和她一起学习水晶的含义，欣赏她亲手缝制的服装，或者参与她组织的任何灵性体验活动。不要嘲笑她的信仰，以真诚的兴趣去了解她的世界，她会以全部的温暖回报你。",
+    "conflictWarning": "艾米丽的思维有时会飘向不切实际的方向，过于沉迷灵性世界可能让务实的伴侣感到难以同频。她高度开放的性格也意味着她的生活状态较为随性，计划性强的人可能会感到一些不确定性。",
+    "farmLifeAdvice": "农场对艾米丽来说是一个充满能量流动的神奇场所。可以在农场里划出一块空间种植她喜爱的草药或制作手工染料原料，和她一起把农场的每个角落都变成一件有意义的艺术装置。"
+  },
+  "meta": {
+    "marriageable": true,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

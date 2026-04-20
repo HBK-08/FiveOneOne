@@ -1,0 +1,54 @@
+{
+  "id": "professor-snail",
+  "nameZh": "蜗牛教授",
+  "nameEn": "Professor Snail",
+  "avatar": "/people/Professor Snail.png",
+  "introShort": "被困在金格岛的古生物学家，乐观地把每一个化石都当作新的发现。",
+  "introLong": "蜗牛教授是一位从事古生物研究的学者，不幸被困在金格岛的一个岩洞里。然而他并没有因此消沉，反而把被困的时光变成了一次意外的田野考察。他对化石和远古生物有着近乎孩子般的热情，每一件新标本都能让他两眼放光、滔滔不绝。他乐观、健谈，充满学者的迂腐可爱，也有着探险家才有的韧劲。即使身陷困境，他依然对这个世界保持着充沛的好奇心。",
+  "tags": ["古生物学家", "学术", "探险", "岛屿研究"],
+  "traitVector": {
+    "social": 45,
+    "pace": 58,
+    "emotion": 55,
+    "value": 65,
+    "natureTech": 72,
+    "adventure": 68,
+    "bonding": 48,
+    "aesthetic": 58
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你是那种即使在最艰难的处境里，也能找到让自己兴奋起来的事情的人。",
+    "analysis": "你和蜗牛教授一样，对知识和探索有着持续燃烧的热情，不容易被困境打倒。你兼具科学头脑与冒险精神，喜欢深入事物的本质去探究，而不满足于表面的了解。你的情感积极，善于在人际关系中传递正能量，和你在一起的人很少会感到沮丧。你的内心有一种孩子气的纯粹，那是对世界最美好的态度。",
+    "getAlongAdvice": "与蜗牛教授相处，最好的方式是带着真诚的好奇心和他交流——任何关于自然、历史或科学的话题都能点燃他。帮他收集化石和标本，他会用最热情的讲解回报你。",
+    "conflictWarning": "蜗牛教授的话题专注度很高，一旦进入专业模式就会停不下来，可能会让不感兴趣的人感到信息过载。他的乐观主义有时也会让他低估实际困难的严重性。",
+    "farmLifeAdvice": "金格岛的化石遗址值得认真探索。把挖掘到的化石捐给博物馆或蜗牛教授，不只是为了奖励，更是为了参与一段真实的知识积累，让农场生活多一份学术的趣味。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

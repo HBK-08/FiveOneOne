@@ -1,18 +1,35 @@
 import { defineStore } from 'pinia'
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import type { Question } from '@/types'
+import { readStorage, writeStorage } from '@/utils/localState'
+
+const STORAGE_KEY = 'svti:quiz'
+
+interface PersistedQuizState {
+  currentIndex: number
+  answers: Record<string, string | number>
+  questions: Question[]
+  isCompleted: boolean
+}
 
 export const useQuizStore = defineStore('quiz', () => {
-  const currentIndex = ref(0)
-  const answers = ref<Record<string, string | number>>({})
-  const questions = ref<Question[]>([])
-  const isCompleted = ref(false)
+  const persisted = readStorage<PersistedQuizState>(STORAGE_KEY, {
+    currentIndex: 0,
+    answers: {},
+    questions: [],
+    isCompleted: false,
+  })
+
+  const currentIndex = ref(persisted.currentIndex)
+  const answers = ref<Record<string, string | number>>(persisted.answers)
+  const questions = ref<Question[]>(persisted.questions)
+  const isCompleted = ref(persisted.isCompleted)
 
   const totalQuestions = computed(() => questions.value.length)
   const currentQuestion = computed(() => questions.value[currentIndex.value] || null)
   const progressPercent = computed(() => {
     if (totalQuestions.value === 0) return 0
-    return Math.round((currentIndex.value / totalQuestions.value) * 100)
+    return Math.round(((currentIndex.value + 1) / totalQuestions.value) * 100)
   })
 
   function setQuestions(qs: Question[]) {
@@ -56,6 +73,19 @@ export const useQuizStore = defineStore('quiz', () => {
     questions.value = []
     isCompleted.value = false
   }
+
+  watch(
+    [currentIndex, answers, questions, isCompleted],
+    () => {
+      writeStorage(STORAGE_KEY, {
+        currentIndex: currentIndex.value,
+        answers: answers.value,
+        questions: questions.value,
+        isCompleted: isCompleted.value,
+      })
+    },
+    { deep: true },
+  )
 
   return {
     currentIndex,

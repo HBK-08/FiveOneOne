@@ -1,0 +1,63 @@
+{
+  "id": "elliott",
+  "nameZh": "埃利奥特",
+  "nameEn": "Elliott",
+  "avatar": "/people/Elliott.png",
+  "introShort": "住在海边小屋的浪漫作家，以文字编织诗意与深情。",
+  "introLong": "埃利奥特是农场镇上最具文学气质的居民。他独居于海岸边的小木屋，日夜以写作为伴，痴迷于古典文学、诗歌和戏剧。他说话优雅，举止带着一种古典时代的绅士风度，习惯用华美的辞藻描述日常的点滴。表面上有些戏剧化，甚至自我，但内心深处他渴望真挚的情感连结，愿意为爱人倾注全部的浪漫与忠诚。",
+  "tags": ["浪漫型", "文学", "感性", "艺术", "古典"],
+  "traitVector": {
+    "social": 45,
+    "pace": 35,
+    "emotion": 82,
+    "value": 15,
+    "natureTech": 22,
+    "adventure": 48,
+    "bonding": 72,
+    "aesthetic": 92
+  },
+  "romanceProfile": {
+    "stability": 55,
+    "openness": 82,
+    "independence": 58,
+    "romance": 92,
+    "adventure": 42,
+    "domesticity": 65,
+    "socialPresence": 48,
+    "growthSupport": 75
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "aesthetic": 1.6,
+      "emotion": 1.4,
+      "bonding": 1.2,
+      "natureTech": 0.7
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": [
+      {
+        "field": "adventure",
+        "operator": "<",
+        "value": 15,
+        "penalty": 8,
+        "reason": "完全不喜欢探索新事物可能与埃利奥特渴望丰富精神世界的追求产生分歧"
+      }
+    ]
+  },
+  "copy": {
+    "oneLiner": "你的内心住着一位诗人，用文字为平凡的日子注入诗意与深情。",
+    "analysis": "你和埃利奥特一样，相信情感与美是生命中最值得追求的事物。你对语言、艺术或某种美的形式有着近乎执着的热爱，在关系中你倾向于付出深沉而炽烈的情感。你不追求热闹与喧嚣，更愿意在安静的空间里与真正理解你的人共享灵魂的交汇。",
+    "getAlongAdvice": "与埃利奥特相处，欣赏他的文字和诗情是最好的切入点。可以和他讨论一本书、一首诗，或者在海边共度静默的午后。给他创作的时间与空间，对他偶尔的戏剧化言辞报以温柔而真诚的回应，会让你们的关系越来越深厚。",
+    "conflictWarning": "埃利奥特有时过于沉浸在理想与浪漫的幻想中，对现实细节和实际问题可能显得不够敏感。他对审美和精神层面的高要求可能让追求务实生活的伴侣感到疲惫，需要注意在诗意与现实之间寻找平衡。",
+    "farmLifeAdvice": "把农场当作你们共同创作的舞台——用花园的布局、季节的更替为日子增添叙事感。埃利奥特会把每一次收获都写进他的作品，而你可以为这片土地的故事提供最鲜活的素材。"
+  },
+  "meta": {
+    "marriageable": true,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

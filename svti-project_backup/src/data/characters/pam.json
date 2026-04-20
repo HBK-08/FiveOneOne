@@ -1,0 +1,54 @@
+{
+  "id": "pam",
+  "nameZh": "帕姆",
+  "nameEn": "Pam",
+  "avatar": "/people/Pam.png",
+  "introShort": "开着镇上公共汽车的粗糙女人，与酗酒抗争，却用深沉的爱守护着女儿佩妮。",
+  "introLong": "帕姆是鹈鹕镇的公共汽车司机，和女儿佩妮住在狭小的拖车屋里。她外表粗糙、言语直白，有时显得不近人情，与酒精的斗争是她生命中挥之不去的阴影。然而在那粗粝的外壳之下，她对女儿的爱是真实而深沉的。随着与玩家关系的加深，她也展现出自我成长的意愿，努力成为更好的母亲。她是那种经历了生活磨难、但还没有放弃的普通人。",
+  "tags": ["公交司机", "酗酒", "粗糙外表", "慈爱", "成长"],
+  "traitVector": {
+    "social": 60,
+    "pace": 25,
+    "emotion": 45,
+    "value": 68,
+    "natureTech": 25,
+    "adventure": 38,
+    "bonding": 55,
+    "aesthetic": 18
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你活得直接，不拘小节，爱的方式粗糙但真实，生活给了你重拳，你依然没有倒下。",
+    "analysis": "你和帕姆一样，用一种不加修饰、甚至有些粗粝的方式面对生活。你不善于用精致的语言表达情感，但在真正重要的时刻，你愿意为所爱的人挺身而出。你对生活有自己一套务实的判断，也在某些挣扎中学会了一些主动选择改变，这需要比外表看起来更大的勇气。",
+    "getAlongAdvice": "与帕姆相处，不要对她的粗口和抱怨过度解读，她的言语方式是多年生活积累下来的习惯，并非真正的敌意。耐心倾听她的故事，对她的生活处境表现出理解而非评判，会慢慢拉近距离。带她一起做点轻松的事，比如喝杯饮料聊聊日常，会让她放松下来。",
+    "conflictWarning": "帕姆与酒精的长期抗争可能让她的状态起伏不定，不善于处理对方情绪波动或有强烈整洁秩序需求的人，可能会在相处中感到吃力。她的防御性外表也可能让初次接触的人难以突破壁垒。",
+    "farmLifeAdvice": "帕姆式的生活哲学告诉我们：农场不需要完美，但需要持续。不必追求最精致的布局，踏实地把每天要做的事做完，经历几个季节的磨砺，你的农场自然会长出属于自己的模样。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

@@ -84,6 +84,11 @@ async function submit() {
 }
 
 onMounted(async () => {
+  if (quizStore.isCompleted && resultStore.result) {
+    router.replace('/result')
+    return
+  }
+
   if (quizStore.totalQuestions === 0) {
     const data = await loadAllData()
     const qs = configStore.quizVersion === 'short' ? data.questionsShort : data.questionsFull

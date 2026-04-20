@@ -2,8 +2,8 @@
   <div class="romance-card">
     <img v-if="romance.avatar" :src="romance.avatar" class="avatar" />
     <div class="info">
-      <div class="name">{{ romance.nameZh }} · {{ romance.nameEn }}</div>
-      <div class="score">适配度 {{ romance.score }}%</div>
+      <div class="name">{{ romance.nameZh }} / {{ romance.nameEn }}</div>
+      <div class="score">契合度 {{ romance.score }}%</div>
       <ul v-if="romance.reasons.length" class="list">
         <li v-for="(r, i) in romance.reasons" :key="i">{{ r }}</li>
       </ul>

@@ -1,0 +1,54 @@
+{
+  "id": "marlon",
+  "nameZh": "马龙",
+  "nameEn": "Marlon",
+  "avatar": "/people/Marlon.png",
+  "introShort": "冒险者公会的领袖，独眼的老战士，见证了矿洞的无数险境。",
+  "introLong": "马龙是冒险者公会的创立者与掌舵人，他那失去的一只眼是他与矿洞无数次搏斗后留下的勋章。他不是一个喜欢喧嚣的人，但他的威望来自真实的战绩，而非言辞。他亲眼见过矿洞的深处究竟藏着什么，也亲手送走过不少同伴。正因如此，他对每一个踏入公会的新人，都有一份沉甸甸的责任感。马龙经营着公会，也守护着这片土地的安全，用他剩下的那只眼，注视着每一个可能的威胁。",
+  "tags": ["冒险者公会会长", "老兵", "独眼", "勇敢"],
+  "traitVector": {
+    "social": 35,
+    "pace": 55,
+    "emotion": 28,
+    "value": 65,
+    "natureTech": 28,
+    "adventure": 80,
+    "bonding": 38,
+    "aesthetic": 22
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你是那种在危险面前不会退缩的人，责任感是你最深的底色。",
+    "analysis": "你和马龙一样，有着强烈的责任心与使命感，愿意站在最前面承担风险，保护身边的人。你的冒险精神不是莽撞，而是建立在经验与判断力之上的从容。你情感内敛，不擅长用语言表达关怀，但你的每一个行动都透露着你在乎的东西。你对荣誉与承诺有近乎执念的坚守。",
+    "getAlongAdvice": "与马龙相处，最重要的是展示你的实力与诚意。他不轻易看重一个人，但一旦他认可你，就会给予真正的支持。别试图绕过他的规则，也别在他面前夸夸其谈，拿出真本事才是正道。",
+    "conflictWarning": "马龙的情感表达直接且克制，他不会无缘无故地安慰你，也不会对软弱太有耐心。如果你需要频繁的鼓励和温情，可能会觉得他过于冷峻。",
+    "farmLifeAdvice": "探索矿洞是农场生活中充满挑战但收益极高的一部分。做好准备再出发——带够药品和武器，分层了解矿洞的规律，像马龙一样有备而战，才能在每次冒险后安然归来。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "pierre",
+  "nameZh": "皮埃尔",
+  "nameEn": "Pierre",
+  "avatar": "/people/Pierre.png",
+  "introShort": "经营杂货店的热心商人，一心为家庭打拼，却时刻担忧Joja超市抢走他的生意。",
+  "introLong": "皮埃尔在鹈鹕镇中心经营着一家杂货店，出售种子、食材和各类生活用品，是每个农民春耕时节的第一站。他热情好客，重视家庭，是卡罗琳的丈夫和阿比盖尔、文森特的父亲。他对Joja超市的强势扩张感到焦虑，始终致力于维护小镇商业的独立性。他有雄心壮志，也有小商人的现实考量，是一个努力在理想与现实之间保持平衡的人。",
+  "tags": ["商人", "家庭", "竞争心", "勤劳", "社区"],
+  "traitVector": {
+    "social": 72,
+    "pace": 70,
+    "emotion": 50,
+    "value": 80,
+    "natureTech": 38,
+    "adventure": 38,
+    "bonding": 68,
+    "aesthetic": 42
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你是一个为家庭和事业全力以赴的实干者，在社区中乐于助人，但对竞争也绝不手软。",
+    "analysis": "你和皮埃尔一样，把家庭责任和事业抱负放在同等重要的位置。你勤劳踏实，对自己经营的事物有强烈的主人翁意识，不轻易放弃。你在社区里乐于建立关系网络，善于与不同类型的人打交道。面对压力和竞争时，你会认真对待而非回避，这种韧劲是你最大的优势。",
+    "getAlongAdvice": "与皮埃尔相处，多光顾他的商店是最直接的支持方式。聊聊农场经营的心得、分享作物信息，他会感到被尊重。对他的家庭表现出关心，尤其是在卡罗琳和孩子们的话题上，会加深彼此的信任。",
+    "conflictWarning": "皮埃尔对商业竞争的焦虑有时会让他显得有些小心眼，如果你选择支持Joja路线，他的态度会明显冷淡。他在家庭与事业之间的平衡有时也做得不够好，可能让家人感到他的重心总在外面。",
+    "farmLifeAdvice": "与皮埃尔合作是农场经营的最佳起点——从他那里购买种子、优先完成社区中心任务，不仅能让农场高效运转，也能强化你在镇上的社区归属感，这正是皮埃尔最珍视的东西。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

@@ -46,11 +46,15 @@
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { useConfigStore } from '@/stores/configStore'
+import { useQuizStore } from '@/stores/quizStore'
+import { useResultStore } from '@/stores/resultStore'
 import BaseButton from '@/components/common/BaseButton.vue'
 import BaseCard from '@/components/common/BaseCard.vue'
 
 const router = useRouter()
 const configStore = useConfigStore()
+const quizStore = useQuizStore()
+const resultStore = useResultStore()
 
 const preferenceSelected = computed({
   get: () => configStore.userRomancePreference[0] || 'any',
@@ -58,6 +62,8 @@ const preferenceSelected = computed({
 })
 
 function startQuiz() {
+  quizStore.reset()
+  resultStore.clear()
   router.push('/quiz')
 }
 </script>

@@ -1,0 +1,54 @@
+{
+  "id": "bouncer",
+  "nameZh": "门卫",
+  "nameEn": "Bouncer",
+  "avatar": "/people/Bouncer.png",
+  "introShort": "齐先生赌场门口沉默的守卫，从不多说一个字。",
+  "introLong": "门卫是齐先生神秘赌场前唯一的屏障，身形魁梧，面无表情，从未有人听过他说话。他存在的意义就是一个字——拒绝。他不评判，不解释，也不动摇，只是站在那里，用沉默和压迫感筛选着每一个试图进入的人。没有人知道他的过去，也没有人真正了解他，他的整个存在就是一道冷峻的墙。",
+  "tags": ["沉默", "守卫", "神秘", "铁面无私"],
+  "traitVector": {
+    "social": 10,
+    "pace": 60,
+    "emotion": 5,
+    "value": 80,
+    "natureTech": 35,
+    "adventure": 15,
+    "bonding": 8,
+    "aesthetic": 12
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你有极强的原则性，一旦划定了边界，任何人都无法轻易逾越。",
+    "analysis": "你和门卫一样，内心有一套非常清晰的规则体系，并且严格执行，不受情绪左右。你不需要太多社交，独处对你来说是常态而非惩罚。你的情感表达极为内敛，甚至在旁人眼中显得冷漠，但这背后是高度的自律与专注。你看重职责与承诺，一旦承担某件事，就会全力以赴。",
+    "getAlongAdvice": "与门卫型的人相处，最重要的是尊重他的边界，不要试图用热情或玩笑打破他的防线。直接、清晰地表达你的目的，他会用行动回应你。不要期待他主动表达情感，但他的沉默本身就是一种稳定的存在。",
+    "conflictWarning": "极低的情绪表达和几乎为零的社交意愿，会让需要情感互动的人感到挫败。他的规则感极强，一旦你越线，可能得不到任何解释就被拒之门外。",
+    "farmLifeAdvice": "清晰的边界让农场井然有序。不妨为农场的每个区域划定明确的用途，有条不紊地管理作物与牲畜，效率与规律会让你的农场越来越稳健。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

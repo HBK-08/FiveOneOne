@@ -1,0 +1,54 @@
+{
+  "id": "linus",
+  "nameZh": "莱纳斯",
+  "nameEn": "Linus",
+  "avatar": "/people/Linus.png",
+  "introShort": "独居山顶帐篷的自然哲人，被镇民误解，却以温柔与智慧感知这个世界。",
+  "introLong": "莱纳斯选择在山顶的帐篷中独自生活，与自然融为一体，靠采集野生食物为生。镇上许多居民对他投以异样的目光，甚至嫌弃他的存在，但真正接近他的人会发现，他拥有一颗温柔而细腻的心。他对动物和自然有深切的爱，不追求物质，只追求内心的自由与宁静。他的孤独并非逃避，而是一种主动的生活选择，也是对主流价值观的一种温和抵抗。",
+  "tags": ["隐居者", "自然主义", "被误解", "温和", "智慧"],
+  "traitVector": {
+    "social": 22,
+    "pace": 32,
+    "emotion": 58,
+    "value": 20,
+    "natureTech": 15,
+    "adventure": 62,
+    "bonding": 42,
+    "aesthetic": 72
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你不需要人群的认可也能活得自在，用自己的方式与这个世界保持深沉而安静的联结。",
+    "analysis": "你和莱纳斯一样，对自然与自由有着本能的向往，不轻易被主流价值观所左右。你可能也体验过被误解的孤独，但这并没有让你变得尖锐，反而让你更能共情他人的处境。你对美的感知细腻独特，善于从别人忽视的角落发现意义与价值，习惯用观察代替评判。",
+    "getAlongAdvice": "与莱纳斯相处，最重要的是放下偏见，真诚接纳他的生活方式。不要试图说服他融入\"正常\"社会，而是好奇地倾听他对自然的见解。一起在山间漫步、学习辨认野生植物，是建立真实信任的最好途径。",
+    "conflictWarning": "莱纳斯对社会规范的疏离感，可能让习惯集体生活的人感到难以理解甚至焦虑。他的高度自足意味着他不依赖他人，如果你需要频繁的情感回应和热闹的社交生活，可能会觉得他过于遥远而疏冷。",
+    "farmLifeAdvice": "如果你与莱纳斯气质相投，不妨让农场也保留一片自然野趣——开辟一角允许杂草与野花共存，或者用采集的野生食材做一顿原野风味的晚餐，感受大地的馈赠。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

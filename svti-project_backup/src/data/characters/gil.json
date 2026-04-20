@@ -1,0 +1,54 @@
+{
+  "id": "gil",
+  "nameZh": "吉尔",
+  "nameEn": "Gil",
+  "avatar": "/people/Gil.png",
+  "introShort": "冒险者公会里总是沉默坐着的老战士，见过太多，话说得越来越少。",
+  "introLong": "吉尔是冒险者公会里那把永远坐在角落的老椅子的主人，是马龙多年的战友与搭档。他年轻时纵横矿洞，经历过无数险境，如今却选择用沉默代替讲述。他不再出战，但他的眼神依然锐利，那是见过真正危险的人才有的平静。他偶尔会说上一两句话，每一句都重若千钧，像是从岁月里淬炼出来的智慧。吉尔用他的存在本身，提醒着每一个踏入公会的年轻人：活下来，才是最重要的事。",
+  "tags": ["冒险者公会", "老兵", "沉默", "经历丰富"],
+  "traitVector": {
+    "social": 22,
+    "pace": 38,
+    "emotion": 22,
+    "value": 62,
+    "natureTech": 25,
+    "adventure": 72,
+    "bonding": 32,
+    "aesthetic": 18
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你是一个经历塑造了沉默、沉默孕育了智慧的人，不需要被人看见，只需要做好该做的事。",
+    "analysis": "你和吉尔一样，有着超出年龄的沉稳，内心世界丰富却不轻易外露。你重视实际经验胜过理论与言辞，相信一个人的行动比他的话语更能说明问题。你对冒险有天然的亲近感，但你已经学会在勇气与风险之间找到平衡。情感上你是低调的守护者，默默为身边人提供安全感。",
+    "getAlongAdvice": "与吉尔型的人相处，最好的方式是用行动表示尊重，而非试图用话语热络。认真倾听他偶尔说出的只言片语，那些话背后往往藏着旁人看不到的深度。不要试图挖掘他的过去，等他愿意分享，自然会开口。",
+    "conflictWarning": "极少的语言表达和封闭的情感世界，可能让伴侣或朋友感到疏离。如果你需要频繁的沟通与情感确认，与吉尔型的人相处会让你感到孤独。",
+    "farmLifeAdvice": "农场里最扎实的成就，往往来自不显山露水的日积月累。每天完成好手头的工作，不必急于向人展示，收成会在适当的时候说明一切。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

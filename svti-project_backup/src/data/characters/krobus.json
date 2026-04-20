@@ -1,0 +1,64 @@
+{
+  "id": "krobus",
+  "nameZh": "克罗布斯",
+  "nameEn": "Krobus",
+  "avatar": "/people/Krobus.png",
+  "introShort": "住在下水道里的暗影生物，用无害的好奇心打量着人类世界，出售着旁人无从找到的珍稀物品。",
+  "introLong": "克罗布斯是鹈鹕镇最特别的存在——一个来自阴影世界、以下水道为家的神秘生物。他天生温和，对人类世界充满孩子气的好奇，却又因为外貌和身份而无法在阳光下自由行走。他没有学会仇恨，反而学会了以独特的视角欣赏那些被人忽视的事物。与克罗布斯建立关系，意味着接受一段跨越物种与世界边界的深厚羁绊。他不会成为你的丈夫或妻子，但他可以成为你最特别的同居伴侣。",
+  "tags": ["神秘生物", "温柔好奇", "阴影居民", "稀有商人", "无害纯真", "跨界羁绊", "独特视角"],
+  "traitVector": {
+    "social": 25,
+    "pace": 50,
+    "emotion": 52,
+    "value": 42,
+    "natureTech": 38,
+    "adventure": 35,
+    "bonding": 58,
+    "aesthetic": 65
+  },
+  "romanceProfile": {
+    "stability": 65,
+    "openness": 62,
+    "independence": 55,
+    "romance": 48,
+    "adventure": 35,
+    "domesticity": 72,
+    "socialPresence": 15,
+    "growthSupport": 70
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 0.5,
+      "adventure": 0.8,
+      "bonding": 1.4,
+      "aesthetic": 1.2,
+      "value": 1.0
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": [
+      {
+        "field": "socialPresence",
+        "op": ">",
+        "val": 72,
+        "penalty": 12,
+        "reason": "克罗布斯生活在阴影中，过于张扬的社交需求会让他感到不安全"
+      }
+    ]
+  },
+  "copy": {
+    "oneLiner": "你在别人视而不见的角落里发现美与意义，用独特的目光重新定义归属感。",
+    "analysis": "克罗布斯不是传统意义上的浪漫伴侣，但他提供的是一种更罕见的东西：无条件的接纳与稳定的陪伴。他的情感表达质朴而真诚，从不玩弄心机。他对共同生活有着出乎意料的高度投入——他会在乎你的日常，记得你的喜好，以自己的方式守护这段关系。与克罗布斯匹配的人，往往是那些不需要被人群簇拥、能在安静中感受到满足的灵魂。",
+    "getAlongAdvice": "尊重克罗布斯对阴影和隐私的需求，不要试图把他带入他不舒适的公共场合。对他眼中那些奇特的「人类习俗」保持耐心和幽默感，他的疑问来自真诚的好奇，而非冒犯。给他空间，他会以令人意外的忠诚回报你。",
+    "conflictWarning": "如果你渴望一段被外界认可、可以公开展示的关系，克罗布斯的特殊身份会成为现实障碍。他无法在阳光下与你同行，这需要你真正接受，而不只是浪漫化。",
+    "farmLifeAdvice": "克罗布斯是完美的「家中伴侣」——他珍视家的概念，会让农舍充满一种静谧而奇异的温暖。他提供的稀有物品能极大助力你的农场发展，而他本人，则会成为你每天归家时最期待见到的存在。"
+  },
+  "meta": {
+    "marriageable": true,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

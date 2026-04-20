@@ -1,0 +1,70 @@
+{
+  "id": "sebastian",
+  "nameZh": "塞巴斯蒂安",
+  "nameEn": "Sebastian",
+  "avatar": "/people/Sebastian.png",
+  "introShort": "地下室里的编程高手，内敛而深沉，骑摩托在夜间游荡。",
+  "introLong": "塞巴斯蒂安是农场镇上最神秘的青年。他把大量时间花在地下室里编程，用音乐和摩托车排解内心的压抑。在家庭氛围中，他常常感到自己是局外人——继父罗宾的木工铺，妹妹马鲁的光芒，这些都让他选择用孤立来保护自己。外表冷漠，实则情感细腻，一旦打开心扉，会是极为忠诚的伴侣。",
+  "tags": ["内敛型", "技术", "独立", "深情", "艺术"],
+  "traitVector": {
+    "social": 18,
+    "pace": 35,
+    "emotion": 28,
+    "value": 42,
+    "natureTech": 82,
+    "adventure": 52,
+    "bonding": 42,
+    "aesthetic": 72
+  },
+  "romanceProfile": {
+    "stability": 55,
+    "openness": 45,
+    "independence": 78,
+    "romance": 60,
+    "adventure": 50,
+    "domesticity": 42,
+    "socialPresence": 18,
+    "growthSupport": 58
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "independence": 1.4,
+      "social": 0.7,
+      "natureTech": 1.2,
+      "aesthetic": 1.1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": [
+      {
+        "field": "socialPresence",
+        "operator": ">",
+        "value": 78,
+        "penalty": 15,
+        "reason": "过强的社交展示需求与塞巴斯蒂安的内敛性格存在根本冲突"
+      },
+      {
+        "field": "domesticity",
+        "operator": "<",
+        "value": 20,
+        "penalty": 8,
+        "reason": "完全不在乎日常生活共建可能让塞巴斯蒂安感到关系缺乏根基"
+      }
+    ]
+  },
+  "copy": {
+    "oneLiner": "你在沉默中构建自己的宇宙，等待那个真正愿意敲门进来的人。",
+    "analysis": "与塞巴斯蒂安相似，你是一个需要大量独处时间来充电的人。表面上的冷漠隐藏着丰富的内心世界，你对技术或艺术有着独特的执着，不轻易向外人展示真实的自我。你的关系模式趋向于慢热型：建立信任需要时间，但一旦建立，便极为深厚。",
+    "getAlongAdvice": "给他足够的个人空间，不要强迫他参加不喜欢的社交活动。对他的编程项目、音乐创作或摩托车文化表示真诚的兴趣，是打开他内心的最好方式。安静地陪伴有时比热情地打扰更能传递关心。",
+    "conflictWarning": "塞巴斯蒂安可能会因为沟通不足而显得疏远，而习惯外向社交的伴侣会感到被冷落。他的独立性有时会被误解为冷漠，需要双方主动建立沟通节奏。",
+    "farmLifeAdvice": "你可能会像塞巴斯蒂安一样，把农场经营得井井有条但不张扬，喜欢在夜间独自工作，用技术视角优化农场效率，比如研究灌溉节奏或作物轮作规律。"
+  },
+  "meta": {
+    "marriageable": true,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

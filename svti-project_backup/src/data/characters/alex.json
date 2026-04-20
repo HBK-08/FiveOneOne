@@ -1,0 +1,69 @@
+{
+  "id": "alex",
+  "nameZh": "亚历克斯",
+  "nameEn": "Alex",
+  "avatar": "/people/Alex.png",
+  "introShort": "追逐职业运动员梦想的阳光男孩，表面强硬，内心深处充满柔情。",
+  "introLong": "亚历克斯是农场镇上最显眼的运动少年，每天坚持训练，梦想成为职业 Gridball 球员。他的外表充满自信甚至有些傲慢，但这不过是他用来保护内心脆弱的盔甲——失去母亲的伤痛始终藏在心底。与外祖父母生活的他学会了用体育转移情感，但在真正信任的人面前，他会展现出极为温柔和忠诚的一面。",
+  "tags": ["运动型", "积极", "竞争", "忠诚", "成长"],
+  "traitVector": {
+    "social": 78,
+    "pace": 72,
+    "emotion": 48,
+    "value": 70,
+    "natureTech": 35,
+    "adventure": 65,
+    "bonding": 62,
+    "aesthetic": 28
+  },
+  "romanceProfile": {
+    "stability": 65,
+    "openness": 52,
+    "independence": 55,
+    "romance": 65,
+    "adventure": 62,
+    "domesticity": 58,
+    "socialPresence": 72,
+    "growthSupport": 68
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1.3,
+      "bonding": 1.2,
+      "adventure": 1.1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": [
+      {
+        "field": "socialPresence",
+        "operator": "<",
+        "value": 22,
+        "penalty": 10,
+        "reason": "亚历克斯在意能否展示自己与伴侣的关系，极度内敛的人可能让他感到不被接受"
+      },
+      {
+        "field": "independence",
+        "operator": ">",
+        "value": 82,
+        "penalty": 8,
+        "reason": "过强的独立性可能让亚历克斯感觉被拒之门外，他需要感受到自己被需要"
+      }
+    ]
+  },
+  "copy": {
+    "oneLiner": "你把汗水和坚持当作信仰，相信努力终会换来属于自己的那个时刻。",
+    "analysis": "你和亚历克斯一样，目标清晰，行动力强。表面上看起来自信满满，实际上内心有一片只对亲近的人开放的柔软地带。你看重真实的情感连接，而不仅仅是表面的热闹，尽管你擅长在人群中发光。",
+    "getAlongAdvice": "支持他的训练计划，对他的运动梦想保持真诚的兴趣。偶尔一起晨跑或是帮他规划训练日程，会让他感受到真实的陪伴。不要总是拆穿他的强硬外表，给他空间慢慢打开心扉。",
+    "conflictWarning": "亚历克斯偶尔会用傲气掩盖不安，在关系受挫时可能显得退缩或过度竞争。如果感觉到不被认可，他可能会选择用运动逃避而非沟通。建立关系需要耐心突破他的防线。",
+    "farmLifeAdvice": "你可能会把农场运营得像一个训练营，有清晰的目标和时间表，热衷于挑战产量记录。偶尔会在农场举办小型竞技活动，把邻居变成同伴。"
+  },
+  "meta": {
+    "marriageable": true,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

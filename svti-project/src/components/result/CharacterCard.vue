@@ -2,11 +2,11 @@
   <div class="character-card">
     <img v-if="character.avatar" :src="character.avatar" class="avatar" />
     <div class="info">
-      <div class="name">{{ character.nameZh }} · {{ character.nameEn }}</div>
+      <div class="name">{{ character.nameZh }} / {{ character.nameEn }}</div>
       <div class="score">匹配度 {{ character.score }}%</div>
       <div class="tags">
-        <span v-for="dim in character.closestDimensions" :key="dim" class="tag close">{{ dim }}</span>
-        <span v-for="dim in character.farthestDimensions" :key="dim" class="tag far">{{ dim }}</span>
+        <span v-for="dim in character.closestDimensions" :key="dim" class="tag close">{{ formatDimension(dim) }}</span>
+        <span v-for="dim in character.farthestDimensions" :key="dim" class="tag far">{{ formatDimension(dim) }}</span>
       </div>
     </div>
   </div>
@@ -14,10 +14,23 @@
 
 <script setup lang="ts">
 import type { TopCharacter } from '@/types'
+import dimensionsJson from '@/data/dimensions.json'
 
 defineProps<{
   character: TopCharacter
 }>()
+
+const dimensionLabelMap = (dimensionsJson as { dimensions: Array<{ id: string; nameZh: string }> }).dimensions.reduce(
+  (map, dimension) => {
+    map[dimension.id] = dimension.nameZh
+    return map
+  },
+  {} as Record<string, string>,
+)
+
+function formatDimension(dimensionId: string) {
+  return dimensionLabelMap[dimensionId] || dimensionId
+}
 </script>
 
 <style scoped>

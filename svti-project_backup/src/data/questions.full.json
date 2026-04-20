@@ -1,0 +1,1258 @@
+[
+  {
+    "id": "q001",
+    "version": "full",
+    "prompt": "春天的一个下午，镇上正在举办复活节彩蛋寻宝活动。你会怎么做？",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "完全不去，宁愿在农场照料作物", "value": "a" },
+      { "label": "只在结束时出现，看看有没有奖励", "value": "b" },
+      { "label": "去看看，但更喜欢站在一旁观察", "value": "c" },
+      { "label": "积极参与，和所有人竞争并享受节日气氛", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "social", "delta": 22 },
+        { "dimension": "adventure", "delta": 6 }
+      ]
+    },
+    "primaryDimension": "social",
+    "secondaryDimension": "adventure",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "social_participation"
+  },
+  {
+    "id": "q002",
+    "version": "full",
+    "prompt": "当你规划农场时，你更倾向于：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "想到什么种什么，享受意外收获", "value": "a" },
+      { "label": "大致规划，允许根据心情灵活调整", "value": "b" },
+      { "label": "只专注于高利润作物，其他随意", "value": "c" },
+      { "label": "提前画好布局图，按季节严格轮作", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "pace", "delta": 28 }
+      ]
+    },
+    "primaryDimension": "pace",
+    "secondaryDimension": "value",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "pace_planning"
+  },
+  {
+    "id": "q003",
+    "version": "full",
+    "prompt": "在表达自己的情感时，你通常是：",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "非常含蓄，习惯隐藏情绪", "mid": "视情况而定", "high": "非常直接，喜欢坦诚表达" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "emotion", "delta": 18 }
+      ],
+      "romance": [
+        { "dimension": "openness", "delta": 10 }
+      ]
+    },
+    "primaryDimension": "emotion",
+    "secondaryDimension": "bonding",
+    "reverseScored": false,
+    "consistencyTag": "emotion_c001",
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "emotion_expression"
+  },
+  {
+    "id": "q004",
+    "version": "full",
+    "prompt": "你更喜欢在矿洞中待上一整天，还是确保每天按时回家休息？",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "完全不去矿洞，农场生活已足够充实", "value": "a" },
+      { "label": "只在有充足准备的日子去探险", "value": "b" },
+      { "label": "会设定闹钟，保证生活节奏不被打乱", "value": "c" },
+      { "label": "矿洞探险更有趣，时间不知不觉就过去了", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "adventure", "delta": 22 },
+        { "dimension": "pace", "delta": -6 }
+      ]
+    },
+    "primaryDimension": "adventure",
+    "secondaryDimension": "pace",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "adventure_rhythm"
+  },
+  {
+    "id": "q005",
+    "version": "full",
+    "prompt": "休息日里，你更愿意：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "待在家里整理房间或阅读", "value": "a" },
+      { "label": "去河边钓鱼，享受自然的宁静", "value": "b" },
+      { "label": "研究新的酿酒配方或自动化农场装置", "value": "c" },
+      { "label": "去镇上拜访朋友，参加各种活动", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "natureTech", "delta": 18 },
+        { "dimension": "social", "delta": 10 }
+      ]
+    },
+    "primaryDimension": "natureTech",
+    "secondaryDimension": "social",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "nature_tech_preference"
+  },
+  {
+    "id": "q006",
+    "version": "full",
+    "prompt": "当你遇到困难时，你更希望伴侣如何回应？",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "安静陪伴，给我空间自己处理", "value": "a" },
+      { "label": "转移注意力，带我去做些有趣的事", "value": "b" },
+      { "label": "用温暖的话语安慰和鼓励我", "value": "c" },
+      { "label": "主动提供具体建议，帮我一起解决", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "romance": [
+        { "dimension": "independence", "delta": -12 },
+        { "dimension": "growthSupport", "delta": 15 },
+        { "dimension": "romance", "delta": 8 }
+      ]
+    },
+    "primaryDimension": "bonding",
+    "secondaryDimension": "bonding",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": true,
+    "weight": 1.2,
+    "explanationKey": "romance_support_style"
+  },
+  {
+    "id": "q007",
+    "version": "full",
+    "prompt": "我通常不擅长在人群中表达自己。",
+    "promptSupplement": "（请根据实际情况作答，这是一道反向题）",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "完全不同意", "mid": "中立", "high": "完全同意" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "emotion", "delta": 18 }
+      ]
+    },
+    "primaryDimension": "emotion",
+    "secondaryDimension": "social",
+    "reverseScored": true,
+    "consistencyTag": "emotion_c001",
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "emotion_reverse"
+  },
+  {
+    "id": "q008",
+    "version": "full",
+    "prompt": "对于一段关系，稳定的日常比激情和冒险更重要。",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "完全不同意", "mid": "中立", "high": "完全同意" },
+    "targetVectors": {
+      "romance": [
+        { "dimension": "stability", "delta": 22 },
+        { "dimension": "adventure", "delta": -10 }
+      ],
+      "trait": [
+        { "dimension": "adventure", "delta": -6 }
+      ]
+    },
+    "primaryDimension": "adventure",
+    "secondaryDimension": "pace",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": true,
+    "weight": 1.2,
+    "explanationKey": "romance_stability"
+  },
+  {
+    "id": "q009",
+    "version": "full",
+    "prompt": "在一个陌生的镇上，你更倾向于：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "独自探索每个角落，享受发现的乐趣", "value": "a" },
+      { "label": "找个安静的地方坐下观察人群", "value": "b" },
+      { "label": "主动和当地人搭话，快速融入", "value": "c" },
+      { "label": "组织或加入一个小团体一起探索", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "social", "delta": 20 },
+        { "dimension": "bonding", "delta": 8 }
+      ]
+    },
+    "primaryDimension": "social",
+    "secondaryDimension": "bonding",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "social_stranger_town"
+  },
+  {
+    "id": "q010",
+    "version": "full",
+    "prompt": "每周与镇上居民的互动让你感到：",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "消耗精力，需要独处恢复", "mid": "视情况而定", "high": "充满能量，期待与人连接" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "social", "delta": 20 }
+      ]
+    },
+    "primaryDimension": "social",
+    "secondaryDimension": "bonding",
+    "reverseScored": false,
+    "consistencyTag": "social_c001",
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "social_energy"
+  },
+  {
+    "id": "q011",
+    "version": "full",
+    "prompt": "面对一周的农场工作，你更习惯：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "完全顺其自然，当天决定当天的事", "value": "a" },
+      { "label": "有大致方向，但保留弹性空间", "value": "b" },
+      { "label": "按优先级排序，完成主要任务即可", "value": "c" },
+      { "label": "制定详细清单，逐项执行", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "pace", "delta": 25 }
+      ]
+    },
+    "primaryDimension": "pace",
+    "secondaryDimension": "value",
+    "reverseScored": false,
+    "consistencyTag": "pace_c001",
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "pace_weekly"
+  },
+  {
+    "id": "q012",
+    "version": "full",
+    "prompt": "我喜欢按照既定计划行动，临时变化会让我感到不适。",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "完全不同意", "mid": "中立", "high": "完全同意" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "pace", "delta": 20 }
+      ]
+    },
+    "primaryDimension": "pace",
+    "secondaryDimension": "adventure",
+    "reverseScored": false,
+    "consistencyTag": "pace_c001",
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "pace_structure"
+  },
+  {
+    "id": "q013",
+    "version": "full",
+    "prompt": "当朋友问你「最近怎么样」时，你通常会：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "简短回答「还好」，不深入分享", "value": "a" },
+      { "label": "分享一些表面情况，但不提真实感受", "value": "b" },
+      { "label": "如实说出近期的心情起伏", "value": "c" },
+      { "label": "详细倾诉，把想法和感受都说出来", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "emotion", "delta": 22 }
+      ],
+      "romance": [
+        { "dimension": "openness", "delta": 12 }
+      ]
+    },
+    "primaryDimension": "emotion",
+    "secondaryDimension": "bonding",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "emotion_sharing"
+  },
+  {
+    "id": "q014",
+    "version": "full",
+    "prompt": "我很少把内心真实的感受说出口。",
+    "promptSupplement": "（反向题）",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "完全不同意", "mid": "中立", "high": "完全同意" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "emotion", "delta": 18 }
+      ]
+    },
+    "primaryDimension": "emotion",
+    "secondaryDimension": "bonding",
+    "reverseScored": true,
+    "consistencyTag": "emotion_c002",
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "emotion_closed"
+  },
+  {
+    "id": "q015",
+    "version": "full",
+    "prompt": "当你给村民送礼物时，你更倾向于：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "送最贵的，确保效果最大化", "value": "a" },
+      { "label": "根据喜好精心选择，哪怕不贵", "value": "b" },
+      { "label": "偶尔送，更在意情感上的真诚", "value": "c" },
+      { "label": "只有明确利益时才会考虑", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "value", "delta": -20 }
+      ]
+    },
+    "primaryDimension": "value",
+    "secondaryDimension": "aesthetic",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "value_gift"
+  },
+  {
+    "id": "q016",
+    "version": "full",
+    "prompt": "对于金钱与幸福的关系，你更倾向于认为：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "幸福无法用金钱衡量，精神满足最重要", "value": "a" },
+      { "label": "精神满足为主，物质基础为辅", "value": "b" },
+      { "label": "两者都重要，需要找到平衡", "value": "c" },
+      { "label": "物质稳定是幸福的前提条件", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "value", "delta": 22 }
+      ]
+    },
+    "primaryDimension": "value",
+    "secondaryDimension": "aesthetic",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "value_money"
+  },
+  {
+    "id": "q017",
+    "version": "full",
+    "prompt": "面对一个新机会，你的第一反应是：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "感受它是否符合内心的热情", "value": "a" },
+      { "label": "先想象最理想的结果", "value": "b" },
+      { "label": "同时评估风险和可能收益", "value": "c" },
+      { "label": "评估可行性和实际回报", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "value", "delta": 22 }
+      ]
+    },
+    "primaryDimension": "value",
+    "secondaryDimension": "pace",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "value_opportunity"
+  },
+  {
+    "id": "q018",
+    "version": "full",
+    "prompt": "如果可以选择一个爱好，你会选择：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "种菜、养花、木工等手作活动", "value": "a" },
+      { "label": "钓鱼、徒步等亲近自然的活动", "value": "b" },
+      { "label": "学习编程或搭建复杂系统", "value": "c" },
+      { "label": "研究自动化机械或科学实验", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "natureTech", "delta": 25 }
+      ]
+    },
+    "primaryDimension": "natureTech",
+    "secondaryDimension": "adventure",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "natureTech_hobby"
+  },
+  {
+    "id": "q019",
+    "version": "full",
+    "prompt": "我觉得技术和效率比传统手作方式更令人满足。",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "完全不同意，更享受手作过程", "mid": "两者都有价值", "high": "完全同意，效率才是关键" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "natureTech", "delta": 22 }
+      ]
+    },
+    "primaryDimension": "natureTech",
+    "secondaryDimension": "value",
+    "reverseScored": false,
+    "consistencyTag": "natureTech_c001",
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "natureTech_efficiency"
+  },
+  {
+    "id": "q020",
+    "version": "full",
+    "prompt": "当你听说附近有一片未探索的洞穴时，你的第一反应是：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "不感兴趣，农场还有很多要做的", "value": "a" },
+      { "label": "等攒够资源再考虑", "value": "b" },
+      { "label": "很好奇，但会先做好准备", "value": "c" },
+      { "label": "立刻想去一探究竟", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "adventure", "delta": 25 }
+      ]
+    },
+    "primaryDimension": "adventure",
+    "secondaryDimension": "pace",
+    "reverseScored": false,
+    "consistencyTag": "adventure_c001",
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "adventure_cave"
+  },
+  {
+    "id": "q021",
+    "version": "full",
+    "prompt": "我更喜欢稳定可预测的生活，而不是充满变化的生活。",
+    "promptSupplement": "（反向题）",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "完全不同意", "mid": "中立", "high": "完全同意" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "adventure", "delta": 20 }
+      ]
+    },
+    "primaryDimension": "adventure",
+    "secondaryDimension": "pace",
+    "reverseScored": true,
+    "consistencyTag": "adventure_c001",
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "adventure_stable"
+  },
+  {
+    "id": "q022",
+    "version": "full",
+    "prompt": "在亲密关系中，你更希望：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "彼此完全独立，偶尔相聚", "value": "a" },
+      { "label": "各自有空间，但常常保持联系", "value": "b" },
+      { "label": "大部分时间在一起，也有各自时光", "value": "c" },
+      { "label": "尽可能在一起，彼此成为彼此的世界", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "bonding", "delta": 25 }
+      ],
+      "romance": [
+        { "dimension": "independence", "delta": -15 }
+      ]
+    },
+    "primaryDimension": "bonding",
+    "secondaryDimension": "social",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.1,
+    "explanationKey": "bonding_closeness"
+  },
+  {
+    "id": "q023",
+    "version": "full",
+    "prompt": "我在乎与朋友保持深度连接，而不是泛泛之交。",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "完全不同意，广泛社交更重要", "mid": "两者都重要", "high": "完全同意，深度连接更有意义" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "bonding", "delta": 18 },
+        { "dimension": "social", "delta": -8 }
+      ]
+    },
+    "primaryDimension": "bonding",
+    "secondaryDimension": "social",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "bonding_depth"
+  },
+  {
+    "id": "q024",
+    "version": "full",
+    "prompt": "当你和朋友或伴侣有一段时间没联系时，你会：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "享受安静，不会主动联系", "value": "a" },
+      { "label": "偶尔想起，但不觉得有紧迫感", "value": "b" },
+      { "label": "会主动发一条消息表示关心", "value": "c" },
+      { "label": "感到不安，会频繁联系确认关系", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "bonding", "delta": 22 }
+      ]
+    },
+    "primaryDimension": "bonding",
+    "secondaryDimension": "social",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "bonding_contact"
+  },
+  {
+    "id": "q025",
+    "version": "full",
+    "prompt": "对你来说，农场的布局外观重要吗？",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "不重要，功能性更优先", "mid": "适度美化即可", "high": "非常重要，美感是农场的灵魂" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "aesthetic", "delta": 22 }
+      ]
+    },
+    "primaryDimension": "aesthetic",
+    "secondaryDimension": "value",
+    "reverseScored": false,
+    "consistencyTag": "aesthetic_c001",
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "aesthetic_farm"
+  },
+  {
+    "id": "q026",
+    "version": "full",
+    "prompt": "在生活中，你更容易被什么打动？",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "实用的工具或清晰的解决方案", "value": "a" },
+      { "label": "朴素而真实的日常细节", "value": "b" },
+      { "label": "富有创意的艺术或音乐作品", "value": "c" },
+      { "label": "宏大的故事、神话或宇宙感", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "aesthetic", "delta": 25 }
+      ]
+    },
+    "primaryDimension": "aesthetic",
+    "secondaryDimension": "value",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "aesthetic_touched"
+  },
+  {
+    "id": "q027",
+    "version": "full",
+    "prompt": "我觉得日常生活中有仪式感、美感和诗意是非常重要的。",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "完全不同意，务实第一", "mid": "视情况而定", "high": "完全同意，美感让生活有意义" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "aesthetic", "delta": 20 }
+      ]
+    },
+    "primaryDimension": "aesthetic",
+    "secondaryDimension": "value",
+    "reverseScored": false,
+    "consistencyTag": "aesthetic_c001",
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "aesthetic_ritual"
+  },
+  {
+    "id": "q028",
+    "version": "full",
+    "prompt": "在一段恋爱关系中，你更看重：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "激情与新鲜感，保持关系的活力", "value": "a" },
+      { "label": "共同经历和成长", "value": "b" },
+      { "label": "相互理解与情感支持", "value": "c" },
+      { "label": "稳定和可靠，彼此可以依靠", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "romance": [
+        { "dimension": "stability", "delta": 22 },
+        { "dimension": "adventure", "delta": -10 }
+      ]
+    },
+    "primaryDimension": "bonding",
+    "secondaryDimension": "bonding",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": true,
+    "weight": 1.2,
+    "explanationKey": "romance_priority"
+  },
+  {
+    "id": "q029",
+    "version": "full",
+    "prompt": "我希望我的伴侣和我有相似的兴趣爱好，而不是完全不同。",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "完全不同意，差异让关系更有趣", "mid": "两者都好", "high": "完全同意，共同爱好很重要" },
+    "targetVectors": {
+      "romance": [
+        { "dimension": "stability", "delta": 12 },
+        { "dimension": "openness", "delta": -8 }
+      ]
+    },
+    "primaryDimension": "bonding",
+    "secondaryDimension": "bonding",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": true,
+    "weight": 1.1,
+    "explanationKey": "romance_similarity"
+  },
+  {
+    "id": "q030",
+    "version": "full",
+    "prompt": "在农场生活中，你更希望伴侣扮演的角色是：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "完全独立，各自发展自己的事业", "value": "a" },
+      { "label": "有自己的方向，但偶尔协作", "value": "b" },
+      { "label": "共同参与大部分农场决策", "value": "c" },
+      { "label": "共同经营，成为真正的生活伴侣", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "romance": [
+        { "dimension": "domesticity", "delta": 25 },
+        { "dimension": "independence", "delta": -12 }
+      ]
+    },
+    "primaryDimension": "bonding",
+    "secondaryDimension": "bonding",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": true,
+    "weight": 1.2,
+    "explanationKey": "romance_domesticity"
+  },
+  {
+    "id": "q031",
+    "version": "full",
+    "prompt": "我希望伴侣在公开场合能够自然地展示我们的关系。",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "不需要，私下情感已足够", "mid": "适度即可", "high": "非常重要，公开认可让我感到安全" },
+    "targetVectors": {
+      "romance": [
+        { "dimension": "socialPresence", "delta": 22 }
+      ]
+    },
+    "primaryDimension": "bonding",
+    "secondaryDimension": "social",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": true,
+    "weight": 1.1,
+    "explanationKey": "romance_public"
+  },
+  {
+    "id": "q032",
+    "version": "full",
+    "prompt": "对于伴侣的个人成长，你更倾向于：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "不干涉，尊重对方自己的节奏", "value": "a" },
+      { "label": "在需要时提供支持", "value": "b" },
+      { "label": "主动关注对方的目标，一起制定计划", "value": "c" },
+      { "label": "成为对方最坚定的支持者，全力相助", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "romance": [
+        { "dimension": "growthSupport", "delta": 25 }
+      ]
+    },
+    "primaryDimension": "bonding",
+    "secondaryDimension": "bonding",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": true,
+    "weight": 1.2,
+    "explanationKey": "romance_growth_support"
+  },
+  {
+    "id": "q033",
+    "version": "full",
+    "prompt": "我期待伴侣主动表达浪漫，而不仅仅是稳定的陪伴。",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "完全不同意，踏实更重要", "mid": "两者兼顾", "high": "完全同意，浪漫让感情保鲜" },
+    "targetVectors": {
+      "romance": [
+        { "dimension": "romance", "delta": 22 }
+      ]
+    },
+    "primaryDimension": "bonding",
+    "secondaryDimension": "aesthetic",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": true,
+    "weight": 1.2,
+    "explanationKey": "romance_gesture"
+  },
+  {
+    "id": "q034",
+    "version": "full",
+    "prompt": "我希望在关系中，双方都能保留各自的独立空间和个人计划。",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "完全不同意，亲密才是重点", "mid": "适度独立即可", "high": "完全同意，独立是健康关系的基础" },
+    "targetVectors": {
+      "romance": [
+        { "dimension": "independence", "delta": 22 }
+      ]
+    },
+    "primaryDimension": "bonding",
+    "secondaryDimension": "bonding",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": true,
+    "weight": 1.1,
+    "explanationKey": "romance_independence"
+  },
+  {
+    "id": "q035",
+    "version": "full",
+    "prompt": "偶尔和伴侣一起去陌生的地方冒险对你来说：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "没有必要，安全的日常已经很好", "value": "a" },
+      { "label": "偶尔可以，但不需要太频繁", "value": "b" },
+      { "label": "很有趣，能加深彼此的了解", "value": "c" },
+      { "label": "非常重要，关系需要新鲜感和刺激", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "romance": [
+        { "dimension": "adventure", "delta": 25 }
+      ],
+      "trait": [
+        { "dimension": "adventure", "delta": 8 }
+      ]
+    },
+    "primaryDimension": "adventure",
+    "secondaryDimension": "bonding",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": true,
+    "weight": 1.2,
+    "explanationKey": "romance_adventure"
+  },
+  {
+    "id": "q036",
+    "version": "full",
+    "prompt": "社群聚会和邻里关系对你来说：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "完全不重要，更在乎家庭小圈子", "value": "a" },
+      { "label": "偶尔参与即可，不会刻意经营", "value": "b" },
+      { "label": "有一定价值，保持适度连接", "value": "c" },
+      { "label": "非常重要，社群是生活的重要部分", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "social", "delta": 22 },
+        { "dimension": "bonding", "delta": -6 }
+      ]
+    },
+    "primaryDimension": "social",
+    "secondaryDimension": "bonding",
+    "reverseScored": false,
+    "consistencyTag": "social_c001",
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "social_community"
+  },
+  {
+    "id": "q037",
+    "version": "full",
+    "prompt": "当镇上有重大事件（如星露谷节）时，我通常：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "宁愿待在家里，不参与公共活动", "value": "a" },
+      { "label": "短暂出现，拿到奖品就离开", "value": "b" },
+      { "label": "正常参与，享受节日氛围", "value": "c" },
+      { "label": "提前准备，是最积极的参与者之一", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "social", "delta": 20 },
+        { "dimension": "pace", "delta": 8 }
+      ]
+    },
+    "primaryDimension": "social",
+    "secondaryDimension": "pace",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "social_festival"
+  },
+  {
+    "id": "q038",
+    "version": "full",
+    "prompt": "对于农场的长期发展目标，你会：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "没有长期目标，活在当下", "value": "a" },
+      { "label": "有模糊的方向，慢慢摸索", "value": "b" },
+      { "label": "有清晰目标，但允许灵活调整", "value": "c" },
+      { "label": "制定详细的多年计划，按步骤推进", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "pace", "delta": 25 },
+        { "dimension": "value", "delta": 8 }
+      ]
+    },
+    "primaryDimension": "pace",
+    "secondaryDimension": "value",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "pace_longterm"
+  },
+  {
+    "id": "q039",
+    "version": "full",
+    "prompt": "在感情中，我更愿意：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "各自保持现有的生活方式，互不干涉", "value": "a" },
+      { "label": "互相了解，但不强求改变", "value": "b" },
+      { "label": "共同建立一套新的生活节奏", "value": "c" },
+      { "label": "完全融合彼此的生活，共同成长", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "romance": [
+        { "dimension": "domesticity", "delta": 22 },
+        { "dimension": "independence", "delta": -15 }
+      ]
+    },
+    "primaryDimension": "bonding",
+    "secondaryDimension": "bonding",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": true,
+    "weight": 1.2,
+    "explanationKey": "romance_merge"
+  },
+  {
+    "id": "q040",
+    "version": "full",
+    "prompt": "如果可以选择，你更希望农场附近有什么？",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "大片的森林和自然保护区", "value": "a" },
+      { "label": "古老的遗迹或神秘的地下空间", "value": "b" },
+      { "label": "完善的技术实验室或工坊", "value": "c" },
+      { "label": "热闹的市集和社区广场", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "natureTech", "delta": 20 },
+        { "dimension": "adventure", "delta": 10 },
+        { "dimension": "social", "delta": 5 }
+      ]
+    },
+    "primaryDimension": "natureTech",
+    "secondaryDimension": "adventure",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "natureTech_environment"
+  },
+  {
+    "id": "q041",
+    "version": "full",
+    "prompt": "当遭遇失败（如作物歉收）时，你的应对方式是：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "接受结果，明天再说", "value": "a" },
+      { "label": "思考一下哪里出了问题", "value": "b" },
+      { "label": "认真复盘，调整种植计划", "value": "c" },
+      { "label": "立刻制定新策略并严格执行", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "pace", "delta": 20 },
+        { "dimension": "value", "delta": 10 }
+      ]
+    },
+    "primaryDimension": "pace",
+    "secondaryDimension": "value",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "pace_failure"
+  },
+  {
+    "id": "q042",
+    "version": "full",
+    "prompt": "我经常花时间想象或构想一个理想的未来生活画面。",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "很少，更专注于当下的实际", "mid": "偶尔会", "high": "经常，未来愿景对我很重要" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "value", "delta": -18 },
+        { "dimension": "aesthetic", "delta": 10 }
+      ]
+    },
+    "primaryDimension": "value",
+    "secondaryDimension": "aesthetic",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "value_vision"
+  },
+  {
+    "id": "q043",
+    "version": "full",
+    "prompt": "你更喜欢哪种与朋友共度时光的方式？",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "一起安静读书或各自做自己的事", "value": "a" },
+      { "label": "一对一的深度谈话", "value": "b" },
+      { "label": "一起参加某项共同活动", "value": "c" },
+      { "label": "大家一起参加热闹的聚会", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "social", "delta": 20 },
+        { "dimension": "bonding", "delta": 8 }
+      ]
+    },
+    "primaryDimension": "social",
+    "secondaryDimension": "bonding",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "social_friend_time"
+  },
+  {
+    "id": "q044",
+    "version": "full",
+    "prompt": "在感情破裂后，你更倾向于：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "独自消化，不向外倾诉", "value": "a" },
+      { "label": "只和最信任的一两个人说", "value": "b" },
+      { "label": "和朋友倾诉，通过社交来恢复", "value": "c" },
+      { "label": "积极寻求帮助，和多人交流", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "social", "delta": 15 },
+        { "dimension": "emotion", "delta": 10 }
+      ]
+    },
+    "primaryDimension": "emotion",
+    "secondaryDimension": "social",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "emotion_breakup"
+  },
+  {
+    "id": "q045",
+    "version": "full",
+    "prompt": "面对一件美丽的艺术品或音乐，你的反应通常是：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "欣赏技巧，评估其实用或经济价值", "value": "a" },
+      { "label": "觉得不错，但很快忘记", "value": "b" },
+      { "label": "会有触动，并在脑海中留下印象", "value": "c" },
+      { "label": "深深感动，甚至联想到自己的经历", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "aesthetic", "delta": 25 }
+      ]
+    },
+    "primaryDimension": "aesthetic",
+    "secondaryDimension": "value",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "aesthetic_response"
+  },
+  {
+    "id": "q046",
+    "version": "full",
+    "prompt": "对于农场附近矿洞的深层区域，你的态度是：",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "不感兴趣，风险太大", "mid": "会探索，但不强求最深层", "high": "必须探索到底，越深越好" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "adventure", "delta": 25 },
+        { "dimension": "natureTech", "delta": 5 }
+      ]
+    },
+    "primaryDimension": "adventure",
+    "secondaryDimension": "natureTech",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "adventure_mine"
+  },
+  {
+    "id": "q047",
+    "version": "full",
+    "prompt": "当我感到压力大时，最能帮助我恢复的是：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "独处和静默，一个人待着", "value": "a" },
+      { "label": "做熟悉的手工或农场工作", "value": "b" },
+      { "label": "和亲近的人倾诉", "value": "c" },
+      { "label": "参加活动或出去走走", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "social", "delta": 15 },
+        { "dimension": "natureTech", "delta": -8 }
+      ]
+    },
+    "primaryDimension": "social",
+    "secondaryDimension": "emotion",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "emotion_stress"
+  },
+  {
+    "id": "q048",
+    "version": "full",
+    "prompt": "在做一个重要决定时，你更倾向于：",
+    "promptSupplement": "",
+    "type": "choice",
+    "options": [
+      { "label": "跟着直觉走，相信当下的感受", "value": "a" },
+      { "label": "听取别人的意见再做判断", "value": "b" },
+      { "label": "收集信息，权衡利弊", "value": "c" },
+      { "label": "制定详细分析框架，系统评估", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "pace", "delta": 20 },
+        { "dimension": "value", "delta": 12 }
+      ]
+    },
+    "primaryDimension": "pace",
+    "secondaryDimension": "value",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "pace_decision"
+  },
+  {
+    "id": "q049",
+    "version": "full",
+    "prompt": "我愿意为了伴侣调整自己的生活习惯或兴趣方向。",
+    "promptSupplement": "",
+    "type": "scale",
+    "options": [],
+    "scaleLabels": { "low": "完全不愿意，保持自我最重要", "mid": "适度调整", "high": "非常愿意，为爱改变自己" },
+    "targetVectors": {
+      "romance": [
+        { "dimension": "domesticity", "delta": 15 },
+        { "dimension": "independence", "delta": -12 }
+      ],
+      "trait": [
+        { "dimension": "bonding", "delta": 10 }
+      ]
+    },
+    "primaryDimension": "bonding",
+    "secondaryDimension": "bonding",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": true,
+    "weight": 1.2,
+    "explanationKey": "romance_adapt"
+  },
+  {
+    "id": "q050",
+    "version": "full",
+    "prompt": "在星露谷的生活中，最让你感到满足的时刻是：",
+    "promptSupplement": "请选择最接近你真实感受的一项。",
+    "type": "choice",
+    "options": [
+      { "label": "一个人安静地看着自己的农场丰收", "value": "a" },
+      { "label": "和镇上的朋友一起庆祝节日", "value": "b" },
+      { "label": "在矿洞中发现了珍贵的宝石", "value": "c" },
+      { "label": "制作出一件精心设计的工艺品或装置", "value": "d" }
+    ],
+    "scaleLabels": { "low": "", "mid": "", "high": "" },
+    "targetVectors": {
+      "trait": [
+        { "dimension": "social", "delta": 10 },
+        { "dimension": "adventure", "delta": 8 },
+        { "dimension": "aesthetic", "delta": 8 },
+        { "dimension": "natureTech", "delta": 5 }
+      ]
+    },
+    "primaryDimension": "social",
+    "secondaryDimension": "aesthetic",
+    "reverseScored": false,
+    "consistencyTag": null,
+    "forRomanceOnly": false,
+    "weight": 1.0,
+    "explanationKey": "holistic_satisfaction"
+  }
+]

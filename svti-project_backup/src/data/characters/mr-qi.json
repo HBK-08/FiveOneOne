@@ -1,0 +1,54 @@
+{
+  "id": "mr-qi",
+  "nameZh": "齐先生",
+  "nameEn": "Mr. Qi",
+  "avatar": "/people/Mr. Qi.png",
+  "introShort": "神出鬼没的神秘人物，背后掌控着许多秘密，对有趣的人保持着特别的关注。",
+  "introLong": "齐先生是整个星露谷世界里最难以捉摸的存在。他掌控着金格岛的赌场，在世界各处留下谜题，却从不轻易露面。他知道的事情远比任何人以为的多，对玩家的成长保持着一种若即若离的关注。他不是敌人，也不完全是朋友，他更像是一个高维的旁观者，用挑战来测试那些有资格引起他注意的人。与他的每一次互动，都像是一场无形的博弈。",
+  "tags": ["神秘人物", "挑战者", "智慧", "权力", "赌场"],
+  "traitVector": {
+    "social": 32,
+    "pace": 60,
+    "emotion": 10,
+    "value": 55,
+    "natureTech": 65,
+    "adventure": 70,
+    "bonding": 12,
+    "aesthetic": 58
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你有一种让人捉摸不透的气质，总是掌握着比别人多一步的信息，乐于在幕后推动事情发展。",
+    "analysis": "你和齐先生一样，习惯于从宏观视角观察局势，不轻易暴露自己的真实意图。你对技术、信息和系统有强烈的好奇心，享受在复杂规则中找到最优解的过程。你的情感世界极为私密，不容易与人产生深度连接，但你对真正有趣的人会保持长久的关注。你的冒险精神藏在智识层面，而非身体层面。",
+    "getAlongAdvice": "与齐先生型的人打交道，最重要的是展示你自己的独特性与能力。平庸对他来说是最大的拒绝信号，而真正的才华与勇气才能引起他持续的兴趣。保持神秘感，不要把所有底牌都摊开。",
+    "conflictWarning": "齐先生的情感连接极弱，他与人的关系更接近棋盘上的博弈而非心灵的交融。如果你希望建立温暖、亲密的情感关系，他几乎不会是合适的人选。",
+    "farmLifeAdvice": "齐先生的挑战是探索农场潜力的绝佳动力。接受他的任务，会引导你深入挖掘游戏中许多被忽视的系统，每一次完成都是一次对自身极限的检验。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

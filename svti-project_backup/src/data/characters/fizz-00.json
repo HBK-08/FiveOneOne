@@ -1,0 +1,54 @@
+{
+  "id": "fizz-00",
+  "nameZh": "菲兹",
+  "nameEn": "Fizz",
+  "avatar": "/people/Fizz 00.png",
+  "introShort": "金格岛上齐先生的眼线，一只洞察一切的鹦鹉。",
+  "introLong": "菲兹是一只羽色鲜艳的鹦鹉，表面上不过是金格岛上一道热带风景，实则是齐先生布置在岛上的情报网络的一部分。它看似漫不经心地停在枝头，实则对岛上的一切了如指掌。菲兹活跃好动，能够在不同的人与地点之间来回穿梭，将所见所闻悉数传递给它真正效忠的主人。它的忠诚不可撼动，但那份忠诚究竟指向何方，才是最值得玩味的谜题。",
+  "tags": ["鹦鹉", "间谍", "岛屿", "忠诚"],
+  "traitVector": {
+    "social": 55,
+    "pace": 40,
+    "emotion": 30,
+    "value": 45,
+    "natureTech": 20,
+    "adventure": 65,
+    "bonding": 18,
+    "aesthetic": 30
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你善于观察周围的一切，信息对你来说是最宝贵的资源，你总能在关键时刻掌握先机。",
+    "analysis": "你和菲兹一样，拥有敏锐的社交触角，能够在各种环境中自如穿行，同时悄悄积累信息与判断。你对规则和效忠对象有清醒的认知，行事有章法，不轻易把底牌亮给所有人。你的冒险精神让你愿意涉足未知领域，但情感上你保持着一定距离，不轻易深度依赖。",
+    "getAlongAdvice": "与菲兹型的人相处，保持坦诚是最好的策略——他们擅长察觉信息的不对称，试图隐瞒只会适得其反。欣赏他们的聪明与灵活，给予足够的自由空间，他们就会用自己独特的方式回馈你。",
+    "conflictWarning": "菲兹的效忠对象可能不总是显而易见，他的行为有时会让人感到难以完全信任。如果你需要一段透明度极高的关系，可能会对他的隐秘性感到不安。",
+    "farmLifeAdvice": "岛屿资源需要不断探索才能充分利用。在农场经营中，留意每一个可能被忽视的细节，也许一次不经意的探险，就能带回意想不到的收获。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}

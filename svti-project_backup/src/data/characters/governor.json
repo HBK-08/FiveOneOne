@@ -1,0 +1,54 @@
+{
+  "id": "governor",
+  "nameZh": "长官",
+  "nameEn": "Governor",
+  "avatar": "/people/Governor.png",
+  "introShort": "偶尔莅临农场镇检查的政府官员，一脸端庄，难以捉摸。",
+  "introLong": "长官是政府派来参加节庆活动的官员代表，他的到访往往意味着整个镇子要绷紧神经。他仪态端正，措辞谨慎，很难从他的表情中读出真实的评价。他代表着某种制度性的权威，是城市文明与镇民朴素生活之间的一道隔膜。是否对他留下好印象，将直接影响鹈鹕镇的声誉，因此人们在他面前都格外在意。尽管露面时间不多，他的存在却构成了镇子对外关系中不可忽视的一个变量。",
+  "tags": ["官员", "审视", "权威", "走形式"],
+  "traitVector": {
+    "social": 65,
+    "pace": 75,
+    "emotion": 15,
+    "value": 85,
+    "natureTech": 55,
+    "adventure": 20,
+    "bonding": 20,
+    "aesthetic": 35
+  },
+  "romanceProfile": {
+    "stability": null,
+    "openness": null,
+    "independence": null,
+    "romance": null,
+    "adventure": null,
+    "domesticity": null,
+    "socialPresence": null,
+    "growthSupport": null
+  },
+  "partnerPreference": {
+    "preferredGender": ["any"],
+    "orientationMode": "player_preference",
+    "weights": {
+      "social": 1,
+      "adventure": 1,
+      "bonding": 1
+    },
+    "hardFilters": {
+      "excludeIfOrientationMismatch": false
+    },
+    "conflictRules": []
+  },
+  "copy": {
+    "oneLiner": "你对规则与形象有强烈的自我要求，表现出色对你来说不只是习惯，更是一种本能。",
+    "analysis": "你和长官一样，在公共场合善于展现得体的一面，对规则与效率有着高度的敏感性。你重视制度的合理性，凡事讲究流程与标准，不轻易被情绪带偏。你的社交能力强，但这种能力往往是功能性的，而非出于真正的情感亲近。你对自我形象的管理极为在意，对外界的评价并非无动于衷。",
+    "getAlongAdvice": "与长官型的人相处，最有效的方式是展示你的能力与规范性。做到位、不出错，是赢得他认可的基础。避免在公开场合让他难堪，他会以同等的尊重回应你。",
+    "conflictWarning": "长官的情感表达极为克制，人际关系在他眼中带有明显的功能性色彩。如果你渴望真实的情感交流和轻松的人际互动，可能会感到与他的相处公式化、疏离感强。",
+    "farmLifeAdvice": "农场的对外形象也很重要。维护好农场的整洁与秩序，参加镇上的节庆活动并展示你的成果，能为你在社区中建立可靠的口碑，长远来看回报丰厚。"
+  },
+  "meta": {
+    "marriageable": false,
+    "source": "Stardew Valley 1.6",
+    "version": "1.0"
+  }
+}
